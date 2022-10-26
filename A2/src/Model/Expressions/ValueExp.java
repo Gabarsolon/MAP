@@ -1,4 +1,7 @@
-package Model;
+package Model.Expressions;
+
+import Model.States.MyIDictionary;
+import Model.Values.Value;
 
 public class ValueExp implements {
     private Value e;

@@ -1,4 +1,4 @@
-package Model;
+package Model.Types;
 
 public interface Type {
 }

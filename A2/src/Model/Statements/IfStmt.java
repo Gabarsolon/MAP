@@ -1,4 +1,8 @@
-package Model;
+package Model.Statements;
+
+import Model.Exceptions.MyException;
+import Model.Expressions.Exp;
+import Model.States.PrgState;
 
 public class IfStmt implements IStmt{
     private Exp exp;
@@ -10,7 +14,7 @@ public class IfStmt implements IStmt{
         thenS=t;
         elseS=el;
     }
-    public PrgState execute(PrgState state) throws MyException{
+    public PrgState execute(PrgState state) throws MyException {
 
         return state;
     }

@@ -1,15 +1,23 @@
-package Model;
+package Model.Statements;
 
-public class AssignStmt implements IStmt{
+import Model.Exceptions.MyException;
+import Model.Expressions.Exp;
+import Model.States.MyIDictionary;
+import Model.States.MyIStack;
+import Model.States.PrgState;
+import Model.Types.Type;
+import Model.Values.Value;
+
+public class AssignStmt implements IStmt {
     private String id;
     private Exp exp;
 
-    String toString(){
+    public String toString(){
         return id + "=" + exp.toString();
     }
-    PrgState execute(PrgState state) throws MyException{
-        MyIStack<IStmt> stk=state.getStk();
-        MyIDictionary<String,Value> symTbl = state.getSymTable();
+    public PrgState execute(PrgState state) throws MyException {
+        MyIStack<IStmt> stk=state.getExeStack();
+        MyIDictionary<String, Value> symTbl = state.getSymTable();
 
         if (symTbl.isDefined(id)){
             Value val = exp.eval(symTbl);

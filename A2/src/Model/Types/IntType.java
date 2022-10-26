@@ -1,4 +1,4 @@
-package Model;
+package Model.Types;
 
 public class IntType implements Type{
     public boolean equals(Object another){

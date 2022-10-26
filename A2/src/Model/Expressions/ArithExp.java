@@ -1,11 +1,17 @@
-package Model;
+package Model.Expressions;
+
+import Model.Exceptions.MyException;
+import Model.States.MyIDictionary;
+import Model.Types.IntType;
+import Model.Values.IntValue;
+import Model.Values.Value;
 
 public class ArithExp implements Exp{
     private Exp e1;
     private Exp e2;
     private int op;
 
-    public Value eval(MyIDictionary<String,Value>tbl) throws MyException{
+    public Value eval(MyIDictionary<String,Value> tbl) throws MyException {
         Value v1,v2;
         v1 = e1.eval(tbl);
         if(v1.getType().equals(new IntType())){

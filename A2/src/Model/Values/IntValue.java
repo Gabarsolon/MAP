@@ -1,8 +1,11 @@
-package Model;
+package Model.Values;
+
+import Model.Types.IntType;
+import Model.Types.Type;
 
 public class IntValue implements Value{
     private int val;
-    IntValue(int v){
+    public IntValue(int v){
         val=v;
     }
 
@@ -10,7 +13,7 @@ public class IntValue implements Value{
         return val;
     }
     public String toString(){
-
+        return Integer.toString(val);
     }
 
     public Type getType(){

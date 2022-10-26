@@ -1,4 +1,4 @@
-package Model;
+package Model.States;
 
 public interface MyIStack<T>{
 
