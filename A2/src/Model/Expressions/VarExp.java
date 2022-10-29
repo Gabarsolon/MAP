@@ -6,6 +6,9 @@ import Model.Values.Value;
 
 public class VarExp implements Exp{
     String id;
+    public VarExp(String id){
+        this.id = id;
+    }
     public Value eval(MyIDictionary<String, Value> tbl) throws MyException {
         Value val = tbl.lookup(id);
         if(val == null)

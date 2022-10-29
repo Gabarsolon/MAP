@@ -11,4 +11,7 @@ public class Repository implements IRepository{
     public PrgState getCrtPrg(){
         return crtPrg;
     }
+    public void setCrtPrg(PrgState prg){
+        this.crtPrg = prg;
+    }
 }

@@ -12,6 +12,10 @@ public class VarDeclStmt implements IStmt{
     private String name;
     private Type typ;
 
+    public VarDeclStmt(String name, Type typ){
+        this.name = name;
+        this.typ = typ;
+    }
     @Override
     public PrgState execute(PrgState state) throws MyException {
         MyIDictionary<String, Value> symTable = state.getSymTable();

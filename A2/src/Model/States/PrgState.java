@@ -9,6 +9,13 @@ public class PrgState {
     private MyIList<Value> out;
 //    private IStmt originalProgram;
 
+    public PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symtbl, MyIList<Value> ot, IStmt prg){
+        exeStack=stk;
+        symTable=symtbl;
+        out=ot;
+        //originalProgram=new PrgState(stk, symtbl, ot, null);
+        stk.push(prg);
+    }
     public void setExeStack(MyIStack<IStmt> exeStack) {
         this.exeStack = exeStack;
     }
@@ -51,11 +58,5 @@ public class PrgState {
                 '}';
     }
 
-    PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symtbl, MyIList<Value> ot, IStmt prg){
-        exeStack=stk;
-        symTable=symtbl;
-        out=ot;
-        //originalProgram=new PrgState(stk, symtbl, ot, null);
-        stk.push(prg);
-    }
+
 }

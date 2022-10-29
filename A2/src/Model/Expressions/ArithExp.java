@@ -11,6 +11,11 @@ public class ArithExp implements Exp{
     private Exp e2;
     private int op;
 
+    public ArithExp(int op, Exp e1, Exp e2){
+        this.e1 = e1;
+        this.e2 = e2;
+        this.op = op;
+    }
     public Value eval(MyIDictionary<String, Value> tbl) throws MyException {
         Value v1,v2;
         v1 = e1.eval(tbl);

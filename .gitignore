@@ -18,3 +18,9 @@ A2/.idea/modules.xml
 A2/.idea/uiDesigner.xml
 A2/.idea/vcs.xml
 A2/A2.iml
+tests/.idea/misc.xml
+tests/.idea/modules.xml
+tests/.idea/vcs.xml
+tests/out/production/tests/Main.class
+tests/src/Main.java
+tests/tests.iml
