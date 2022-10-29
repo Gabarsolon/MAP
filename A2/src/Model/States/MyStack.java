@@ -21,4 +21,7 @@ public class MyStack<T> implements MyIStack<T>{
     public boolean isEmpty() {
         return data.isEmpty();
     }
+    public String toString(){
+        return data.toString();
+    }
 }

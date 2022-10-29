@@ -34,7 +34,7 @@ public class Controller implements IController{
             }
         }
     }
-    public void setPrgState(boolean val){
+    public void setDisplayPrgState(boolean val){
         this.displayPrgState = val;
     }
 }

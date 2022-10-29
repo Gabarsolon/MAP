@@ -29,9 +29,11 @@ public class Main {
                                 new CompStmt(new IfStmt(new VarExp("a"),new AssignStmt("v",
                                         new ValueExp(new IntValue(2))), new AssignStmt("v", new ValueExp(
                                                 new IntValue(3)))), new PrintStmt(new VarExp("v"))))));
+
         Scanner scanner = new Scanner(System.in);
         IRepository repository = new Repository(new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(), new MyList<Value>(), ex1));
         IController controller = new Controller(repository);
+        controller.setDisplayPrgState(true);
         while(true) {
             System.out.println("1.Input a program");
             System.out.println("2.Execute the current program");
@@ -40,8 +42,8 @@ public class Main {
             System.out.print("Input a option: ");
             int option = scanner.nextInt();
             switch (option){
-                case 1: {
-                    System.out.println("Which of the hardcoded program do you want?(input 1 2 or 3");
+                case 1:
+                    System.out.print("Which of the hardcoded program do you want?(input 1 2 or 3): ");
                     int programOption = scanner.nextInt();
                     switch(programOption){
                         case 1:
@@ -56,22 +58,24 @@ public class Main {
                         default:
                             break;
                     }
-                }
+                    break;
+
                 case 2:
-                    try{
+                    try {
                         controller.allStep();
-                    }
-                    catch(Exception e){
+                    } catch (Exception e) {
                         System.out.println(e.toString());
                     }
-                case 3: {
+                    break;
+                case 3:
                     System.out.print("Input true or false: ");
-                    String displayPrgStateOption = scanner.nextLine();
-                    if (displayPrgStateOption == "true")
-                        controller.setPrgState(true);
+                    boolean displayPrgStateOption = scanner.nextBoolean();
+                    if (displayPrgStateOption)
+                        controller.setDisplayPrgState(true);
                     else
-                        controller.setPrgState(false);
-                }
+                        controller.setDisplayPrgState(false);
+                    System.out.println();
+                    break;
                 case 4:
                     return;
             }
