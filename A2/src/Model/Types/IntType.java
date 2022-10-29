@@ -10,4 +10,7 @@ public class IntType implements Type{
     public String toString() {
         return "int";
     }
+//    public int defaultValue(){
+//        return 0;
+//    }
 }

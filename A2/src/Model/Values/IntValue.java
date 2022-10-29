@@ -3,7 +3,7 @@ package Model.Values;
 import Model.Types.IntType;
 import Model.Types.Type;
 
-public class IntValue implements Value{
+public class IntValue implements Value {
     private int val;
     public IntValue(int v){
         val=v;

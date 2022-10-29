@@ -9,4 +9,7 @@ public class BoolType implements Type{
     public String toString(){
         return "bool";
     }
+//    public boolean defaultValue(){
+//        return false;
+//    }
 }
