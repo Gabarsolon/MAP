@@ -13,15 +13,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         IStmt ex1 = new CompStmt(new VarDeclStmt("v",new IntType()),
                 new CompStmt(new AssignStmt("v",new ValueExp(new IntValue(2))),
                         new PrintStmt(new VarExp("v"))));
         IStmt ex2 = new CompStmt( new VarDeclStmt("a",new IntType()),
                 new CompStmt(new VarDeclStmt("b",new IntType()),
-                        new CompStmt(new AssignStmt("a", new ArithExp('+',new ValueExp(new IntValue(2)),
+                        new CompStmt(new AssignStmt("a", new ArithExp(1,new ValueExp(new IntValue(2)),
                                 new ArithExp(3,new ValueExp(new IntValue(3)),
                                         new ValueExp(new IntValue(5))))),
-                                new CompStmt(new AssignStmt("b",new ArithExp('+',new VarExp("a"),
+                                new CompStmt(new AssignStmt("b",new ArithExp(1,new VarExp("a"),
                                         new ValueExp(new IntValue(1)))), new PrintStmt(new VarExp("b"))))));
         IStmt ex3 = new CompStmt(new VarDeclStmt("a",new BoolType()),
                 new CompStmt(new VarDeclStmt("v", new IntType()),
@@ -48,18 +49,20 @@ public class Main {
                     switch(programOption){
                         case 1:
                             repository.setCrtPrg(new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(), new MyList<Value>(), ex1));
+                            System.out.println("First program selected");
                             break;
                         case 2:
                             repository.setCrtPrg(new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(), new MyList<Value>(), ex2));
+                            System.out.println("Second program selected");
                             break;
                         case 3:
                             repository.setCrtPrg(new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(), new MyList<Value>(), ex3));
+                            System.out.println("Third program selected");
                             break;
                         default:
                             break;
                     }
                     break;
-
                 case 2:
                     try {
                         controller.allStep();
