@@ -32,7 +32,9 @@ public class Main {
                                                 new IntValue(3)))), new PrintStmt(new VarExp("v"))))));
 
         Scanner scanner = new Scanner(System.in);
-        IRepository repository = new Repository(new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(), new MyList<Value>(), ex1));
+        System.out.print("Input the path to the log file: ");
+        String logFilePath = scanner.nextLine();
+        IRepository repository = new Repository(new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(), new MyList<Value>(), ex1), logFilePath);
         IController controller = new Controller(repository);
         while(true) {
             try{

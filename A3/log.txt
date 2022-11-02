@@ -1,0 +1,46 @@
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(v=ValueExp{e=2}
+print(VarExp{id='v'})))]
+SymTable:
+{}
+Out:
+[]
+----------------------------
+ExeStack:
+[(v=ValueExp{e=2}
+print(VarExp{id='v'})), VarDeclStmt{name='v', typ=int}]
+SymTable:
+{}
+Out:
+[]
+----------------------------
+ExeStack:
+[(v=ValueExp{e=2}
+print(VarExp{id='v'}))]
+SymTable:
+{v=0}
+Out:
+[]
+----------------------------
+ExeStack:
+[print(VarExp{id='v'}), v=ValueExp{e=2}]
+SymTable:
+{v=0}
+Out:
+[]
+----------------------------
+ExeStack:
+[print(VarExp{id='v'})]
+SymTable:
+{v=2}
+Out:
+[]
+----------------------------
+ExeStack:
+[]
+SymTable:
+{v=2}
+Out:
+[2]
+----------------------------

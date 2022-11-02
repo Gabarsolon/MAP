@@ -18,6 +18,10 @@ public class MyStack<T> implements MyIStack<T>{
     }
 
     @Override
+    public T top(){
+        return data.peek();
+    }
+    @Override
     public boolean isEmpty() {
         return data.isEmpty();
     }

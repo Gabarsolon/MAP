@@ -24,15 +24,18 @@ public class Controller implements IController{
         PrgState prg = repository.getCrtPrg();
         if(prg.getExeStack().isEmpty())
             throw new MyException("PrgState stack is empty");
+        repository.logPrgStateExec();
         if(displayPrgState){
             while(!prg.getExeStack().isEmpty()){
                 oneStep(prg);
+                repository.logPrgStateExec();
                 System.out.println(prg);
             }
         }
         else{
             while(!prg.getExeStack().isEmpty()){
                 oneStep(prg);
+                repository.logPrgStateExec();
             }
         }
     }
