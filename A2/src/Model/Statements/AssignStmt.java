@@ -33,4 +33,7 @@ public class AssignStmt implements IStmt {
         return state;
     }
 
+    public AssignStmt deepCopy(){
+        return new AssignStmt(id, exp);
+    }
 }

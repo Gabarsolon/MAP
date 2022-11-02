@@ -22,5 +22,7 @@ public class CompStmt implements IStmt{
         stk.push(first);
         return state;
     }
-
+    public CompStmt deepCopy(){
+        return new CompStmt(first, snd);
+    }
 }

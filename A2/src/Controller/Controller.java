@@ -11,7 +11,7 @@ public class Controller implements IController{
     private boolean displayPrgState;
     public Controller(IRepository repo){
         this.repository = repo;
-        this.displayPrgState = false;
+        this.displayPrgState = true;
     }
     public PrgState oneStep(PrgState state) throws MyException{
         MyIStack<IStmt> stk = state.getExeStack();
@@ -22,6 +22,8 @@ public class Controller implements IController{
     }
     public void allStep() throws MyException{
         PrgState prg = repository.getCrtPrg();
+        if(prg.getExeStack().isEmpty())
+            throw new MyException("PrgState stack is empty");
         if(displayPrgState){
             while(!prg.getExeStack().isEmpty()){
                 oneStep(prg);

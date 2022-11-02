@@ -12,4 +12,7 @@ public class BoolType implements Type{
 //    public boolean defaultValue(){
 //        return false;
 //    }
+    public BoolType deepCopy(){
+        return new BoolType();
+    }
 }

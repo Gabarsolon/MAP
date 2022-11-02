@@ -11,6 +11,12 @@ public class LogicExp implements Exp{
     private Exp e2;
     private int op;
 
+    public LogicExp(Exp e1, Exp e2, int op) {
+        this.e1 = e1;
+        this.e2 = e2;
+        this.op = op;
+    }
+
     public Value eval(MyIDictionary<String, Value> tbl) throws MyException {
         Value nr1 = e1.eval(tbl);
         if(nr1.getType() instanceof BoolType) {
@@ -33,5 +39,8 @@ public class LogicExp implements Exp{
         }
         else
             throw new MyException("Opperand 1 is not a boolean");
+    }
+    public LogicExp deepCopy(){
+        return new LogicExp(e1.deepCopy(), e2.deepCopy(), op);
     }
 }

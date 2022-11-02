@@ -22,4 +22,7 @@ public class PrintStmt implements IStmt{
         out.add(exp.eval(symTable));
         return state;
     }
+    public PrintStmt deepCopy(){
+        return new PrintStmt(exp);
+    }
 }

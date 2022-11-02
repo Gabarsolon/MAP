@@ -7,13 +7,13 @@ public class PrgState {
     private MyIStack<IStmt> exeStack;
     private MyIDictionary<String, Value> symTable;
     private MyIList<Value> out;
-//    private IStmt originalProgram;
+    private IStmt originalProgram;
 
     public PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symtbl, MyIList<Value> ot, IStmt prg){
         exeStack=stk;
         symTable=symtbl;
         out=ot;
-        //originalProgram=new PrgState(stk, symtbl, ot, null);
+        originalProgram=prg.deepCopy();
         stk.push(prg);
     }
     public void setExeStack(MyIStack<IStmt> exeStack) {
@@ -28,9 +28,9 @@ public class PrgState {
         this.out = out;
     }
 
-//    public void setOriginalProgram(IStmt originalProgram) {
-//        this.originalProgram = originalProgram;
-//    }
+    public void setOriginalProgram(IStmt originalProgram) {
+        this.originalProgram = originalProgram;
+    }
 
     public MyIStack<IStmt> getExeStack() {
         return exeStack;
@@ -44,9 +44,9 @@ public class PrgState {
         return out;
     }
 
-//    public IStmt getOriginalProgram() {
-//        return originalProgram;
-//    }
+    public IStmt getOriginalProgram() {
+        return originalProgram;
+    }
 
     @Override
     public String toString() {
@@ -54,9 +54,8 @@ public class PrgState {
                 "exeStack=" + exeStack +
                 ", symTable=" + symTable +
                 ", out=" + out +
-//                ", originalProgram=" + originalProgram +
+                ", originalProgram=" + originalProgram +
                 '}';
     }
-
 
 }

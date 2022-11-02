@@ -19,4 +19,7 @@ public class IntValue implements Value {
     public Type getType(){
         return new IntType();
     }
+    public IntValue deepCopy(){
+        return new IntValue(val);
+    }
 }

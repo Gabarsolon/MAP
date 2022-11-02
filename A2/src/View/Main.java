@@ -34,53 +34,57 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         IRepository repository = new Repository(new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(), new MyList<Value>(), ex1));
         IController controller = new Controller(repository);
-        controller.setDisplayPrgState(true);
         while(true) {
-            System.out.println("1.Input a program");
-            System.out.println("2.Execute the current program");
-            System.out.println("3.Enable the displaying of the current program state");
-            System.out.println("4.Exit");
-            System.out.print("Input a option: ");
-            int option = scanner.nextInt();
-            switch (option){
-                case 1:
-                    System.out.print("Which of the hardcoded program do you want?(input 1 2 or 3): ");
-                    int programOption = scanner.nextInt();
-                    switch(programOption){
-                        case 1:
-                            repository.setCrtPrg(new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(), new MyList<Value>(), ex1));
-                            System.out.println("First program selected");
-                            break;
-                        case 2:
-                            repository.setCrtPrg(new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(), new MyList<Value>(), ex2));
-                            System.out.println("Second program selected");
-                            break;
-                        case 3:
-                            repository.setCrtPrg(new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(), new MyList<Value>(), ex3));
-                            System.out.println("Third program selected");
-                            break;
-                        default:
-                            break;
-                    }
-                    break;
-                case 2:
-                    try {
-                        controller.allStep();
-                    } catch (Exception e) {
-                        System.out.println(e.toString());
-                    }
-                    break;
-                case 3:
-                    System.out.print("Input true or false: ");
-                    boolean displayPrgStateOption = scanner.nextBoolean();
-                    if (displayPrgStateOption)
-                        controller.setDisplayPrgState(true);
-                    else
-                        controller.setDisplayPrgState(false);
-                    System.out.println();
-                    break;
-                case 4:
-                    return;
+            try{
+                System.out.println("1.Input a program");
+                System.out.println("2.Execute the current program");
+                System.out.println("3.Enable the displaying of the current program state");
+                System.out.println("4.Exit");
+                System.out.print("Input a option: ");
+                int option = scanner.nextInt();
+                switch (option){
+                    case 1:
+                        System.out.print("Which of the hardcoded program do you want?(input 1 2 or 3): ");
+                        int programOption = scanner.nextInt();
+                        switch(programOption){
+                            case 1:
+                                repository.setCrtPrg(new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(), new MyList<Value>(), ex1));
+                                System.out.println("First program selected");
+                                break;
+                            case 2:
+                                repository.setCrtPrg(new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(), new MyList<Value>(), ex2));
+                                System.out.println("Second program selected");
+                                break;
+                            case 3:
+                                repository.setCrtPrg(new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(), new MyList<Value>(), ex3));
+                                System.out.println("Third program selected");
+                                break;
+                            default:
+                                System.out.println("Invalid option");
+                                break;
+                        }
+                        break;
+                    case 2:
+                        try {
+                            controller.allStep();
+                            System.out.println("Program executed successfully");
+                        } catch (Exception e) {
+                            System.out.println(e.toString());
+                        }
+                        break;
+                    case 3:
+                        System.out.print("Input true or false: ");
+                        controller.setDisplayPrgState(scanner.nextBoolean());
+                        break;
+                    case 4:
+                        return;
+                    default:
+                        System.out.println("Invalid option");
+                        break;
+                }
+            }
+            catch(Exception e){
+                System.out.println(e.toString());
             }
         }
     }

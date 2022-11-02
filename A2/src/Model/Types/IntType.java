@@ -13,4 +13,7 @@ public class IntType implements Type{
 //    public int defaultValue(){
 //        return 0;
 //    }
+    public IntType deepCopy(){
+        return new IntType();
+    }
 }

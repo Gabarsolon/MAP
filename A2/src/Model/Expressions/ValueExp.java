@@ -12,4 +12,8 @@ public class ValueExp implements Exp{
     }
 
     public Value eval(MyIDictionary<String, Value> tbl) throws MyException {return e;}
+
+    public ValueExp deepCopy(){
+        return new ValueExp(e);
+    }
 }

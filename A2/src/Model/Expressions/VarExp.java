@@ -15,4 +15,7 @@ public class VarExp implements Exp{
             throw new MyException("The variable wasn't declared before");
         return val;
     }
+    public VarExp deepCopy(){
+        return new VarExp(id);
+    }
 }

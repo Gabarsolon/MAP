@@ -9,4 +9,7 @@ public class NopStmt implements IStmt{
     public PrgState execute(PrgState state) throws MyException {
         return null;
     }
+    public NopStmt deepCopy(){
+        return new NopStmt();
+    }
 }

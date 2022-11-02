@@ -27,4 +27,7 @@ public class VarDeclStmt implements IStmt{
             symTable.update(name, new IntValue(0));
         return state;
     }
+    public VarDeclStmt deepCopy(){
+        return new VarDeclStmt(name, typ);
+    }
 }

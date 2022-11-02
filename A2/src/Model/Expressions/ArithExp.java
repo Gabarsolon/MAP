@@ -1,6 +1,7 @@
 package Model.Expressions;
 
 import Model.Exceptions.MyException;
+import Model.States.MyDictionary;
 import Model.States.MyIDictionary;
 import Model.Types.IntType;
 import Model.Values.IntValue;
@@ -48,5 +49,8 @@ public class ArithExp implements Exp{
         }
         else
             throw new MyException("first operand is not an integer");
+    }
+    public ArithExp deepCopy(){
+        return new ArithExp(op, e1.deepCopy(), e2.deepCopy());
     }
 }

@@ -20,6 +20,12 @@ public class IfStmt implements IStmt{
         thenS=t;
         elseS=el;
     }
+
+    @Override
+    public IStmt deepCopy() {
+        return new IfStmt(exp, thenS, elseS);
+    }
+
     public PrgState execute(PrgState state) throws MyException {
         MyIDictionary<String, Value> symTable = state.getSymTable();
         MyIStack<IStmt> stk = state.getExeStack();
