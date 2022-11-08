@@ -38,4 +38,8 @@ public class VarDeclStmt implements IStmt{
     public VarDeclStmt deepCopy(){
         return new VarDeclStmt(name, typ.deepCopy());
     }
+
+    public Value defaultValue(){
+        return this.typ.defaultValue();
+    }
 }

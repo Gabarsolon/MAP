@@ -3,11 +3,14 @@ package Model.States;
 import Model.Statements.IStmt;
 import Model.Values.Value;
 
+import java.io.BufferedReader;
+
 public class PrgState {
     private MyIStack<IStmt> exeStack;
     private MyIDictionary<String, Value> symTable;
     private MyIList<Value> out;
     private IStmt originalProgram;
+    MyIDictionary<String, BufferedReader> fileTable;
 
     public PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symtbl, MyIList<Value> ot, IStmt prg){
         exeStack=stk;

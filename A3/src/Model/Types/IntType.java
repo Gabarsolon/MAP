@@ -1,5 +1,8 @@
 package Model.Types;
 
+import Model.Values.Value;
+import Model.Values.IntValue;
+
 public class IntType implements Type{
     public boolean equals(Object another){
         if(another instanceof IntType)
@@ -15,5 +18,10 @@ public class IntType implements Type{
 //    }
     public IntType deepCopy(){
         return new IntType();
+    }
+
+    @Override
+    public Value defaultValue() {
+        return new IntValue(0);
     }
 }

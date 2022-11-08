@@ -1,5 +1,8 @@
 package Model.Types;
 
+import Model.Values.BoolValue;
+import Model.Values.Value;
+
 public class BoolType implements Type{
     public boolean equals(Object another){
         if(another instanceof BoolType)
@@ -14,5 +17,9 @@ public class BoolType implements Type{
 //    }
     public BoolType deepCopy(){
         return new BoolType();
+    }
+
+    public Value defaultValue(){
+        return new BoolValue(false);
     }
 }

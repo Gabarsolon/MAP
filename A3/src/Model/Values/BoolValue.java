@@ -1,6 +1,7 @@
 package Model.Values;
 
 import Model.Types.BoolType;
+import Model.Types.IntType;
 import Model.Types.Type;
 
 public class BoolValue implements Value {
@@ -10,6 +11,12 @@ public class BoolValue implements Value {
         this.value = val;
     }
 
+    public boolean equals(Object another){
+        if(another instanceof IntType)
+            return true;
+        else
+            return false;
+    }
     public boolean getVal(){
         return value;
     }
