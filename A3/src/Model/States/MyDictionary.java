@@ -6,6 +6,7 @@ import java.util.Map;
 
 public class MyDictionary<T1, T2> implements MyIDictionary<T1, T2> {
     private Map<T1, T2> data;
+
     public MyDictionary(){
         data = new HashMap<T1,T2>();
     }
@@ -31,4 +32,8 @@ public class MyDictionary<T1, T2> implements MyIDictionary<T1, T2> {
 //    public void add(T1 key, T2 value) {
 //        data.put(key,value);
 //    }
+
+    public void delete(T1 key){
+        data.remove(key);
+    }
 }

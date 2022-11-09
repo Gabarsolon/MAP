@@ -17,6 +17,14 @@ public class readFile implements IStmt{
     String var_name;
 
     @Override
+    public String toString() {
+        return "readFile{" +
+                "exp=" + exp +
+                ", var_name='" + var_name + '\'' +
+                '}';
+    }
+
+    @Override
     public PrgState execute(PrgState state) throws MyException {
         MyIDictionary<String, Value> symtbl = state.getSymTable();
         MyIDictionary<String, BufferedReader> fileTable = state.getFileTable();
@@ -44,6 +52,9 @@ public class readFile implements IStmt{
         try {
             IntValue iv;
             String line = br.readLine();
+            if(line == "<EOF>")
+                throw new MyException("You reached the end of file");
+            line = line.replace("<NL>","");
             if(line == null)
                 iv = new IntValue(0);
             else

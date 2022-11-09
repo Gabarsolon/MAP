@@ -11,7 +11,7 @@ public class StringValue implements Value{
         this.val = val;
     }
     public boolean equals(Object another){
-        if(another instanceof IntType)
+        if(another instanceof StringType)
             return true;
         else
             return false;

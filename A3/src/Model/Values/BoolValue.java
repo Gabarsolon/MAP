@@ -12,7 +12,7 @@ public class BoolValue implements Value {
     }
 
     public boolean equals(Object another){
-        if(another instanceof IntType)
+        if(another instanceof BoolType)
             return true;
         else
             return false;

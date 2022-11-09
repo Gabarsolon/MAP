@@ -6,6 +6,7 @@ import Model.States.PrgState;
 import Model.Types.Type;
 import Model.Values.BoolValue;
 import Model.Values.IntValue;
+import Model.Values.StringValue;
 import Model.Values.Value;
 
 public class VarDeclStmt implements IStmt{
@@ -29,10 +30,13 @@ public class VarDeclStmt implements IStmt{
         MyIDictionary<String, Value> symTable = state.getSymTable();
         if(symTable.isDefined(name))
             throw new MyException("Variable is already declared");
-        if(typ.toString() == "bool")
-            symTable.update(name, new BoolValue(false));
-        else
-            symTable.update(name, new IntValue(0));
+//        if(typ.toString() == "bool")
+//            symTable.update(name, new BoolValue(false));
+//        else if (typ.toString() == "int")
+//            symTable.update(name, new IntValue(0));
+//        else
+//            symTable.update(name, new StringValue(""));
+        symTable.update(name, typ.defaultValue());
         return state;
     }
     public VarDeclStmt deepCopy(){

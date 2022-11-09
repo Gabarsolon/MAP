@@ -26,7 +26,7 @@ public class AssignStmt implements IStmt {
             Type typId = (symTbl.lookup(id)).getType();
             if(val.getType().equals(typId))
                 symTbl.update(id,val);
-            else throw new MyException("declared type of variable" + id + " and type of " +
+            else throw new MyException("declared type of variable " + id + " and type of " +
                         "the asigned expression do not match");
         }
         else throw new MyException("the used variable" + id + " was not declared before");

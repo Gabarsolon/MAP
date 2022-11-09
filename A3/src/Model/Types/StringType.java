@@ -5,7 +5,7 @@ import Model.Values.Value;
 
 public class StringType implements Type{
     public boolean equals(Object another){
-        if(another instanceof IntType)
+        if(another instanceof StringType)
             return true;
         else
             return false;

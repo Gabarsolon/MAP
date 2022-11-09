@@ -14,10 +14,12 @@ public class PrgState {
 
     private MyIDictionary<String, BufferedReader> fileTable;
 
-    public PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symtbl, MyIList<Value> ot, IStmt prg){
+    public PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symtbl, MyIList<Value> ot,
+                    MyIDictionary<String, BufferedReader>ft, IStmt prg){
         exeStack=stk;
         symTable=symtbl;
         out=ot;
+        fileTable=ft;
         originalProgram=prg.deepCopy();
         stk.push(prg);
     }
@@ -60,9 +62,10 @@ public class PrgState {
     public String toString() {
         return "PrgState{" +
                 "exeStack=" + exeStack +
-                ", symTable=" + symTable +
-                ", out=" + out +
+                "\nsymTable=" + symTable +
+                "\nout=" + out +
 //                ", originalProgram=" + originalProgram +
+                "\nfileTable=" + fileTable+
                 '}';
     }
 
