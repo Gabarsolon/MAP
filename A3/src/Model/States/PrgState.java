@@ -9,8 +9,10 @@ public class PrgState {
     private MyIStack<IStmt> exeStack;
     private MyIDictionary<String, Value> symTable;
     private MyIList<Value> out;
+
     private IStmt originalProgram;
-    MyIDictionary<String, BufferedReader> fileTable;
+
+    private MyIDictionary<String, BufferedReader> fileTable;
 
     public PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symtbl, MyIList<Value> ot, IStmt prg){
         exeStack=stk;
@@ -31,6 +33,9 @@ public class PrgState {
         this.out = out;
     }
 
+    public MyIDictionary<String, BufferedReader> getFileTable() {
+        return fileTable;
+    }
     public void setOriginalProgram(IStmt originalProgram) {
         this.originalProgram = originalProgram;
     }

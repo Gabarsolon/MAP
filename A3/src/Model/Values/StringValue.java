@@ -5,7 +5,7 @@ import Model.Types.StringType;
 import Model.Types.Type;
 
 public class StringValue implements Value{
-    public String val;
+    private String val;
 
     public StringValue(String val) {
         this.val = val;
