@@ -23,7 +23,7 @@ public class TextMenu {
         Scanner scanner = new Scanner(System.in);
         while(true){
             printMenu();
-            System.out.println("Input the option: ");
+            System.out.print("Input the option: ");
             String key = scanner.nextLine();
             Command com = commands.get(key);
             if(com==null) {
@@ -31,6 +31,7 @@ public class TextMenu {
                 continue;
             }
             com.execute();
+            System.out.println("------------------------------");
         }
     }
 }
