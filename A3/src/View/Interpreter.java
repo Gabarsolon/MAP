@@ -69,6 +69,7 @@ public class Interpreter {
         menu.addCommand(new RunExample("2", "Run the second example", ctr2));
         menu.addCommand(new RunExample("3", "Run the third example", ctr3));
         menu.addCommand(new RunExample("4", "Run the fourth example", ctr4));
+        menu.addCommand(new SetDisplayPrgStateFlag("5", "Enable the displaying of the program state"));
         menu.show();
     }
 }

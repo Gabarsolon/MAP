@@ -8,7 +8,7 @@ import Repository.*;
 
 public class Controller implements IController{
     private IRepository repository;
-    private boolean displayPrgState;
+    public static boolean displayPrgState;
     public Controller(IRepository repo){
         this.repository = repo;
         this.displayPrgState = true;
@@ -39,7 +39,7 @@ public class Controller implements IController{
             }
         }
     }
-    public void setDisplayPrgState(boolean val){
-        this.displayPrgState = val;
-    }
+//    public void setDisplayPrgState(boolean val){
+//        this.displayPrgState = val;
+//    }
 }

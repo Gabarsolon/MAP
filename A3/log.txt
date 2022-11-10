@@ -1717,3 +1717,135 @@ SymTable:
 Out:
 [15, 50]
 ----------------------------
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(v=ValueExp{e=2}
+print(VarExp{id='v'})))]
+SymTable:
+{}
+Out:
+[]
+----------------------------
+ExeStack:
+[(v=ValueExp{e=2}
+print(VarExp{id='v'})), VarDeclStmt{name='v', typ=int}]
+SymTable:
+{}
+Out:
+[]
+----------------------------
+ExeStack:
+[(v=ValueExp{e=2}
+print(VarExp{id='v'}))]
+SymTable:
+{v=0}
+Out:
+[]
+----------------------------
+ExeStack:
+[print(VarExp{id='v'}), v=ValueExp{e=2}]
+SymTable:
+{v=0}
+Out:
+[]
+----------------------------
+ExeStack:
+[print(VarExp{id='v'})]
+SymTable:
+{v=2}
+Out:
+[]
+----------------------------
+ExeStack:
+[]
+SymTable:
+{v=2}
+Out:
+[2]
+----------------------------
+ExeStack:
+[(VarDeclStmt{name='a', typ=int}
+(VarDeclStmt{name='b', typ=int}
+(a=ArithExp{e1=ValueExp{e=2}, e2=ArithExp{e1=ValueExp{e=3}, e2=ValueExp{e=5}, op=3}, op=1}
+(b=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=1}, op=1}
+print(VarExp{id='b'})))))]
+SymTable:
+{}
+Out:
+[]
+----------------------------
+ExeStack:
+[(VarDeclStmt{name='b', typ=int}
+(a=ArithExp{e1=ValueExp{e=2}, e2=ArithExp{e1=ValueExp{e=3}, e2=ValueExp{e=5}, op=3}, op=1}
+(b=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=1}, op=1}
+print(VarExp{id='b'})))), VarDeclStmt{name='a', typ=int}]
+SymTable:
+{}
+Out:
+[]
+----------------------------
+ExeStack:
+[(VarDeclStmt{name='b', typ=int}
+(a=ArithExp{e1=ValueExp{e=2}, e2=ArithExp{e1=ValueExp{e=3}, e2=ValueExp{e=5}, op=3}, op=1}
+(b=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=1}, op=1}
+print(VarExp{id='b'}))))]
+SymTable:
+{a=0}
+Out:
+[]
+----------------------------
+ExeStack:
+[(a=ArithExp{e1=ValueExp{e=2}, e2=ArithExp{e1=ValueExp{e=3}, e2=ValueExp{e=5}, op=3}, op=1}
+(b=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=1}, op=1}
+print(VarExp{id='b'}))), VarDeclStmt{name='b', typ=int}]
+SymTable:
+{a=0}
+Out:
+[]
+----------------------------
+ExeStack:
+[(a=ArithExp{e1=ValueExp{e=2}, e2=ArithExp{e1=ValueExp{e=3}, e2=ValueExp{e=5}, op=3}, op=1}
+(b=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=1}, op=1}
+print(VarExp{id='b'})))]
+SymTable:
+{a=0, b=0}
+Out:
+[]
+----------------------------
+ExeStack:
+[(b=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=1}, op=1}
+print(VarExp{id='b'})), a=ArithExp{e1=ValueExp{e=2}, e2=ArithExp{e1=ValueExp{e=3}, e2=ValueExp{e=5}, op=3}, op=1}]
+SymTable:
+{a=0, b=0}
+Out:
+[]
+----------------------------
+ExeStack:
+[(b=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=1}, op=1}
+print(VarExp{id='b'}))]
+SymTable:
+{a=17, b=0}
+Out:
+[]
+----------------------------
+ExeStack:
+[print(VarExp{id='b'}), b=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=1}, op=1}]
+SymTable:
+{a=17, b=0}
+Out:
+[]
+----------------------------
+ExeStack:
+[print(VarExp{id='b'})]
+SymTable:
+{a=17, b=18}
+Out:
+[]
+----------------------------
+ExeStack:
+[]
+SymTable:
+{a=17, b=18}
+Out:
+[18]
+----------------------------
