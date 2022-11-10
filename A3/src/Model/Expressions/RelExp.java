@@ -48,6 +48,16 @@ public class RelExp implements Exp{
         else
             throw new MyException("The first expression doesn't evaluate to a integer");
     }
+
+    @Override
+    public String toString() {
+        return "RelExp{" +
+                "exp1=" + exp1 +
+                ", exp2=" + exp2 +
+                ", op='" + op + '\'' +
+                '}';
+    }
+
     @Override
     public Exp deepCopy() {
         return new RelExp(exp1.deepCopy(), exp2.deepCopy(), op);

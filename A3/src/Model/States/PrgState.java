@@ -66,7 +66,8 @@ public class PrgState {
                 "\nout=" + out +
 //                ", originalProgram=" + originalProgram +
                 "\nfileTable=" + fileTable+
-                '}';
+                "}\n"+
+                "---------------------------------------------";
     }
 
 }

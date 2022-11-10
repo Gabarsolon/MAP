@@ -1,1070 +1,60 @@
 ExeStack:
-[(VarDeclStmt{name='varf', typ=string}
-(varf=ValueExp{e=test.in}
-(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=ValueExp{e=varf}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=ValueExp{e=varf}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}}))))))))]
+[(VarDeclStmt{name='v', typ=int}
+(v=ValueExp{e=2}
+print(VarExp{id='v'})))]
 SymTable:
 {}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
-[(varf=ValueExp{e=test.in}
-(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=ValueExp{e=varf}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=ValueExp{e=varf}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}}))))))), VarDeclStmt{name='varf', typ=string}]
+[(v=ValueExp{e=2}
+print(VarExp{id='v'})), VarDeclStmt{name='v', typ=int}]
 SymTable:
 {}
 Out:
 []
-----------------------------
-ExeStack:
-[(varf=ValueExp{e=test.in}
-(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=ValueExp{e=varf}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=ValueExp{e=varf}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}})))))))]
-SymTable:
-{varf=}
-Out:
-[]
-----------------------------
-ExeStack:
-[(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=ValueExp{e=varf}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=ValueExp{e=varf}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}})))))), varf=ValueExp{e=test.in}]
-SymTable:
-{varf=}
-Out:
-[]
-----------------------------
-ExeStack:
-[(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=ValueExp{e=varf}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=ValueExp{e=varf}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}}))))))]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=ValueExp{e=varf}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=ValueExp{e=varf}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}}))))), openRFile{exp=VarExp{id='varf'}}]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=ValueExp{e=varf}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=ValueExp{e=varf}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}})))))]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=ValueExp{e=varf}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=ValueExp{e=varf}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}})))), VarDeclStmt{name='varc', typ=int}]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=ValueExp{e=varf}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=ValueExp{e=varf}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}}))))]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-(readFile{exp=ValueExp{e=varf}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}}))), readFile{exp=ValueExp{e=varf}, var_name='varc'}]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='varf', typ=string}
-(varf=ValueExp{e=test.in}
-(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}}))))))))]
-SymTable:
+FileTable:
 {}
-Out:
-[]
 ----------------------------
 ExeStack:
-[(varf=ValueExp{e=test.in}
-(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}}))))))), VarDeclStmt{name='varf', typ=string}]
+[(v=ValueExp{e=2}
+print(VarExp{id='v'}))]
 SymTable:
+{v=0}
+Out:
+[]
+FileTable:
 {}
+----------------------------
+ExeStack:
+[print(VarExp{id='v'}), v=ValueExp{e=2}]
+SymTable:
+{v=0}
 Out:
 []
-----------------------------
-ExeStack:
-[(varf=ValueExp{e=test.in}
-(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}})))))))]
-SymTable:
-{varf=}
-Out:
-[]
-----------------------------
-ExeStack:
-[(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}})))))), varf=ValueExp{e=test.in}]
-SymTable:
-{varf=}
-Out:
-[]
-----------------------------
-ExeStack:
-[(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}}))))))]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}}))))), openRFile{exp=VarExp{id='varf'}}]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}})))))]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}})))), VarDeclStmt{name='varc', typ=int}]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}}))))]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}}))), readFile{exp=VarExp{id='varf'}, var_name='varc'}]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}})))]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}})), print(VarExp{id='varc'})]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}}))]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[0]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}}), readFile{exp=VarExp{id='varf'}, var_name='varc'}]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[0]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-closeRFile{exp=ValueExp{e=varf}})]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[0]
-----------------------------
-ExeStack:
-[closeRFile{exp=ValueExp{e=varf}}, print(VarExp{id='varc'})]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[0]
-----------------------------
-ExeStack:
-[closeRFile{exp=ValueExp{e=varf}}]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[0, 0]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='varf', typ=string}
-(varf=ValueExp{e=test.in}
-(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))))))]
-SymTable:
+FileTable:
 {}
-Out:
-[]
 ----------------------------
 ExeStack:
-[(varf=ValueExp{e=test.in}
-(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))))), VarDeclStmt{name='varf', typ=string}]
+[print(VarExp{id='v'})]
 SymTable:
+{v=2}
+Out:
+[]
+FileTable:
 {}
-Out:
-[]
-----------------------------
-ExeStack:
-[(varf=ValueExp{e=test.in}
-(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))))))]
-SymTable:
-{varf=}
-Out:
-[]
-----------------------------
-ExeStack:
-[(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))))), varf=ValueExp{e=test.in}]
-SymTable:
-{varf=}
-Out:
-[]
-----------------------------
-ExeStack:
-[(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))))]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))), openRFile{exp=VarExp{id='varf'}}]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))))]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))), VarDeclStmt{name='varc', typ=int}]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))), readFile{exp=VarExp{id='varf'}, var_name='varc'}]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})), print(VarExp{id='varc'})]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[0]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}), readFile{exp=VarExp{id='varf'}, var_name='varc'}]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[0]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[0]
-----------------------------
-ExeStack:
-[closeRFile{exp=VarExp{id='varf'}}, print(VarExp{id='varc'})]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[0]
-----------------------------
-ExeStack:
-[closeRFile{exp=VarExp{id='varf'}}]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[0, 0]
 ----------------------------
 ExeStack:
 []
 SymTable:
-{varf=test.in, varc=0}
+{v=2}
 Out:
-[0, 0]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='varf', typ=string}
-(varf=ValueExp{e=test.in}
-(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))))))]
-SymTable:
+[2]
+FileTable:
 {}
-Out:
-[]
-----------------------------
-ExeStack:
-[(varf=ValueExp{e=test.in}
-(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))))), VarDeclStmt{name='varf', typ=string}]
-SymTable:
-{}
-Out:
-[]
-----------------------------
-ExeStack:
-[(varf=ValueExp{e=test.in}
-(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))))))]
-SymTable:
-{varf=}
-Out:
-[]
-----------------------------
-ExeStack:
-[(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))))), varf=ValueExp{e=test.in}]
-SymTable:
-{varf=}
-Out:
-[]
-----------------------------
-ExeStack:
-[(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))))]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))), openRFile{exp=VarExp{id='varf'}}]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))))]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))), VarDeclStmt{name='varc', typ=int}]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))), readFile{exp=VarExp{id='varf'}, var_name='varc'}]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})), print(VarExp{id='varc'})]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[0]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}), readFile{exp=VarExp{id='varf'}, var_name='varc'}]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[0]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[0]
-----------------------------
-ExeStack:
-[closeRFile{exp=VarExp{id='varf'}}, print(VarExp{id='varc'})]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[0]
-----------------------------
-ExeStack:
-[closeRFile{exp=VarExp{id='varf'}}]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[0, 0]
-----------------------------
-ExeStack:
-[]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[0, 0]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='varf', typ=string}
-(varf=ValueExp{e=test.in}
-(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))))))]
-SymTable:
-{}
-Out:
-[]
-----------------------------
-ExeStack:
-[(varf=ValueExp{e=test.in}
-(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))))), VarDeclStmt{name='varf', typ=string}]
-SymTable:
-{}
-Out:
-[]
-----------------------------
-ExeStack:
-[(varf=ValueExp{e=test.in}
-(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))))))]
-SymTable:
-{varf=}
-Out:
-[]
-----------------------------
-ExeStack:
-[(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))))), varf=ValueExp{e=test.in}]
-SymTable:
-{varf=}
-Out:
-[]
-----------------------------
-ExeStack:
-[(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))))]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))), openRFile{exp=VarExp{id='varf'}}]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))))]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))), VarDeclStmt{name='varc', typ=int}]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))), readFile{exp=VarExp{id='varf'}, var_name='varc'}]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})), print(VarExp{id='varc'})]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[0]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}), readFile{exp=VarExp{id='varf'}, var_name='varc'}]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[0]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[0]
-----------------------------
-ExeStack:
-[closeRFile{exp=VarExp{id='varf'}}, print(VarExp{id='varc'})]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[0]
-----------------------------
-ExeStack:
-[closeRFile{exp=VarExp{id='varf'}}]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[0, 0]
-----------------------------
-ExeStack:
-[]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[0, 0]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='varf', typ=string}
-(varf=ValueExp{e=test.in}
-(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))))))]
-SymTable:
-{}
-Out:
-[]
-----------------------------
-ExeStack:
-[(varf=ValueExp{e=test.in}
-(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))))), VarDeclStmt{name='varf', typ=string}]
-SymTable:
-{}
-Out:
-[]
-----------------------------
-ExeStack:
-[(varf=ValueExp{e=test.in}
-(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))))))]
-SymTable:
-{varf=}
-Out:
-[]
-----------------------------
-ExeStack:
-[(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))))), varf=ValueExp{e=test.in}]
-SymTable:
-{varf=}
-Out:
-[]
-----------------------------
-ExeStack:
-[(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))))]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))), openRFile{exp=VarExp{id='varf'}}]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))))]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))), VarDeclStmt{name='varc', typ=int}]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))), readFile{exp=VarExp{id='varf'}, var_name='varc'}]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))]
-SymTable:
-{varf=test.in, varc=15}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})), print(VarExp{id='varc'})]
-SymTable:
-{varf=test.in, varc=15}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))]
-SymTable:
-{varf=test.in, varc=15}
-Out:
-[15]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}), readFile{exp=VarExp{id='varf'}, var_name='varc'}]
-SymTable:
-{varf=test.in, varc=15}
-Out:
-[15]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})]
-SymTable:
-{varf=test.in, varc=50}
-Out:
-[15]
-----------------------------
-ExeStack:
-[closeRFile{exp=VarExp{id='varf'}}, print(VarExp{id='varc'})]
-SymTable:
-{varf=test.in, varc=50}
-Out:
-[15]
-----------------------------
-ExeStack:
-[closeRFile{exp=VarExp{id='varf'}}]
-SymTable:
-{varf=test.in, varc=50}
-Out:
-[15, 50]
-----------------------------
-ExeStack:
-[]
-SymTable:
-{varf=test.in, varc=50}
-Out:
-[15, 50]
 ----------------------------
 ExeStack:
 [(VarDeclStmt{name='v', typ=int}
@@ -1074,6 +64,8 @@ SymTable:
 {}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [(v=ValueExp{e=2}
@@ -1082,6 +74,8 @@ SymTable:
 {}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [(v=ValueExp{e=2}
@@ -1090,6 +84,8 @@ SymTable:
 {v=0}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [print(VarExp{id='v'}), v=ValueExp{e=2}]
@@ -1097,6 +93,8 @@ SymTable:
 {v=0}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [print(VarExp{id='v'})]
@@ -1104,6 +102,8 @@ SymTable:
 {v=2}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 []
@@ -1111,196 +111,8 @@ SymTable:
 {v=2}
 Out:
 [2]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='varf', typ=string}
-(varf=ValueExp{e=test.in}
-(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))))))]
-SymTable:
+FileTable:
 {}
-Out:
-[]
-----------------------------
-ExeStack:
-[(varf=ValueExp{e=test.in}
-(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))))), VarDeclStmt{name='varf', typ=string}]
-SymTable:
-{}
-Out:
-[]
-----------------------------
-ExeStack:
-[(varf=ValueExp{e=test.in}
-(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))))))]
-SymTable:
-{varf=}
-Out:
-[]
-----------------------------
-ExeStack:
-[(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))))), varf=ValueExp{e=test.in}]
-SymTable:
-{varf=}
-Out:
-[]
-----------------------------
-ExeStack:
-[(openRFile{exp=VarExp{id='varf'}}
-(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))))]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))), openRFile{exp=VarExp{id='varf'}}]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='varc', typ=int}
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))))]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))), VarDeclStmt{name='varc', typ=int}]
-SymTable:
-{varf=test.in}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))))]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))), readFile{exp=VarExp{id='varf'}, var_name='varc'}]
-SymTable:
-{varf=test.in, varc=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})))]
-SymTable:
-{varf=test.in, varc=15}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})), print(VarExp{id='varc'})]
-SymTable:
-{varf=test.in, varc=15}
-Out:
-[]
-----------------------------
-ExeStack:
-[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
-(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}))]
-SymTable:
-{varf=test.in, varc=15}
-Out:
-[15]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}}), readFile{exp=VarExp{id='varf'}, var_name='varc'}]
-SymTable:
-{varf=test.in, varc=15}
-Out:
-[15]
-----------------------------
-ExeStack:
-[(print(VarExp{id='varc'})
-closeRFile{exp=VarExp{id='varf'}})]
-SymTable:
-{varf=test.in, varc=50}
-Out:
-[15]
-----------------------------
-ExeStack:
-[closeRFile{exp=VarExp{id='varf'}}, print(VarExp{id='varc'})]
-SymTable:
-{varf=test.in, varc=50}
-Out:
-[15]
-----------------------------
-ExeStack:
-[closeRFile{exp=VarExp{id='varf'}}]
-SymTable:
-{varf=test.in, varc=50}
-Out:
-[15, 50]
-----------------------------
-ExeStack:
-[]
-SymTable:
-{varf=test.in, varc=50}
-Out:
-[15, 50]
 ----------------------------
 ExeStack:
 [(VarDeclStmt{name='a', typ=int}
@@ -1312,6 +124,8 @@ SymTable:
 {}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [(VarDeclStmt{name='b', typ=int}
@@ -1322,6 +136,8 @@ SymTable:
 {}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [(VarDeclStmt{name='b', typ=int}
@@ -1332,6 +148,8 @@ SymTable:
 {a=0}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [(a=ArithExp{e1=ValueExp{e=2}, e2=ArithExp{e1=ValueExp{e=3}, e2=ValueExp{e=5}, op=3}, op=1}
@@ -1341,6 +159,8 @@ SymTable:
 {a=0}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [(a=ArithExp{e1=ValueExp{e=2}, e2=ArithExp{e1=ValueExp{e=3}, e2=ValueExp{e=5}, op=3}, op=1}
@@ -1350,6 +170,8 @@ SymTable:
 {a=0, b=0}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [(b=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=1}, op=1}
@@ -1358,6 +180,8 @@ SymTable:
 {a=0, b=0}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [(b=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=1}, op=1}
@@ -1366,6 +190,8 @@ SymTable:
 {a=17, b=0}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [print(VarExp{id='b'}), b=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=1}, op=1}]
@@ -1373,6 +199,8 @@ SymTable:
 {a=17, b=0}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [print(VarExp{id='b'})]
@@ -1380,6 +208,8 @@ SymTable:
 {a=17, b=18}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 []
@@ -1387,52 +217,8 @@ SymTable:
 {a=17, b=18}
 Out:
 [18]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='v', typ=int}
-(v=ValueExp{e=2}
-print(VarExp{id='v'})))]
-SymTable:
+FileTable:
 {}
-Out:
-[]
-----------------------------
-ExeStack:
-[(v=ValueExp{e=2}
-print(VarExp{id='v'})), VarDeclStmt{name='v', typ=int}]
-SymTable:
-{}
-Out:
-[]
-----------------------------
-ExeStack:
-[(v=ValueExp{e=2}
-print(VarExp{id='v'}))]
-SymTable:
-{v=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), v=ValueExp{e=2}]
-SymTable:
-{v=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[print(VarExp{id='v'})]
-SymTable:
-{v=2}
-Out:
-[]
-----------------------------
-ExeStack:
-[]
-SymTable:
-{v=2}
-Out:
-[2]
 ----------------------------
 ExeStack:
 [(VarDeclStmt{name='a', typ=bool}
@@ -1444,6 +230,8 @@ SymTable:
 {}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [(VarDeclStmt{name='v', typ=int}
@@ -1454,6 +242,8 @@ SymTable:
 {}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [(VarDeclStmt{name='v', typ=int}
@@ -1464,6 +254,8 @@ SymTable:
 {a=false}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [(a=ValueExp{e=true}
@@ -1473,6 +265,8 @@ SymTable:
 {a=false}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [(a=ValueExp{e=true}
@@ -1482,6 +276,8 @@ SymTable:
 {a=false, v=0}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [(IfStmt{exp=VarExp{id='a'}, thenS=v=ValueExp{e=2}, elseS=v=ValueExp{e=3}}
@@ -1490,6 +286,8 @@ SymTable:
 {a=false, v=0}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [(IfStmt{exp=VarExp{id='a'}, thenS=v=ValueExp{e=2}, elseS=v=ValueExp{e=3}}
@@ -1498,6 +296,8 @@ SymTable:
 {a=true, v=0}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [print(VarExp{id='v'}), IfStmt{exp=VarExp{id='a'}, thenS=v=ValueExp{e=2}, elseS=v=ValueExp{e=3}}]
@@ -1505,6 +305,8 @@ SymTable:
 {a=true, v=0}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [print(VarExp{id='v'}), v=ValueExp{e=2}]
@@ -1512,6 +314,8 @@ SymTable:
 {a=true, v=0}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [print(VarExp{id='v'})]
@@ -1519,6 +323,8 @@ SymTable:
 {a=true, v=2}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 []
@@ -1526,6 +332,8 @@ SymTable:
 {a=true, v=2}
 Out:
 [2]
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [(VarDeclStmt{name='varf', typ=string}
@@ -1541,6 +349,8 @@ SymTable:
 {}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [(varf=ValueExp{e=test.in}
@@ -1555,6 +365,8 @@ SymTable:
 {}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [(varf=ValueExp{e=test.in}
@@ -1569,6 +381,8 @@ SymTable:
 {varf=}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [(openRFile{exp=VarExp{id='varf'}}
@@ -1582,6 +396,8 @@ SymTable:
 {varf=}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [(openRFile{exp=VarExp{id='varf'}}
@@ -1595,6 +411,8 @@ SymTable:
 {varf=test.in}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [(VarDeclStmt{name='varc', typ=int}
@@ -1607,6 +425,8 @@ SymTable:
 {varf=test.in}
 Out:
 []
+FileTable:
+{}
 ----------------------------
 ExeStack:
 [(VarDeclStmt{name='varc', typ=int}
@@ -1619,6 +439,8 @@ SymTable:
 {varf=test.in}
 Out:
 []
+FileTable:
+{test.in=java.io.BufferedReader@108c4c35}
 ----------------------------
 ExeStack:
 [(readFile{exp=VarExp{id='varf'}, var_name='varc'}
@@ -1630,6 +452,8 @@ SymTable:
 {varf=test.in}
 Out:
 []
+FileTable:
+{test.in=java.io.BufferedReader@108c4c35}
 ----------------------------
 ExeStack:
 [(readFile{exp=VarExp{id='varf'}, var_name='varc'}
@@ -1641,6 +465,8 @@ SymTable:
 {varf=test.in, varc=0}
 Out:
 []
+FileTable:
+{test.in=java.io.BufferedReader@108c4c35}
 ----------------------------
 ExeStack:
 [(print(VarExp{id='varc'})
@@ -1651,6 +477,8 @@ SymTable:
 {varf=test.in, varc=0}
 Out:
 []
+FileTable:
+{test.in=java.io.BufferedReader@108c4c35}
 ----------------------------
 ExeStack:
 [(print(VarExp{id='varc'})
@@ -1661,6 +489,8 @@ SymTable:
 {varf=test.in, varc=15}
 Out:
 []
+FileTable:
+{test.in=java.io.BufferedReader@108c4c35}
 ----------------------------
 ExeStack:
 [(readFile{exp=VarExp{id='varf'}, var_name='varc'}
@@ -1670,6 +500,8 @@ SymTable:
 {varf=test.in, varc=15}
 Out:
 []
+FileTable:
+{test.in=java.io.BufferedReader@108c4c35}
 ----------------------------
 ExeStack:
 [(readFile{exp=VarExp{id='varf'}, var_name='varc'}
@@ -1679,6 +511,8 @@ SymTable:
 {varf=test.in, varc=15}
 Out:
 [15]
+FileTable:
+{test.in=java.io.BufferedReader@108c4c35}
 ----------------------------
 ExeStack:
 [(print(VarExp{id='varc'})
@@ -1687,6 +521,8 @@ SymTable:
 {varf=test.in, varc=15}
 Out:
 [15]
+FileTable:
+{test.in=java.io.BufferedReader@108c4c35}
 ----------------------------
 ExeStack:
 [(print(VarExp{id='varc'})
@@ -1695,6 +531,8 @@ SymTable:
 {varf=test.in, varc=50}
 Out:
 [15]
+FileTable:
+{test.in=java.io.BufferedReader@108c4c35}
 ----------------------------
 ExeStack:
 [closeRFile{exp=VarExp{id='varf'}}, print(VarExp{id='varc'})]
@@ -1702,6 +540,8 @@ SymTable:
 {varf=test.in, varc=50}
 Out:
 [15]
+FileTable:
+{test.in=java.io.BufferedReader@108c4c35}
 ----------------------------
 ExeStack:
 [closeRFile{exp=VarExp{id='varf'}}]
@@ -1709,6 +549,8 @@ SymTable:
 {varf=test.in, varc=50}
 Out:
 [15, 50]
+FileTable:
+{test.in=java.io.BufferedReader@108c4c35}
 ----------------------------
 ExeStack:
 []
@@ -1716,136 +558,6 @@ SymTable:
 {varf=test.in, varc=50}
 Out:
 [15, 50]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='v', typ=int}
-(v=ValueExp{e=2}
-print(VarExp{id='v'})))]
-SymTable:
+FileTable:
 {}
-Out:
-[]
-----------------------------
-ExeStack:
-[(v=ValueExp{e=2}
-print(VarExp{id='v'})), VarDeclStmt{name='v', typ=int}]
-SymTable:
-{}
-Out:
-[]
-----------------------------
-ExeStack:
-[(v=ValueExp{e=2}
-print(VarExp{id='v'}))]
-SymTable:
-{v=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), v=ValueExp{e=2}]
-SymTable:
-{v=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[print(VarExp{id='v'})]
-SymTable:
-{v=2}
-Out:
-[]
-----------------------------
-ExeStack:
-[]
-SymTable:
-{v=2}
-Out:
-[2]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='a', typ=int}
-(VarDeclStmt{name='b', typ=int}
-(a=ArithExp{e1=ValueExp{e=2}, e2=ArithExp{e1=ValueExp{e=3}, e2=ValueExp{e=5}, op=3}, op=1}
-(b=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=1}, op=1}
-print(VarExp{id='b'})))))]
-SymTable:
-{}
-Out:
-[]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='b', typ=int}
-(a=ArithExp{e1=ValueExp{e=2}, e2=ArithExp{e1=ValueExp{e=3}, e2=ValueExp{e=5}, op=3}, op=1}
-(b=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=1}, op=1}
-print(VarExp{id='b'})))), VarDeclStmt{name='a', typ=int}]
-SymTable:
-{}
-Out:
-[]
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='b', typ=int}
-(a=ArithExp{e1=ValueExp{e=2}, e2=ArithExp{e1=ValueExp{e=3}, e2=ValueExp{e=5}, op=3}, op=1}
-(b=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=1}, op=1}
-print(VarExp{id='b'}))))]
-SymTable:
-{a=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(a=ArithExp{e1=ValueExp{e=2}, e2=ArithExp{e1=ValueExp{e=3}, e2=ValueExp{e=5}, op=3}, op=1}
-(b=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=1}, op=1}
-print(VarExp{id='b'}))), VarDeclStmt{name='b', typ=int}]
-SymTable:
-{a=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(a=ArithExp{e1=ValueExp{e=2}, e2=ArithExp{e1=ValueExp{e=3}, e2=ValueExp{e=5}, op=3}, op=1}
-(b=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=1}, op=1}
-print(VarExp{id='b'})))]
-SymTable:
-{a=0, b=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(b=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=1}, op=1}
-print(VarExp{id='b'})), a=ArithExp{e1=ValueExp{e=2}, e2=ArithExp{e1=ValueExp{e=3}, e2=ValueExp{e=5}, op=3}, op=1}]
-SymTable:
-{a=0, b=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[(b=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=1}, op=1}
-print(VarExp{id='b'}))]
-SymTable:
-{a=17, b=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[print(VarExp{id='b'}), b=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=1}, op=1}]
-SymTable:
-{a=17, b=0}
-Out:
-[]
-----------------------------
-ExeStack:
-[print(VarExp{id='b'})]
-SymTable:
-{a=17, b=18}
-Out:
-[]
-----------------------------
-ExeStack:
-[]
-SymTable:
-{a=17, b=18}
-Out:
-[18]
 ----------------------------
