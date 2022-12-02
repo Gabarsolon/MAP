@@ -5,6 +5,12 @@ import java.util.HashMap;
 public class MyHeap<K, V> implements MyIHeap<K, V>{
     private HashMap<Integer, V> data;
     private Integer freePos;
+
+    @Override
+    public String toString() {
+        return data.toString();
+    }
+
     public MyHeap(){
         data = new HashMap<Integer,V>();
         freePos = 1;

@@ -10,8 +10,16 @@ import Model.Values.RefValue;
 import Model.Values.Value;
 
 public class writeHeap implements IStmt{
-    String var_name;
-    Exp exp;
+    @Override
+    public String toString() {
+        return "writeHeap{" +
+                "var_name='" + var_name + '\'' +
+                ", exp=" + exp +
+                '}';
+    }
+
+    private String var_name;
+    private Exp exp;
     public writeHeap(String var_name, Exp exp){
         this.var_name = var_name;
         this.exp = exp;

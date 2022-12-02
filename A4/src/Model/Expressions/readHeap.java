@@ -10,7 +10,14 @@ import Model.Values.Value;
 import java.sql.Ref;
 
 public class readHeap implements Exp{
-    Exp exp;
+    @Override
+    public String toString() {
+        return "readHeap{" +
+                "exp=" + exp +
+                '}';
+    }
+
+    private Exp exp;
     public readHeap(Exp exp){
         this.exp = exp;
     }

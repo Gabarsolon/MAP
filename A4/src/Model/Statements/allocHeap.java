@@ -11,8 +11,16 @@ import Model.Values.Value;
 
 
 public class allocHeap implements IStmt{
-    String var_name;
-    Exp exp;
+    @Override
+    public String toString() {
+        return "allocHeap{" +
+                "var_name='" + var_name + '\'' +
+                ", exp=" + exp +
+                '}';
+    }
+
+    private String var_name;
+    private Exp exp;
     public allocHeap(String var_name, Exp expression){
         this.var_name = var_name;
         this.exp = expression;

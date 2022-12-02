@@ -4,7 +4,7 @@ import Model.Values.RefValue;
 import Model.Values.Value;
 
 public class RefType implements Type{
-    Type inner;
+    private Type inner;
     public RefType(Type inner){
         this.inner = inner;
     }

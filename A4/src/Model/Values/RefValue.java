@@ -4,8 +4,17 @@ import Model.Types.RefType;
 import Model.Types.Type;
 
 public class RefValue implements Value{
-    int address;
-    Type locationType;
+    private int address;
+    private Type locationType;
+
+    @Override
+    public String toString() {
+        return "RefValue{" +
+                "address=" + address +
+                ", locationType=" + locationType +
+                '}';
+    }
+
     public RefValue(int address, Type locationType){
         this.address = address;
         this.locationType = locationType;
