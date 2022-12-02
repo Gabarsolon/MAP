@@ -1,5 +1,6 @@
 package Model.Types;
 
+import Model.Values.RefValue;
 import Model.Values.Value;
 
 public class RefType implements Type{
@@ -7,7 +8,7 @@ public class RefType implements Type{
     public RefType(Type inner){
         this.inner = inner;
     }
-    Type getInner(){
+    public Type getInner(){
         return inner;
     }
 
@@ -24,5 +25,8 @@ public class RefType implements Type{
 
     public Value defaultValue(){
         return new RefValue(0,inner);
+    }
+    public RefType deepCopy(){
+        return new RefType(inner);
     }
 }

@@ -6,11 +6,17 @@ import Model.Types.Type;
 public class RefValue implements Value{
     int address;
     Type locationType;
-
-    int getAddress(){
+    public RefValue(int address, Type locationType){
+        this.address = address;
+        this.locationType = locationType;
+    }
+    public int getAddress(){
         return address;
     }
-    Type getType(){
+    public Type getType(){
         return new RefType(locationType);
+    }
+    public RefValue deepCopy(){
+        return new RefValue(address, locationType);
     }
 }

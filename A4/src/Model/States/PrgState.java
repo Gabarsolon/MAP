@@ -9,17 +9,17 @@ public class PrgState {
     private MyIStack<IStmt> exeStack;
     private MyIDictionary<String, Value> symTable;
     private MyIList<Value> out;
-
+    private MyIDictionary<String, BufferedReader> fileTable;
+    private MyIHeap<Integer, Value> heapTable;
     private IStmt originalProgram;
 
-    private MyIDictionary<String, BufferedReader> fileTable;
-
     public PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symtbl, MyIList<Value> ot,
-                    MyIDictionary<String, BufferedReader>ft, IStmt prg){
+                    MyIDictionary<String, BufferedReader>ft,MyIHeap<Integer, Value>ht, IStmt prg){
         exeStack=stk;
         symTable=symtbl;
         out=ot;
         fileTable=ft;
+        heapTable=ht;
         originalProgram=prg.deepCopy();
         stk.push(prg);
     }
@@ -35,13 +35,6 @@ public class PrgState {
         this.out = out;
     }
 
-    public MyIDictionary<String, BufferedReader> getFileTable() {
-        return fileTable;
-    }
-    public void setOriginalProgram(IStmt originalProgram) {
-        this.originalProgram = originalProgram;
-    }
-
     public MyIStack<IStmt> getExeStack() {
         return exeStack;
     }
@@ -49,12 +42,19 @@ public class PrgState {
     public MyIDictionary<String, Value> getSymTable() {
         return symTable;
     }
-
+    public void setOriginalProgram(IStmt originalProgram) {
+        this.originalProgram = originalProgram;
+    }
     public MyIList<Value> getOut() {
         return out;
     }
-
-    public IStmt getOriginalProgram() {
+    public MyIDictionary<String, BufferedReader> getFileTable() {
+        return fileTable;
+    }
+    public MyIHeap<Integer, Value> getHeapTable(){
+        return heapTable;
+    }
+    public IStmt getOriginalProgram(){
         return originalProgram;
     }
 
@@ -66,6 +66,7 @@ public class PrgState {
                 "\nout=" + out +
 //                ", originalProgram=" + originalProgram +
                 "\nfileTable=" + fileTable+
+                "\nheapTable=" + heapTable+
                 "}\n"+
                 "---------------------------------------------";
     }
