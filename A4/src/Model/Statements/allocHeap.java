@@ -18,16 +18,22 @@ public class allocHeap implements IStmt{
         this.exp = expression;
     }
 
-    public PrgState execute(PrgState prg) throws MyException{
-        MyIDictionary<String, Value> symTbl = prg.getSymTable();
-        MyIHeap<Integer, Value> heapTbl  = prg.getHeapTable();
+    public PrgState execute(PrgState state) throws MyException{
+        MyIDictionary<String, Value> symTbl = state.getSymTable();
+        MyIHeap<Integer, Value> heapTbl  = state.getHeapTable();
+
         if(!symTbl.isDefined(var_name))
             throw new MyException("The variable named " + var_name + " isn't defined");
+
         Value var = symTbl.lookup(var_name);
-        Value expEval = exp.eval(symTbl);
+        Value expEval = exp.eval(symTbl, heapTbl);
         if(!var.getType().equals(new RefType(expEval.getType())))
             throw new MyException("The types are not equal");
 
+        Integer address = heapTbl.newEntry(expEval);
+        symTbl.update(var_name, new RefValue(address, expEval.getType()));
+
+        return state;
     }
     public allocHeap deepCopy(){
         return new allocHeap(var_name, exp);

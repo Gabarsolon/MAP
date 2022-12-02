@@ -3,6 +3,7 @@ package Model.Statements;
 import Model.Exceptions.MyException;
 import Model.Expressions.Exp;
 import Model.States.MyIDictionary;
+import Model.States.MyIHeap;
 import Model.States.PrgState;
 import Model.Values.StringValue;
 import Model.Values.Value;
@@ -27,10 +28,11 @@ public class closeRFile implements IStmt{
     public PrgState execute(PrgState state) throws MyException {
         MyIDictionary<String, Value> symtbl = state.getSymTable();
         MyIDictionary<String, BufferedReader> fileTable = state.getFileTable();
+        MyIHeap<Integer, Value> heapTbl  = state.getHeapTable();
         StringValue val;
 
         try{
-            val = (StringValue)exp.eval(symtbl);
+            val = (StringValue)exp.eval(symtbl, heapTbl);
         }catch(Exception e){
             throw new MyException("The evaluation of the expression is not a string value");
         }

@@ -2,10 +2,7 @@ package Model.Statements;
 
 import Model.Exceptions.MyException;
 import Model.Expressions.Exp;
-import Model.States.MyIDictionary;
-import Model.States.MyIList;
-import Model.States.MyIStack;
-import Model.States.PrgState;
+import Model.States.*;
 import Model.Values.Value;
 
 public class PrintStmt implements IStmt{
@@ -19,7 +16,8 @@ public class PrintStmt implements IStmt{
     public PrgState execute(PrgState state) throws MyException {
         MyIList<Value> out = state.getOut();
         MyIDictionary<String, Value> symTable = state.getSymTable();
-        out.add(exp.eval(symTable));
+        MyIHeap<Integer, Value> heapTbl  = state.getHeapTable();
+        out.add(exp.eval(symTable, heapTbl));
         return state;
     }
     public PrintStmt deepCopy(){

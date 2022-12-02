@@ -2,10 +2,7 @@ package Model.Statements;
 
 import Model.Exceptions.MyException;
 import Model.Expressions.Exp;
-import Model.States.MyIDictionary;
-import Model.States.MyIStack;
-import Model.States.MyList;
-import Model.States.PrgState;
+import Model.States.*;
 import Model.Types.StringType;
 import Model.Values.StringValue;
 import Model.Values.Value;
@@ -23,7 +20,8 @@ public class openRFile implements IStmt{
     public PrgState execute(PrgState state) throws MyException {
         MyIDictionary<String, Value> symtbl = state.getSymTable();
         MyIDictionary<String, BufferedReader> fileTable = state.getFileTable();
-        Value value =exp.eval(symtbl);
+        MyIHeap<Integer, Value> heapTbl  = state.getHeapTable();
+        Value value =exp.eval(symtbl, heapTbl);
         String fileString = ((StringValue) value).getVal();
         if(!value.getType().equals(new StringType())){
             throw new MyException("The value must be of string type");

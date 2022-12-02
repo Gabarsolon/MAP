@@ -3,6 +3,7 @@ package Model.Statements;
 import Model.Exceptions.MyException;
 import Model.Expressions.Exp;
 import Model.States.MyIDictionary;
+import Model.States.MyIHeap;
 import Model.States.PrgState;
 import Model.Types.IntType;
 import Model.Types.StringType;
@@ -28,6 +29,7 @@ public class readFile implements IStmt{
     public PrgState execute(PrgState state) throws MyException {
         MyIDictionary<String, Value> symtbl = state.getSymTable();
         MyIDictionary<String, BufferedReader> fileTable = state.getFileTable();
+        MyIHeap<Integer, Value> heapTbl  = state.getHeapTable();
         Value varVal;
         StringValue val;
 
@@ -38,7 +40,7 @@ public class readFile implements IStmt{
             throw new MyException("The variable isn't of int type");
 
         try{
-            val = (StringValue)exp.eval(symtbl);
+            val = (StringValue)exp.eval(symtbl, heapTbl);
         }catch(Exception e){
             throw new MyException("The value must be a string value");
         }

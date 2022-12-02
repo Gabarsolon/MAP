@@ -2,6 +2,7 @@ package Model.Expressions;
 
 import Model.Exceptions.MyException;
 import Model.States.MyIDictionary;
+import Model.States.MyIHeap;
 import Model.Types.BoolType;
 import Model.Values.BoolValue;
 import Model.Values.Value;
@@ -26,10 +27,10 @@ public class LogicExp implements Exp{
                 '}';
     }
 
-    public Value eval(MyIDictionary<String, Value> tbl) throws MyException {
-        Value nr1 = e1.eval(tbl);
+    public Value eval(MyIDictionary<String, Value> tbl, MyIHeap<Integer, Value> hp) throws MyException {
+        Value nr1 = e1.eval(tbl, hp);
         if(nr1.getType() instanceof BoolType) {
-            Value nr2 = e2.eval(tbl);
+            Value nr2 = e2.eval(tbl, hp);
             if(nr2.getType() instanceof BoolType)
             {
                 boolean bv1 = ((BoolValue)nr1).getVal();

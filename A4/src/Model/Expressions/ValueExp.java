@@ -2,6 +2,7 @@ package Model.Expressions;
 
 import Model.Exceptions.MyException;
 import Model.States.MyIDictionary;
+import Model.States.MyIHeap;
 import Model.Values.Value;
 
 public class ValueExp implements Exp{
@@ -18,7 +19,7 @@ public class ValueExp implements Exp{
         this.e = e;
     }
 
-    public Value eval(MyIDictionary<String, Value> tbl) throws MyException {return e;}
+    public Value eval(MyIDictionary<String, Value> tbl, MyIHeap<Integer, Value> hp) throws MyException {return e;}
 
     public ValueExp deepCopy(){
         return new ValueExp(e.deepCopy());
