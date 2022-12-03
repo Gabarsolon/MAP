@@ -1,0 +1,298 @@
+ExeStack:
+[(VarDeclStmt{name='v', typ=Ref(int)}
+(allocHeap{var_name='v', exp=ValueExp{e=20}}
+(VarDeclStmt{name='a', typ=Ref(Ref(int))}
+(allocHeap{var_name='a', exp=VarExp{id='v'}}
+(allocHeap{var_name='v', exp=ValueExp{e=30}}
+print(readHeap{exp=readHeap{exp=VarExp{id='a'}}}))))))]
+SymTable:
+{}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+ExeStack:
+[(allocHeap{var_name='v', exp=ValueExp{e=20}}
+(VarDeclStmt{name='a', typ=Ref(Ref(int))}
+(allocHeap{var_name='a', exp=VarExp{id='v'}}
+(allocHeap{var_name='v', exp=ValueExp{e=30}}
+print(readHeap{exp=readHeap{exp=VarExp{id='a'}}}))))), VarDeclStmt{name='v', typ=Ref(int)}]
+SymTable:
+{}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+ExeStack:
+[(allocHeap{var_name='v', exp=ValueExp{e=20}}
+(VarDeclStmt{name='a', typ=Ref(Ref(int))}
+(allocHeap{var_name='a', exp=VarExp{id='v'}}
+(allocHeap{var_name='v', exp=ValueExp{e=30}}
+print(readHeap{exp=readHeap{exp=VarExp{id='a'}}}))))), VarDeclStmt{name='v', typ=Ref(int)}]
+SymTable:
+{}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+ExeStack:
+[(allocHeap{var_name='v', exp=ValueExp{e=20}}
+(VarDeclStmt{name='a', typ=Ref(Ref(int))}
+(allocHeap{var_name='a', exp=VarExp{id='v'}}
+(allocHeap{var_name='v', exp=ValueExp{e=30}}
+print(readHeap{exp=readHeap{exp=VarExp{id='a'}}})))))]
+SymTable:
+{v=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+ExeStack:
+[(allocHeap{var_name='v', exp=ValueExp{e=20}}
+(VarDeclStmt{name='a', typ=Ref(Ref(int))}
+(allocHeap{var_name='a', exp=VarExp{id='v'}}
+(allocHeap{var_name='v', exp=ValueExp{e=30}}
+print(readHeap{exp=readHeap{exp=VarExp{id='a'}}})))))]
+SymTable:
+{v=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+ExeStack:
+[(VarDeclStmt{name='a', typ=Ref(Ref(int))}
+(allocHeap{var_name='a', exp=VarExp{id='v'}}
+(allocHeap{var_name='v', exp=ValueExp{e=30}}
+print(readHeap{exp=readHeap{exp=VarExp{id='a'}}})))), allocHeap{var_name='v', exp=ValueExp{e=20}}]
+SymTable:
+{v=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+ExeStack:
+[(VarDeclStmt{name='a', typ=Ref(Ref(int))}
+(allocHeap{var_name='a', exp=VarExp{id='v'}}
+(allocHeap{var_name='v', exp=ValueExp{e=30}}
+print(readHeap{exp=readHeap{exp=VarExp{id='a'}}})))), allocHeap{var_name='v', exp=ValueExp{e=20}}]
+SymTable:
+{v=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+ExeStack:
+[(VarDeclStmt{name='a', typ=Ref(Ref(int))}
+(allocHeap{var_name='a', exp=VarExp{id='v'}}
+(allocHeap{var_name='v', exp=ValueExp{e=30}}
+print(readHeap{exp=readHeap{exp=VarExp{id='a'}}}))))]
+SymTable:
+{v=RefValue{address=1, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=20}
+----------------------------
+ExeStack:
+[(VarDeclStmt{name='a', typ=Ref(Ref(int))}
+(allocHeap{var_name='a', exp=VarExp{id='v'}}
+(allocHeap{var_name='v', exp=ValueExp{e=30}}
+print(readHeap{exp=readHeap{exp=VarExp{id='a'}}}))))]
+SymTable:
+{v=RefValue{address=1, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=20}
+----------------------------
+ExeStack:
+[(allocHeap{var_name='a', exp=VarExp{id='v'}}
+(allocHeap{var_name='v', exp=ValueExp{e=30}}
+print(readHeap{exp=readHeap{exp=VarExp{id='a'}}}))), VarDeclStmt{name='a', typ=Ref(Ref(int))}]
+SymTable:
+{v=RefValue{address=1, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=20}
+----------------------------
+ExeStack:
+[(allocHeap{var_name='a', exp=VarExp{id='v'}}
+(allocHeap{var_name='v', exp=ValueExp{e=30}}
+print(readHeap{exp=readHeap{exp=VarExp{id='a'}}}))), VarDeclStmt{name='a', typ=Ref(Ref(int))}]
+SymTable:
+{v=RefValue{address=1, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=20}
+----------------------------
+ExeStack:
+[(allocHeap{var_name='a', exp=VarExp{id='v'}}
+(allocHeap{var_name='v', exp=ValueExp{e=30}}
+print(readHeap{exp=readHeap{exp=VarExp{id='a'}}})))]
+SymTable:
+{a=RefValue{address=0, locationType=Ref(int)}, v=RefValue{address=1, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=20}
+----------------------------
+ExeStack:
+[(allocHeap{var_name='a', exp=VarExp{id='v'}}
+(allocHeap{var_name='v', exp=ValueExp{e=30}}
+print(readHeap{exp=readHeap{exp=VarExp{id='a'}}})))]
+SymTable:
+{a=RefValue{address=0, locationType=Ref(int)}, v=RefValue{address=1, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=20}
+----------------------------
+ExeStack:
+[(allocHeap{var_name='v', exp=ValueExp{e=30}}
+print(readHeap{exp=readHeap{exp=VarExp{id='a'}}})), allocHeap{var_name='a', exp=VarExp{id='v'}}]
+SymTable:
+{a=RefValue{address=0, locationType=Ref(int)}, v=RefValue{address=1, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=20}
+----------------------------
+ExeStack:
+[(allocHeap{var_name='v', exp=ValueExp{e=30}}
+print(readHeap{exp=readHeap{exp=VarExp{id='a'}}})), allocHeap{var_name='a', exp=VarExp{id='v'}}]
+SymTable:
+{a=RefValue{address=0, locationType=Ref(int)}, v=RefValue{address=1, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=20}
+----------------------------
+ExeStack:
+[(allocHeap{var_name='v', exp=ValueExp{e=30}}
+print(readHeap{exp=readHeap{exp=VarExp{id='a'}}}))]
+SymTable:
+{a=RefValue{address=2, locationType=Ref(int)}, v=RefValue{address=1, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=RefValue{address=1, locationType=int}}
+----------------------------
+ExeStack:
+[(allocHeap{var_name='v', exp=ValueExp{e=30}}
+print(readHeap{exp=readHeap{exp=VarExp{id='a'}}}))]
+SymTable:
+{a=RefValue{address=2, locationType=Ref(int)}, v=RefValue{address=1, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=RefValue{address=1, locationType=int}}
+----------------------------
+ExeStack:
+[print(readHeap{exp=readHeap{exp=VarExp{id='a'}}}), allocHeap{var_name='v', exp=ValueExp{e=30}}]
+SymTable:
+{a=RefValue{address=2, locationType=Ref(int)}, v=RefValue{address=1, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=RefValue{address=1, locationType=int}}
+----------------------------
+ExeStack:
+[print(readHeap{exp=readHeap{exp=VarExp{id='a'}}}), allocHeap{var_name='v', exp=ValueExp{e=30}}]
+SymTable:
+{a=RefValue{address=2, locationType=Ref(int)}, v=RefValue{address=1, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=RefValue{address=1, locationType=int}}
+----------------------------
+ExeStack:
+[print(readHeap{exp=readHeap{exp=VarExp{id='a'}}})]
+SymTable:
+{a=RefValue{address=2, locationType=Ref(int)}, v=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=RefValue{address=1, locationType=int}, 3=30}
+----------------------------
+ExeStack:
+[print(readHeap{exp=readHeap{exp=VarExp{id='a'}}})]
+SymTable:
+{a=RefValue{address=2, locationType=Ref(int)}, v=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=RefValue{address=1, locationType=int}, 3=30}
+----------------------------
+ExeStack:
+[]
+SymTable:
+{a=RefValue{address=2, locationType=Ref(int)}, v=RefValue{address=3, locationType=int}}
+Out:
+[20]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=RefValue{address=1, locationType=int}, 3=30}
+----------------------------
+ExeStack:
+[]
+SymTable:
+{a=RefValue{address=2, locationType=Ref(int)}, v=RefValue{address=3, locationType=int}}
+Out:
+[20]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=RefValue{address=1, locationType=int}, 3=30}
+----------------------------
