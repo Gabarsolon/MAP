@@ -1,10 +1,19 @@
 package Model.States;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class MyHeap<K, V> implements MyIHeap<K, V>{
-    private HashMap<Integer, V> data;
+    private Map<Integer, V> data;
     private Integer freePos;
+
+    public void setData(Map<Integer, V> data) {
+        this.data = data;
+    }
+
+    public Map<Integer, V> getData() {
+        return data;
+    }
 
     @Override
     public String toString() {

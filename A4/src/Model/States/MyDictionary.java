@@ -20,6 +20,10 @@ public class MyDictionary<T1, T2> implements MyIDictionary<T1, T2> {
         return data.get(key);
     }
 
+    public Map<T1, T2> getData() {
+        return data;
+    }
+
     @Override
     public void update(T1 key, T2 value) {
         data.put(key,value);

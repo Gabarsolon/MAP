@@ -80,6 +80,19 @@ public class Interpreter {
             new CompStmt(new writeHeap("v", new ValueExp(new IntValue(30))),
             new PrintStmt(new ArithExp(1, new readHeap(new VarExp("v")), new ValueExp(new IntValue(5))))))));
 
+        //Ref int v;new(v,20);Ref Ref int a; new(a,v); new(v,30);print(rH(rH(a)))
+
+        IStmt ex8 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())),
+            new CompStmt(new allocHeap("v", new ValueExp(new IntValue(20))),
+            new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType()))),
+            new CompStmt(new allocHeap("a", new VarExp("v")),
+            new CompStmt(new allocHeap("v", new ValueExp(new IntValue(30))),
+            new PrintStmt(new readHeap(new readHeap(new VarExp("a")))))))));
+
+
+
+
+
         PrgState prg1 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
                 new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex1);
         PrgState prg2 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
@@ -94,6 +107,9 @@ public class Interpreter {
                 new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(),ex6);
         PrgState prg7 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
                 new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(),ex7);
+        PrgState prg8 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
+                new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(),ex8);
+
 
         IRepository rp1 = new Repository(prg1, logFilePath);
         IRepository rp2 = new Repository(prg2, logFilePath);
@@ -102,6 +118,7 @@ public class Interpreter {
         IRepository rp5 = new Repository(prg5, logFilePath);
         IRepository rp6 = new Repository(prg6, logFilePath);
         IRepository rp7 = new Repository(prg7, logFilePath);
+        IRepository rp8 = new Repository(prg8, logFilePath);
 
         IController ctr1 = new Controller(rp1);
         IController ctr2 = new Controller(rp2);
@@ -110,6 +127,7 @@ public class Interpreter {
         IController ctr5 = new Controller(rp5);
         IController ctr6 = new Controller(rp6);
         IController ctr7 = new Controller(rp7);
+        IController ctr8 = new Controller(rp8);
 
         TextMenu menu = new TextMenu();
         menu.addCommand(new ExitCommand("0", "exit"));
@@ -121,6 +139,7 @@ public class Interpreter {
         menu.addCommand(new RunExample("5", "Run the fifth example", ctr5));
         menu.addCommand(new RunExample("6", "Run the sixth example", ctr6));
         menu.addCommand(new RunExample("7", "Run the seventh example", ctr7));
+        menu.addCommand(new RunExample("8", "Run the eighth example", ctr8));
         menu.show();
     }
 }

@@ -37,6 +37,8 @@ public class Repository implements IRepository{
             logFile.println(crtPrg.getOut());
             logFile.println("FileTable:");
             logFile.println(crtPrg.getFileTable());
+            logFile.println("HeapTable:");
+            logFile.println(crtPrg.getHeapTable());
             logFile.println("----------------------------");
             logFile.close();
         }
