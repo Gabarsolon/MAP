@@ -13,7 +13,7 @@ public class RelExp implements Exp{
     private Exp exp2;
     String op;
 
-    public RelExp(Exp exp1, Exp exp2, String op) {
+    public RelExp(String op, Exp exp1, Exp exp2) {
         this.exp1 = exp1;
         this.exp2 = exp2;
         this.op = op;
@@ -61,6 +61,6 @@ public class RelExp implements Exp{
 
     @Override
     public Exp deepCopy() {
-        return new RelExp(exp1.deepCopy(), exp2.deepCopy(), op);
+        return new RelExp(op, exp1.deepCopy(), exp2.deepCopy());
     }
 }

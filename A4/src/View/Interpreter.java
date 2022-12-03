@@ -89,9 +89,12 @@ public class Interpreter {
             new CompStmt(new allocHeap("v", new ValueExp(new IntValue(30))),
             new PrintStmt(new readHeap(new readHeap(new VarExp("a")))))))));
 
-
-
-
+        IStmt ex9 = new CompStmt(new VarDeclStmt("v", new IntType()),
+            new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(4))),
+            new CompStmt(new WhileStmt(new RelExp(">", new VarExp("v"), new ValueExp(new IntValue(0))),
+                                       new CompStmt(new PrintStmt(new VarExp("v")),  new AssignStmt("v",
+                                                    new ArithExp(2, new VarExp("v"), new ValueExp(new IntValue(1)))))),
+            new PrintStmt(new VarExp("v")))));
 
         PrgState prg1 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
                 new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex1);
@@ -109,6 +112,8 @@ public class Interpreter {
                 new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(),ex7);
         PrgState prg8 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
                 new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(),ex8);
+        PrgState prg9 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
+                new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(),ex9);
 
 
         IRepository rp1 = new Repository(prg1, logFilePath);
@@ -119,6 +124,7 @@ public class Interpreter {
         IRepository rp6 = new Repository(prg6, logFilePath);
         IRepository rp7 = new Repository(prg7, logFilePath);
         IRepository rp8 = new Repository(prg8, logFilePath);
+        IRepository rp9 = new Repository(prg9, logFilePath);
 
         IController ctr1 = new Controller(rp1);
         IController ctr2 = new Controller(rp2);
@@ -128,6 +134,7 @@ public class Interpreter {
         IController ctr6 = new Controller(rp6);
         IController ctr7 = new Controller(rp7);
         IController ctr8 = new Controller(rp8);
+        IController ctr9 = new Controller(rp9);
 
         TextMenu menu = new TextMenu();
         menu.addCommand(new ExitCommand("0", "exit"));
@@ -140,6 +147,7 @@ public class Interpreter {
         menu.addCommand(new RunExample("6", "Run the sixth example", ctr6));
         menu.addCommand(new RunExample("7", "Run the seventh example", ctr7));
         menu.addCommand(new RunExample("8", "Run the eighth example", ctr8));
+        menu.addCommand(new RunExample("9", "Run the ninth example", ctr9));
         menu.show();
     }
 }
