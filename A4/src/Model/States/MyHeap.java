@@ -34,10 +34,14 @@ public class MyHeap<K, V> implements MyIHeap<K, V>{
     public void update(Integer address, V val) {
         data.put(address, val);
     }
-
+    private void getFreePos(){
+        this.freePos = 1;
+        while(data.containsKey(freePos))
+            freePos++;
+    }
     public Integer newEntry(V val){
+        getFreePos();
         data.put(freePos, val);
-        freePos++;
-        return freePos-1;
+        return freePos;
     }
 }
