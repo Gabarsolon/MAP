@@ -9,4 +9,5 @@ public interface MyIDictionary <T1,T2>{
 //    public void add(T1 key, T2 value);
     public void delete(T1 key);
     public Map<T1, T2> getData();
+    public MyDictionary<T1, T2> deepCopy();
 }

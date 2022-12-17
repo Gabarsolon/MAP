@@ -8,37 +8,39 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
+import java.util.List;
 import java.util.StringTokenizer;
 
 public class Repository implements IRepository{
-    private PrgState crtPrg;
+    private List<PrgState> prgList;
     private String logFilePath;
     public Repository(PrgState prg, String logFilePath){
-        this.crtPrg = prg;
+        this.prgList.add(prg);
         this.logFilePath = logFilePath;
     }
-    public PrgState getCrtPrg(){
-        return crtPrg;
+    public List<PrgState> getPrgList(){
+        return this.prgList;
     }
-    public void setCrtPrg(PrgState prg){
-        this.crtPrg = prg;
+    void setPrgList(List<PrgState> prgList){
+        this.prgList = prgList;
     }
-    public void logPrgStateExec() throws MyException{
+    public void logPrgStateExec(PrgState prg) throws MyException{
         try{
             PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter("log.txt",true)));
+            logFile.println("Program id: " + PrgState.getPrgId().toString());
             logFile.println("ExeStack:");
-            StringTokenizer st = new StringTokenizer(crtPrg.getExeStack().toString(),";");
+            StringTokenizer st = new StringTokenizer(prg.getExeStack().toString(),";");
             while(st.hasMoreTokens()){
                 logFile.println(st.nextToken());
             }
             logFile.println("SymTable:");
-            logFile.println(crtPrg.getSymTable());
+            logFile.println(prg.getSymTable());
             logFile.println("Out:");
-            logFile.println(crtPrg.getOut());
+            logFile.println(prg.getOut());
             logFile.println("FileTable:");
-            logFile.println(crtPrg.getFileTable());
+            logFile.println(prg.getFileTable());
             logFile.println("HeapTable:");
-            logFile.println(crtPrg.getHeapTable());
+            logFile.println(prg.getHeapTable());
             logFile.println("----------------------------");
             logFile.close();
         }

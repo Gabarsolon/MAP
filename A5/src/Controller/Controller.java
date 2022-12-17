@@ -38,13 +38,7 @@ public class Controller implements IController{
                 .map(v->{RefValue v1 = (RefValue)v; return v1.getAddress();})
                 .collect(Collectors.toList());
     }
-    public PrgState oneStep(PrgState state) throws MyException{
-        MyIStack<IStmt> stk = state.getExeStack();
-        if(stk.isEmpty())
-            throw new MyException("PrgState stack is empty");
-        IStmt crtStmt = stk.pop();
-        return crtStmt.execute(state);
-    }
+
     public void allStep() throws MyException{
         PrgState prg = repository.getCrtPrg();
         if(prg.getExeStack().isEmpty())

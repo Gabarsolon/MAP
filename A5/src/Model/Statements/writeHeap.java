@@ -42,7 +42,7 @@ public class writeHeap implements IStmt{
             throw new MyException("The types aren't the same");
 
         heapTbl.update(address, newVal);
-        return state;
+        return null;
     }
 
     @Override

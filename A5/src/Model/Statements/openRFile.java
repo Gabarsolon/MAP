@@ -35,7 +35,7 @@ public class openRFile implements IStmt{
         }catch(Exception e) {
             System.out.println(e.toString());
         }finally {
-            return state;
+            return null;
         }
     }
 

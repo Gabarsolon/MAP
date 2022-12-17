@@ -32,7 +32,7 @@ public class WhileStmt implements IStmt{
             exeStack.push(this);
             exeStack.push(stmt);
         }
-        return state;
+        return null;
     }
 
     @Override

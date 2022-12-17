@@ -1,5 +1,6 @@
 package Model.States;
 
+import Model.Exceptions.MyException;
 import Model.Statements.IStmt;
 import Model.Values.Value;
 
@@ -12,6 +13,7 @@ public class PrgState {
     private MyIDictionary<String, BufferedReader> fileTable;
     private MyIHeap<Integer, Value> heapTable;
     private IStmt originalProgram;
+    public static Integer id;
 
     public PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symtbl, MyIList<Value> ot,
                     MyIDictionary<String, BufferedReader>ft,MyIHeap<Integer, Value>ht, IStmt prg){
@@ -23,6 +25,26 @@ public class PrgState {
         originalProgram=prg.deepCopy();
         stk.push(prg);
     }
+
+    public PrgState oneStep() throws MyException {
+        if(exeStack.isEmpty())
+            throw new MyException("PrgState stack is empty");
+        IStmt crtStmt = exeStack.pop();
+        return crtStmt.execute(this);
+    }
+
+    public Boolean isNotCompleted(){
+        return !exeStack.isEmpty();
+    }
+
+    public static Integer getPrgId() {
+        return id;
+    }
+
+    public static void setPrgId(Integer id) {
+        PrgState.id = id;
+    }
+
     public void setExeStack(MyIStack<IStmt> exeStack) {
         this.exeStack = exeStack;
     }
@@ -61,7 +83,8 @@ public class PrgState {
     @Override
     public String toString() {
         return "PrgState{" +
-                "exeStack=" + exeStack +
+                "id=" + id +
+                "\nexeStack=" + exeStack +
                 "\nsymTable=" + symTable +
                 "\nout=" + out +
 //                ", originalProgram=" + originalProgram +

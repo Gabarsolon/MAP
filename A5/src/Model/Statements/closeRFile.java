@@ -49,7 +49,7 @@ public class closeRFile implements IStmt{
             e.toString();
         }
         fileTable.delete(fileString);
-        return state;
+        return null;
     }
 
     @Override

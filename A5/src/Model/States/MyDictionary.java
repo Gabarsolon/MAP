@@ -3,6 +3,7 @@ package Model.States;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class MyDictionary<T1, T2> implements MyIDictionary<T1, T2> {
     private Map<T1, T2> data;
@@ -39,5 +40,10 @@ public class MyDictionary<T1, T2> implements MyIDictionary<T1, T2> {
 
     public void delete(T1 key){
         data.remove(key);
+    }
+    public MyDictionary<T1, T2> deepCopy(){
+        MyDictionary<T1,T2> myDictionaryCopy = new MyDictionary<>();
+        myDictionaryCopy.data = this.data.entrySet().stream().collect(Collectors.toMap(e->e.getKey(), e->e.getValue()));
+        return myDictionaryCopy;
     }
 }

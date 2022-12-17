@@ -32,7 +32,7 @@ public class AssignStmt implements IStmt {
                         "the asigned expression do not match");
         }
         else throw new MyException("the used variable" + id + " was not declared before");
-        return state;
+        return null;
     }
 
     public AssignStmt deepCopy(){

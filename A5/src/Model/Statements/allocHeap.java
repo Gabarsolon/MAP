@@ -41,7 +41,7 @@ public class allocHeap implements IStmt{
         Integer address = heapTbl.newEntry(expEval);
         symTbl.update(var_name, new RefValue(address, expEval.getType()));
 
-        return state;
+        return null;
     }
     public allocHeap deepCopy(){
         return new allocHeap(var_name, exp);

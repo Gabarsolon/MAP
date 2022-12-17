@@ -65,7 +65,7 @@ public class readFile implements IStmt{
         }catch(Exception e){
             e.toString();
         }
-        return state;
+        return null;
     }
 
     @Override
