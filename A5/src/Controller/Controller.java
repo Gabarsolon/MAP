@@ -2,20 +2,27 @@ package Controller;
 
 import Model.Exceptions.MyException;
 import Model.Statements.IStmt;
+import Model.States.MyIHeap;
+import Model.States.MyIList;
 import Model.States.MyIStack;
 import Model.States.PrgState;
 import Model.Values.RefValue;
 import Model.Values.Value;
 import Repository.*;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 
 public class Controller implements IController{
     private IRepository repository;
     public static boolean displayPrgState;
+    private ExecutorService executor;
     public Controller(IRepository repo){
         this.repository = repo;
         this.displayPrgState = true;
@@ -38,35 +45,90 @@ public class Controller implements IController{
                 .map(v->{RefValue v1 = (RefValue)v; return v1.getAddress();})
                 .collect(Collectors.toList());
     }
+    private void conservativeGarbageCollector(List<PrgState> prgList){
+        MyIHeap<Integer, Value> heapTbl = prgList.get(0).getHeapTable();
+        List<Integer> addresses = new ArrayList<>();
+        prgList.forEach(prg->{
+            addresses.addAll(getAddrFromSymTable(prg.getSymTable().getData().values()));
+        });
+        heapTbl.setData(safeGarbageCollector(addresses, heapTbl.getData()));
+    }
+    public void oneStepForAllPrg(List<PrgState> prgList) throws MyException{
+        try {
+            //before the execution, print the PrgState List into the log file
+            prgList.forEach(prg -> {
+                try {
+                    repository.logPrgStateExec(prg);
+                } catch (Exception e) {
+                    System.out.println(e.toString());
+                }
+            });
 
-    public void allStep() throws MyException{
-        PrgState prg = repository.getCrtPrg();
-        if(prg.getExeStack().isEmpty())
-            throw new MyException("PrgState stack is empty");
-        repository.logPrgStateExec();
-        if(displayPrgState){
-            while(!prg.getExeStack().isEmpty()){
-                oneStep(prg);
-                repository.logPrgStateExec();
-                prg.getHeapTable().setData(safeGarbageCollector(
-                        getAddrFromSymTable(prg.getSymTable().getData().values()),
-                        prg.getHeapTable().getData()));
-                repository.logPrgStateExec();
-                System.out.println(prg);
-            }
+            //RUN concurrently one step for each of the existing PrgStates
+            //-----------------------------------------------------------------------
+            //prepare the list of callables
+            List<Callable<PrgState>> callList = prgList.stream()
+                    .map((PrgState p) -> (Callable<PrgState>) (() -> {
+                        return p.oneStep();
+                    }))
+                    .collect(Collectors.toList());
+
+            //start the execution of the callables
+            //it returns the list of new created PrgStates (namely threads)
+            List<PrgState> newPrgList = executor.invokeAll(callList).stream()
+                    .map(future -> {
+                        try {
+                            return future.get();
+                        } catch (Exception e) {
+                            System.out.println(e.toString());
+                        } finally {
+                            return null;
+                        }
+                    })
+                    .filter(p -> p != null)
+                    .collect(Collectors.toList());
+
+            //add the new created threads to the list of existing threads
+            prgList.addAll(newPrgList);
+
+            //after the execution, print the PrgState List into the log file
+            prgList.forEach(prg -> {
+                try {
+                    repository.logPrgStateExec(prg);
+                } catch (Exception e) {
+                    System.out.println(e.toString());
+                }
+            });
+
+            //save the current programs in the repopsitory
+            repository.setPrgList(prgList);
         }
-        else{
-            while(!prg.getExeStack().isEmpty()){
-                oneStep(prg);
-                repository.logPrgStateExec();
-                prg.getHeapTable().setData(unsafeGarbageCollector(
-                        getAddrFromSymTable(prg.getSymTable().getData().values()),
-                        prg.getHeapTable().getData()));
-                repository.logPrgStateExec();
-            }
+        catch(Exception e){
+            System.out.printf(e.toString());
         }
     }
-//    public void setDisplayPrgState(boolean val){
-//        this.displayPrgState = val;
-//    }
+
+    public void allStep() throws MyException {
+        executor = Executors.newFixedThreadPool(2);
+        //remove the completed programs
+        List<PrgState> prgList = removeCompletedPrg(repository.getPrgList());
+        while (prgList.size() > 0) {
+            conservativeGarbageCollector(prgList);
+            oneStepForAllPrg(prgList);
+            //remove the completed programs
+            prgList = removeCompletedPrg(repository.getPrgList());
+        }
+        executor.shutdownNow();
+        //HERE the repository still contains at least one Completed Prg
+        //at its List<PrgState> is not empty. Note that oneStepForAllPrg calls the method
+        //setPrgList of repository in order to change the repository
+
+        //update the repository state
+        repository.setPrgList(prgList);
+    }
+
+    public List<PrgState> removeCompletedPrg(List<PrgState> inPrgList){
+        return inPrgList.stream().filter(p->p.isNotCompleted())
+                .collect(Collectors.toList());
+    }
 }

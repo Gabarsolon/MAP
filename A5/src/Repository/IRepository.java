@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface IRepository {
     public List<PrgState> getPrgList();
-    void setPrgList(List<PrgState> prgList);
+    public void setPrgList(List<PrgState> prgList);
     public void logPrgStateExec(PrgState prg) throws MyException;
 }

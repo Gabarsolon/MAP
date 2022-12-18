@@ -21,7 +21,7 @@ public class Repository implements IRepository{
     public List<PrgState> getPrgList(){
         return this.prgList;
     }
-    void setPrgList(List<PrgState> prgList){
+    public void setPrgList(List<PrgState> prgList){
         this.prgList = prgList;
     }
     public void logPrgStateExec(PrgState prg) throws MyException{
