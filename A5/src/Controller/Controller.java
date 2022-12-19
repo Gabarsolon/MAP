@@ -59,6 +59,8 @@ public class Controller implements IController{
             //before the execution, print the PrgState List into the log file
             prgList.forEach(prg -> {
                 try {
+                    if(displayPrgState)
+                        System.out.println(prg);
                     repository.logPrgStateExec(prg);
                 } catch (Exception e) {
                     System.out.println(e.toString());
@@ -78,26 +80,24 @@ public class Controller implements IController{
             //it returns the list of new created PrgStates (namely threads)
             List<PrgState> newPrgList = executor.invokeAll(callList).stream()
                     .map(future -> {
+                        PrgState p = null;
                         try {
-                            return future.get();
+                            p = future.get();
                         } catch(Exception e){
                             System.out.println(e.toString());
                         }
-                        finally{
-                            return null;
-                        }
+                        return p;
                     })
                     .collect(Collectors.toList());
-            System.out.println("before " + newPrgList.toString());
             newPrgList =newPrgList.stream().filter(p->p!=null).collect(Collectors.toList());
-            System.out.println("after " + newPrgList.toString());
             //add the new created threads to the list of existing threads
             prgList.addAll(newPrgList);
-            System.out.println(prgList.size());
 
             //after the execution, print the PrgState List into the log file
             prgList.forEach(prg -> {
                 try {
+                    if(displayPrgState)
+                        System.out.println(prg);
                     repository.logPrgStateExec(prg);
                 } catch (Exception e) {
                     System.out.println(e.toString());

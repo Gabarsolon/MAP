@@ -5,6 +5,7 @@ import Model.States.*;
 import Model.Values.Value;
 
 import java.io.BufferedReader;
+import java.util.stream.Collectors;
 
 public class forkStmt implements IStmt{
     IStmt stmt;
@@ -16,7 +17,9 @@ public class forkStmt implements IStmt{
     @Override
     public PrgState execute(PrgState state) throws MyException {
         MyIStack<IStmt> exeStack = new MyStack<>();
-        MyIDictionary<String, Value> symTbl = state.getSymTable().deepCopy();
+        MyIDictionary<String, Value> symTbl = new MyDictionary<>();
+        symTbl.setData(state.getSymTable().getData().entrySet().stream()
+                .collect(Collectors.toMap(e->e.getKey(), e->e.getValue().deepCopy())));
         MyIList<Value> out = state.getOut();
         MyIDictionary<String, BufferedReader> fileTbl = state.getFileTable();
         MyIHeap<Integer, Value> heapTbl= state.getHeapTable();
