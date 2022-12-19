@@ -8,6 +8,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
@@ -15,6 +16,7 @@ public class Repository implements IRepository{
     private List<PrgState> prgList;
     private String logFilePath;
     public Repository(PrgState prg, String logFilePath){
+        prgList = new ArrayList<>();
         this.prgList.add(prg);
         this.logFilePath = logFilePath;
     }
@@ -27,7 +29,7 @@ public class Repository implements IRepository{
     public void logPrgStateExec(PrgState prg) throws MyException{
         try{
             PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter("log.txt",true)));
-            logFile.println("Program id: " + PrgState.getPrgId().toString());
+            logFile.println("Program id: " + prg.getPrgId().toString());
             logFile.println("ExeStack:");
             StringTokenizer st = new StringTokenizer(prg.getExeStack().toString(),";");
             while(st.hasMoreTokens()){

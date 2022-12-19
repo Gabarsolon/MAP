@@ -9,6 +9,8 @@ import java.io.BufferedReader;
 public class forkStmt implements IStmt{
     IStmt stmt;
 
+
+
     public forkStmt(IStmt stmt){
         this.stmt = stmt;
     }
@@ -20,9 +22,16 @@ public class forkStmt implements IStmt{
         MyIList<Value> out = state.getOut();
         MyIDictionary<String, BufferedReader> fileTbl = state.getFileTable();
         MyIHeap<Integer, Value> heapTbl= state.getHeapTable();
-        PrgState.setPrgId(PrgState.getPrgId()+1);
+        PrgState.setAvailableId(PrgState.getAvailableId()+1);
 
         return new PrgState(exeStack,symTbl,out,fileTbl,heapTbl,stmt);
+    }
+
+    @Override
+    public String toString() {
+        return "forkStmt{" +
+                "stmt=" + stmt +
+                '}';
     }
 
     @Override

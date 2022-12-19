@@ -89,7 +89,7 @@ public class Controller implements IController{
                     .collect(Collectors.toList());
 
             //add the new created threads to the list of existing threads
-            prgList.addAll(newPrgList);
+            System.out.println(newPrgList.size());
 
             //after the execution, print the PrgState List into the log file
             prgList.forEach(prg -> {
@@ -109,6 +109,7 @@ public class Controller implements IController{
     }
 
     public void allStep() throws MyException {
+        PrgState.setAvailableId(0);
         executor = Executors.newFixedThreadPool(2);
         //remove the completed programs
         List<PrgState> prgList = removeCompletedPrg(repository.getPrgList());

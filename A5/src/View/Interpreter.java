@@ -9,6 +9,7 @@ import Model.Types.*;
 import Model.Values.*;
 import Repository.*;
 
+import javax.crypto.CipherInputStream;
 import java.io.BufferedReader;
 import java.util.Scanner;
 
@@ -17,6 +18,8 @@ public class Interpreter {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Input the path to the log file: ");
         String logFilePath = scanner.nextLine();
+
+        PrgState.setAvailableId(0);
 
         IStmt ex1 = new CompStmt(new VarDeclStmt("v",new IntType()),
                 new CompStmt(new AssignStmt("v",new ValueExp(new IntValue(2))),
@@ -95,6 +98,17 @@ public class Interpreter {
                                                     new ArithExp(2, new VarExp("v"), new ValueExp(new IntValue(1)))))),
             new PrintStmt(new VarExp("v")))));
 
+        IStmt ex10 = new CompStmt(new VarDeclStmt("v", new IntType()),
+            new CompStmt(new VarDeclStmt("a", new RefType(new IntType())),
+            new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(10))),
+            new CompStmt(new allocHeap("a", new ValueExp(new IntValue(22))),
+            new CompStmt(new forkStmt(new CompStmt(new writeHeap("a", new ValueExp(new IntValue(30))),
+                                      new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(32))),
+                                      new CompStmt(new PrintStmt(new VarExp("v")),
+                                              new PrintStmt(new readHeap(new VarExp("a"))))))),
+            new CompStmt(new PrintStmt(new VarExp("v")),
+            new PrintStmt(new readHeap(new VarExp("a")))))))));
+
         PrgState prg1 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
                 new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex1);
         PrgState prg2 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
@@ -113,7 +127,8 @@ public class Interpreter {
                 new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(),ex8);
         PrgState prg9 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
                 new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(),ex9);
-
+        PrgState prg10 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
+                new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(),ex10);
 
         IRepository rp1 = new Repository(prg1, logFilePath);
         IRepository rp2 = new Repository(prg2, logFilePath);
@@ -124,6 +139,7 @@ public class Interpreter {
         IRepository rp7 = new Repository(prg7, logFilePath);
         IRepository rp8 = new Repository(prg8, logFilePath);
         IRepository rp9 = new Repository(prg9, logFilePath);
+        IRepository rp10 = new Repository(prg10, logFilePath);
 
         IController ctr1 = new Controller(rp1);
         IController ctr2 = new Controller(rp2);
@@ -134,6 +150,7 @@ public class Interpreter {
         IController ctr7 = new Controller(rp7);
         IController ctr8 = new Controller(rp8);
         IController ctr9 = new Controller(rp9);
+        IController ctr10 = new Controller(rp10);
 
         TextMenu menu = new TextMenu();
         menu.addCommand(new ExitCommand("0", "exit"));
@@ -147,6 +164,7 @@ public class Interpreter {
         menu.addCommand(new RunExample("7", "Run the seventh example", ctr7));
         menu.addCommand(new RunExample("8", "Run the eighth example", ctr8));
         menu.addCommand(new RunExample("9", "Run the ninth example", ctr9));
+        menu.addCommand(new RunExample("10", "Run the tenth example", ctr10));
         menu.show();
     }
 }

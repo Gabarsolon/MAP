@@ -1,9 +1,15 @@
+Program id: 0
 ExeStack:
 [(VarDeclStmt{name='v', typ=int}
-(v=ValueExp{e=4}
-(WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}
-print(VarExp{id='v'}))))]
+(VarDeclStmt{name='a', typ=Ref(int)}
+(v=ValueExp{e=10}
+(allocHeap{var_name='a', exp=ValueExp{e=22}}
+(forkStmt{stmt=(writeHeap{var_name='a', exp=ValueExp{e=30}}
+(v=ValueExp{e=32}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}})))))))]
 SymTable:
 {}
 Out:
@@ -13,11 +19,17 @@ FileTable:
 HeapTable:
 {}
 ----------------------------
+Program id: 0
 ExeStack:
-[(v=ValueExp{e=4}
-(WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}
-print(VarExp{id='v'}))), VarDeclStmt{name='v', typ=int}]
+[(VarDeclStmt{name='a', typ=Ref(int)}
+(v=ValueExp{e=10}
+(allocHeap{var_name='a', exp=ValueExp{e=22}}
+(forkStmt{stmt=(writeHeap{var_name='a', exp=ValueExp{e=30}}
+(v=ValueExp{e=32}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}})))))), VarDeclStmt{name='v', typ=int}]
 SymTable:
 {}
 Out:
@@ -27,11 +39,17 @@ FileTable:
 HeapTable:
 {}
 ----------------------------
+Program id: 0
 ExeStack:
-[(v=ValueExp{e=4}
-(WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}
-print(VarExp{id='v'}))), VarDeclStmt{name='v', typ=int}]
+[(VarDeclStmt{name='a', typ=Ref(int)}
+(v=ValueExp{e=10}
+(allocHeap{var_name='a', exp=ValueExp{e=22}}
+(forkStmt{stmt=(writeHeap{var_name='a', exp=ValueExp{e=30}}
+(v=ValueExp{e=32}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}})))))), VarDeclStmt{name='v', typ=int}]
 SymTable:
 {}
 Out:
@@ -41,11 +59,17 @@ FileTable:
 HeapTable:
 {}
 ----------------------------
+Program id: 0
 ExeStack:
-[(v=ValueExp{e=4}
-(WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}
-print(VarExp{id='v'})))]
+[(VarDeclStmt{name='a', typ=Ref(int)}
+(v=ValueExp{e=10}
+(allocHeap{var_name='a', exp=ValueExp{e=22}}
+(forkStmt{stmt=(writeHeap{var_name='a', exp=ValueExp{e=30}}
+(v=ValueExp{e=32}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))))]
 SymTable:
 {v=0}
 Out:
@@ -55,11 +79,17 @@ FileTable:
 HeapTable:
 {}
 ----------------------------
+Program id: 0
 ExeStack:
-[(v=ValueExp{e=4}
-(WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}
-print(VarExp{id='v'})))]
+[(VarDeclStmt{name='a', typ=Ref(int)}
+(v=ValueExp{e=10}
+(allocHeap{var_name='a', exp=ValueExp{e=22}}
+(forkStmt{stmt=(writeHeap{var_name='a', exp=ValueExp{e=30}}
+(v=ValueExp{e=32}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))))]
 SymTable:
 {v=0}
 Out:
@@ -69,10 +99,16 @@ FileTable:
 HeapTable:
 {}
 ----------------------------
+Program id: 0
 ExeStack:
-[(WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}
-print(VarExp{id='v'})), v=ValueExp{e=4}]
+[(v=ValueExp{e=10}
+(allocHeap{var_name='a', exp=ValueExp{e=22}}
+(forkStmt{stmt=(writeHeap{var_name='a', exp=ValueExp{e=30}}
+(v=ValueExp{e=32}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))), VarDeclStmt{name='a', typ=Ref(int)}]
 SymTable:
 {v=0}
 Out:
@@ -82,10 +118,16 @@ FileTable:
 HeapTable:
 {}
 ----------------------------
+Program id: 0
 ExeStack:
-[(WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}
-print(VarExp{id='v'})), v=ValueExp{e=4}]
+[(v=ValueExp{e=10}
+(allocHeap{var_name='a', exp=ValueExp{e=22}}
+(forkStmt{stmt=(writeHeap{var_name='a', exp=ValueExp{e=30}}
+(v=ValueExp{e=32}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))), VarDeclStmt{name='a', typ=Ref(int)}]
 SymTable:
 {v=0}
 Out:
@@ -95,12 +137,18 @@ FileTable:
 HeapTable:
 {}
 ----------------------------
+Program id: 0
 ExeStack:
-[(WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}
-print(VarExp{id='v'}))]
+[(v=ValueExp{e=10}
+(allocHeap{var_name='a', exp=ValueExp{e=22}}
+(forkStmt{stmt=(writeHeap{var_name='a', exp=ValueExp{e=30}}
+(v=ValueExp{e=32}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}})))))]
 SymTable:
-{v=4}
+{a=RefValue{address=0, locationType=int}, v=0}
 Out:
 []
 FileTable:
@@ -108,12 +156,18 @@ FileTable:
 HeapTable:
 {}
 ----------------------------
+Program id: 0
 ExeStack:
-[(WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}
-print(VarExp{id='v'}))]
+[(v=ValueExp{e=10}
+(allocHeap{var_name='a', exp=ValueExp{e=22}}
+(forkStmt{stmt=(writeHeap{var_name='a', exp=ValueExp{e=30}}
+(v=ValueExp{e=32}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}})))))]
 SymTable:
-{v=4}
+{a=RefValue{address=0, locationType=int}, v=0}
 Out:
 []
 FileTable:
@@ -121,11 +175,17 @@ FileTable:
 HeapTable:
 {}
 ----------------------------
+Program id: 0
 ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}]
+[(allocHeap{var_name='a', exp=ValueExp{e=22}}
+(forkStmt{stmt=(writeHeap{var_name='a', exp=ValueExp{e=30}}
+(v=ValueExp{e=32}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}})))), v=ValueExp{e=10}]
 SymTable:
-{v=4}
+{a=RefValue{address=0, locationType=int}, v=0}
 Out:
 []
 FileTable:
@@ -133,11 +193,17 @@ FileTable:
 HeapTable:
 {}
 ----------------------------
+Program id: 0
 ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}]
+[(allocHeap{var_name='a', exp=ValueExp{e=22}}
+(forkStmt{stmt=(writeHeap{var_name='a', exp=ValueExp{e=30}}
+(v=ValueExp{e=32}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}})))), v=ValueExp{e=10}]
 SymTable:
-{v=4}
+{a=RefValue{address=0, locationType=int}, v=0}
 Out:
 []
 FileTable:
@@ -145,12 +211,17 @@ FileTable:
 HeapTable:
 {}
 ----------------------------
+Program id: 0
 ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, (print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})]
+[(allocHeap{var_name='a', exp=ValueExp{e=22}}
+(forkStmt{stmt=(writeHeap{var_name='a', exp=ValueExp{e=30}}
+(v=ValueExp{e=32}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))]
 SymTable:
-{v=4}
+{a=RefValue{address=0, locationType=int}, v=10}
 Out:
 []
 FileTable:
@@ -158,12 +229,17 @@ FileTable:
 HeapTable:
 {}
 ----------------------------
+Program id: 0
 ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, (print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})]
+[(allocHeap{var_name='a', exp=ValueExp{e=22}}
+(forkStmt{stmt=(writeHeap{var_name='a', exp=ValueExp{e=30}}
+(v=ValueExp{e=32}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))]
 SymTable:
-{v=4}
+{a=RefValue{address=0, locationType=int}, v=10}
 Out:
 []
 FileTable:
@@ -171,11 +247,16 @@ FileTable:
 HeapTable:
 {}
 ----------------------------
+Program id: 0
 ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}, print(VarExp{id='v'})]
+[(forkStmt{stmt=(writeHeap{var_name='a', exp=ValueExp{e=30}}
+(v=ValueExp{e=32}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))), allocHeap{var_name='a', exp=ValueExp{e=22}}]
 SymTable:
-{v=4}
+{a=RefValue{address=0, locationType=int}, v=10}
 Out:
 []
 FileTable:
@@ -183,11 +264,16 @@ FileTable:
 HeapTable:
 {}
 ----------------------------
+Program id: 0
 ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}, print(VarExp{id='v'})]
+[(forkStmt{stmt=(writeHeap{var_name='a', exp=ValueExp{e=30}}
+(v=ValueExp{e=32}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))), allocHeap{var_name='a', exp=ValueExp{e=22}}]
 SymTable:
-{v=4}
+{a=RefValue{address=0, locationType=int}, v=10}
 Out:
 []
 FileTable:
@@ -195,1270 +281,155 @@ FileTable:
 HeapTable:
 {}
 ----------------------------
+Program id: 0
 ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}]
+[(forkStmt{stmt=(writeHeap{var_name='a', exp=ValueExp{e=30}}
+(v=ValueExp{e=32}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}})))]
 SymTable:
-{v=4}
-Out:
-[4]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}]
-SymTable:
-{v=4}
-Out:
-[4]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}]
-SymTable:
-{v=3}
-Out:
-[4]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}]
-SymTable:
-{v=3}
-Out:
-[4]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, (print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})]
-SymTable:
-{v=3}
-Out:
-[4]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, (print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})]
-SymTable:
-{v=3}
-Out:
-[4]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}, print(VarExp{id='v'})]
-SymTable:
-{v=3}
-Out:
-[4]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}, print(VarExp{id='v'})]
-SymTable:
-{v=3}
-Out:
-[4]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}]
-SymTable:
-{v=3}
-Out:
-[4, 3]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}]
-SymTable:
-{v=3}
-Out:
-[4, 3]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}]
-SymTable:
-{v=2}
-Out:
-[4, 3]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}]
-SymTable:
-{v=2}
-Out:
-[4, 3]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, (print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})]
-SymTable:
-{v=2}
-Out:
-[4, 3]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, (print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})]
-SymTable:
-{v=2}
-Out:
-[4, 3]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}, print(VarExp{id='v'})]
-SymTable:
-{v=2}
-Out:
-[4, 3]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}, print(VarExp{id='v'})]
-SymTable:
-{v=2}
-Out:
-[4, 3]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}]
-SymTable:
-{v=2}
-Out:
-[4, 3, 2]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}]
-SymTable:
-{v=2}
-Out:
-[4, 3, 2]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}]
-SymTable:
-{v=1}
-Out:
-[4, 3, 2]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}]
-SymTable:
-{v=1}
-Out:
-[4, 3, 2]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, (print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})]
-SymTable:
-{v=1}
-Out:
-[4, 3, 2]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, (print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})]
-SymTable:
-{v=1}
-Out:
-[4, 3, 2]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}, print(VarExp{id='v'})]
-SymTable:
-{v=1}
-Out:
-[4, 3, 2]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}, print(VarExp{id='v'})]
-SymTable:
-{v=1}
-Out:
-[4, 3, 2]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}]
-SymTable:
-{v=1}
-Out:
-[4, 3, 2, 1]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}]
-SymTable:
-{v=1}
-Out:
-[4, 3, 2, 1]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}]
-SymTable:
-{v=0}
-Out:
-[4, 3, 2, 1]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}]
-SymTable:
-{v=0}
-Out:
-[4, 3, 2, 1]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'})]
-SymTable:
-{v=0}
-Out:
-[4, 3, 2, 1]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'})]
-SymTable:
-{v=0}
-Out:
-[4, 3, 2, 1]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[]
-SymTable:
-{v=0}
-Out:
-[4, 3, 2, 1, 0]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[]
-SymTable:
-{v=0}
-Out:
-[4, 3, 2, 1, 0]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='v', typ=int}
-(v=ValueExp{e=4}
-(WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}
-print(VarExp{id='v'}))))]
-SymTable:
-{}
+{a=RefValue{address=1, locationType=int}, v=10}
 Out:
 []
 FileTable:
 {}
 HeapTable:
-{}
+{1=22}
 ----------------------------
+Program id: 0
 ExeStack:
-[(v=ValueExp{e=4}
-(WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}
-print(VarExp{id='v'}))), VarDeclStmt{name='v', typ=int}]
+[(forkStmt{stmt=(writeHeap{var_name='a', exp=ValueExp{e=30}}
+(v=ValueExp{e=32}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}})))]
 SymTable:
-{}
+{a=RefValue{address=1, locationType=int}, v=10}
 Out:
 []
 FileTable:
 {}
 HeapTable:
-{}
+{1=22}
 ----------------------------
+Program id: 0
 ExeStack:
-[(v=ValueExp{e=4}
-(WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}
-print(VarExp{id='v'}))), VarDeclStmt{name='v', typ=int}]
+[(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}})), forkStmt{stmt=(writeHeap{var_name='a', exp=ValueExp{e=30}}
+(v=ValueExp{e=32}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))}]
 SymTable:
-{}
+{a=RefValue{address=1, locationType=int}, v=10}
 Out:
 []
 FileTable:
 {}
 HeapTable:
-{}
+{1=22}
 ----------------------------
+Program id: 0
 ExeStack:
-[(v=ValueExp{e=4}
-(WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}
-print(VarExp{id='v'})))]
+[(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}})), forkStmt{stmt=(writeHeap{var_name='a', exp=ValueExp{e=30}}
+(v=ValueExp{e=32}
+(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))))}]
 SymTable:
-{v=0}
+{a=RefValue{address=1, locationType=int}, v=10}
 Out:
 []
 FileTable:
 {}
 HeapTable:
-{}
+{1=22}
 ----------------------------
+Program id: 0
 ExeStack:
-[(v=ValueExp{e=4}
-(WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}
-print(VarExp{id='v'})))]
+[(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))]
 SymTable:
-{v=0}
+{a=RefValue{address=1, locationType=int}, v=10}
 Out:
 []
 FileTable:
 {}
 HeapTable:
-{}
+{1=22}
 ----------------------------
+Program id: 0
 ExeStack:
-[(WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}
-print(VarExp{id='v'})), v=ValueExp{e=4}]
+[(print(VarExp{id='v'})
+print(readHeap{exp=VarExp{id='a'}}))]
 SymTable:
-{v=0}
+{a=RefValue{address=1, locationType=int}, v=10}
 Out:
 []
 FileTable:
 {}
 HeapTable:
-{}
+{1=22}
 ----------------------------
+Program id: 0
 ExeStack:
-[(WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}
-print(VarExp{id='v'})), v=ValueExp{e=4}]
+[print(readHeap{exp=VarExp{id='a'}}), print(VarExp{id='v'})]
 SymTable:
-{v=0}
+{a=RefValue{address=1, locationType=int}, v=10}
 Out:
 []
 FileTable:
 {}
 HeapTable:
-{}
+{1=22}
 ----------------------------
+Program id: 0
 ExeStack:
-[(WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}
-print(VarExp{id='v'}))]
+[print(readHeap{exp=VarExp{id='a'}}), print(VarExp{id='v'})]
 SymTable:
-{v=4}
+{a=RefValue{address=1, locationType=int}, v=10}
 Out:
 []
 FileTable:
 {}
 HeapTable:
-{}
+{1=22}
 ----------------------------
+Program id: 0
 ExeStack:
-[(WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}
-print(VarExp{id='v'}))]
+[print(readHeap{exp=VarExp{id='a'}})]
 SymTable:
-{v=4}
+{a=RefValue{address=1, locationType=int}, v=10}
 Out:
-[]
+[10]
 FileTable:
 {}
 HeapTable:
-{}
+{1=22}
 ----------------------------
+Program id: 0
 ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}]
+[print(readHeap{exp=VarExp{id='a'}})]
 SymTable:
-{v=4}
+{a=RefValue{address=1, locationType=int}, v=10}
 Out:
-[]
+[10]
 FileTable:
 {}
 HeapTable:
-{}
+{1=22}
 ----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}]
-SymTable:
-{v=4}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, (print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})]
-SymTable:
-{v=4}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, (print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})]
-SymTable:
-{v=4}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}, print(VarExp{id='v'})]
-SymTable:
-{v=4}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}, print(VarExp{id='v'})]
-SymTable:
-{v=4}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}]
-SymTable:
-{v=4}
-Out:
-[4]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}]
-SymTable:
-{v=4}
-Out:
-[4]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}]
-SymTable:
-{v=3}
-Out:
-[4]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}]
-SymTable:
-{v=3}
-Out:
-[4]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, (print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})]
-SymTable:
-{v=3}
-Out:
-[4]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, (print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})]
-SymTable:
-{v=3}
-Out:
-[4]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}, print(VarExp{id='v'})]
-SymTable:
-{v=3}
-Out:
-[4]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}, print(VarExp{id='v'})]
-SymTable:
-{v=3}
-Out:
-[4]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}]
-SymTable:
-{v=3}
-Out:
-[4, 3]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}]
-SymTable:
-{v=3}
-Out:
-[4, 3]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}]
-SymTable:
-{v=2}
-Out:
-[4, 3]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}]
-SymTable:
-{v=2}
-Out:
-[4, 3]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, (print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})]
-SymTable:
-{v=2}
-Out:
-[4, 3]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, (print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})]
-SymTable:
-{v=2}
-Out:
-[4, 3]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}, print(VarExp{id='v'})]
-SymTable:
-{v=2}
-Out:
-[4, 3]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}, print(VarExp{id='v'})]
-SymTable:
-{v=2}
-Out:
-[4, 3]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}]
-SymTable:
-{v=2}
-Out:
-[4, 3, 2]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}]
-SymTable:
-{v=2}
-Out:
-[4, 3, 2]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}]
-SymTable:
-{v=1}
-Out:
-[4, 3, 2]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}]
-SymTable:
-{v=1}
-Out:
-[4, 3, 2]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, (print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})]
-SymTable:
-{v=1}
-Out:
-[4, 3, 2]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, (print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})]
-SymTable:
-{v=1}
-Out:
-[4, 3, 2]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}, print(VarExp{id='v'})]
-SymTable:
-{v=1}
-Out:
-[4, 3, 2]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}, print(VarExp{id='v'})]
-SymTable:
-{v=1}
-Out:
-[4, 3, 2]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}]
-SymTable:
-{v=1}
-Out:
-[4, 3, 2, 1]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}, v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2}]
-SymTable:
-{v=1}
-Out:
-[4, 3, 2, 1]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}]
-SymTable:
-{v=0}
-Out:
-[4, 3, 2, 1]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'}), WhileStmt{exp=RelExp{exp1=VarExp{id='v'}, exp2=ValueExp{e=0}, op='>'}, stmt=(print(VarExp{id='v'})
-v=ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=1}, op=2})}]
-SymTable:
-{v=0}
-Out:
-[4, 3, 2, 1]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'})]
-SymTable:
-{v=0}
-Out:
-[4, 3, 2, 1]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[print(VarExp{id='v'})]
-SymTable:
-{v=0}
-Out:
-[4, 3, 2, 1]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
+Program id: 0
 ExeStack:
 []
 SymTable:
-{v=0}
+{a=RefValue{address=1, locationType=int}, v=10}
 Out:
-[4, 3, 2, 1, 0]
+[10, 22]
 FileTable:
 {}
 HeapTable:
-{}
-----------------------------
-ExeStack:
-[]
-SymTable:
-{v=0}
-Out:
-[4, 3, 2, 1, 0]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='v', typ=Ref(int)}
-(allocHeap{var_name='v', exp=ValueExp{e=20}}
-(VarDeclStmt{name='a', typ=Ref(Ref(int))}
-(allocHeap{var_name='a', exp=VarExp{id='v'}}
-(allocHeap{var_name='v', exp=ValueExp{e=30}}
-print(readHeap{exp=readHeap{exp=VarExp{id='a'}}}))))))]
-SymTable:
-{}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[(allocHeap{var_name='v', exp=ValueExp{e=20}}
-(VarDeclStmt{name='a', typ=Ref(Ref(int))}
-(allocHeap{var_name='a', exp=VarExp{id='v'}}
-(allocHeap{var_name='v', exp=ValueExp{e=30}}
-print(readHeap{exp=readHeap{exp=VarExp{id='a'}}}))))), VarDeclStmt{name='v', typ=Ref(int)}]
-SymTable:
-{}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[(allocHeap{var_name='v', exp=ValueExp{e=20}}
-(VarDeclStmt{name='a', typ=Ref(Ref(int))}
-(allocHeap{var_name='a', exp=VarExp{id='v'}}
-(allocHeap{var_name='v', exp=ValueExp{e=30}}
-print(readHeap{exp=readHeap{exp=VarExp{id='a'}}}))))), VarDeclStmt{name='v', typ=Ref(int)}]
-SymTable:
-{}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[(allocHeap{var_name='v', exp=ValueExp{e=20}}
-(VarDeclStmt{name='a', typ=Ref(Ref(int))}
-(allocHeap{var_name='a', exp=VarExp{id='v'}}
-(allocHeap{var_name='v', exp=ValueExp{e=30}}
-print(readHeap{exp=readHeap{exp=VarExp{id='a'}}})))))]
-SymTable:
-{v=RefValue{address=0, locationType=int}}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[(allocHeap{var_name='v', exp=ValueExp{e=20}}
-(VarDeclStmt{name='a', typ=Ref(Ref(int))}
-(allocHeap{var_name='a', exp=VarExp{id='v'}}
-(allocHeap{var_name='v', exp=ValueExp{e=30}}
-print(readHeap{exp=readHeap{exp=VarExp{id='a'}}})))))]
-SymTable:
-{v=RefValue{address=0, locationType=int}}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='a', typ=Ref(Ref(int))}
-(allocHeap{var_name='a', exp=VarExp{id='v'}}
-(allocHeap{var_name='v', exp=ValueExp{e=30}}
-print(readHeap{exp=readHeap{exp=VarExp{id='a'}}})))), allocHeap{var_name='v', exp=ValueExp{e=20}}]
-SymTable:
-{v=RefValue{address=0, locationType=int}}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='a', typ=Ref(Ref(int))}
-(allocHeap{var_name='a', exp=VarExp{id='v'}}
-(allocHeap{var_name='v', exp=ValueExp{e=30}}
-print(readHeap{exp=readHeap{exp=VarExp{id='a'}}})))), allocHeap{var_name='v', exp=ValueExp{e=20}}]
-SymTable:
-{v=RefValue{address=0, locationType=int}}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{}
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='a', typ=Ref(Ref(int))}
-(allocHeap{var_name='a', exp=VarExp{id='v'}}
-(allocHeap{var_name='v', exp=ValueExp{e=30}}
-print(readHeap{exp=readHeap{exp=VarExp{id='a'}}}))))]
-SymTable:
-{v=RefValue{address=1, locationType=int}}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{1=20}
-----------------------------
-ExeStack:
-[(VarDeclStmt{name='a', typ=Ref(Ref(int))}
-(allocHeap{var_name='a', exp=VarExp{id='v'}}
-(allocHeap{var_name='v', exp=ValueExp{e=30}}
-print(readHeap{exp=readHeap{exp=VarExp{id='a'}}}))))]
-SymTable:
-{v=RefValue{address=1, locationType=int}}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{1=20}
-----------------------------
-ExeStack:
-[(allocHeap{var_name='a', exp=VarExp{id='v'}}
-(allocHeap{var_name='v', exp=ValueExp{e=30}}
-print(readHeap{exp=readHeap{exp=VarExp{id='a'}}}))), VarDeclStmt{name='a', typ=Ref(Ref(int))}]
-SymTable:
-{v=RefValue{address=1, locationType=int}}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{1=20}
-----------------------------
-ExeStack:
-[(allocHeap{var_name='a', exp=VarExp{id='v'}}
-(allocHeap{var_name='v', exp=ValueExp{e=30}}
-print(readHeap{exp=readHeap{exp=VarExp{id='a'}}}))), VarDeclStmt{name='a', typ=Ref(Ref(int))}]
-SymTable:
-{v=RefValue{address=1, locationType=int}}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{1=20}
-----------------------------
-ExeStack:
-[(allocHeap{var_name='a', exp=VarExp{id='v'}}
-(allocHeap{var_name='v', exp=ValueExp{e=30}}
-print(readHeap{exp=readHeap{exp=VarExp{id='a'}}})))]
-SymTable:
-{a=RefValue{address=0, locationType=Ref(int)}, v=RefValue{address=1, locationType=int}}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{1=20}
-----------------------------
-ExeStack:
-[(allocHeap{var_name='a', exp=VarExp{id='v'}}
-(allocHeap{var_name='v', exp=ValueExp{e=30}}
-print(readHeap{exp=readHeap{exp=VarExp{id='a'}}})))]
-SymTable:
-{a=RefValue{address=0, locationType=Ref(int)}, v=RefValue{address=1, locationType=int}}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{1=20}
-----------------------------
-ExeStack:
-[(allocHeap{var_name='v', exp=ValueExp{e=30}}
-print(readHeap{exp=readHeap{exp=VarExp{id='a'}}})), allocHeap{var_name='a', exp=VarExp{id='v'}}]
-SymTable:
-{a=RefValue{address=0, locationType=Ref(int)}, v=RefValue{address=1, locationType=int}}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{1=20}
-----------------------------
-ExeStack:
-[(allocHeap{var_name='v', exp=ValueExp{e=30}}
-print(readHeap{exp=readHeap{exp=VarExp{id='a'}}})), allocHeap{var_name='a', exp=VarExp{id='v'}}]
-SymTable:
-{a=RefValue{address=0, locationType=Ref(int)}, v=RefValue{address=1, locationType=int}}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{1=20}
-----------------------------
-ExeStack:
-[(allocHeap{var_name='v', exp=ValueExp{e=30}}
-print(readHeap{exp=readHeap{exp=VarExp{id='a'}}}))]
-SymTable:
-{a=RefValue{address=2, locationType=Ref(int)}, v=RefValue{address=1, locationType=int}}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{1=20, 2=RefValue{address=1, locationType=int}}
-----------------------------
-ExeStack:
-[(allocHeap{var_name='v', exp=ValueExp{e=30}}
-print(readHeap{exp=readHeap{exp=VarExp{id='a'}}}))]
-SymTable:
-{a=RefValue{address=2, locationType=Ref(int)}, v=RefValue{address=1, locationType=int}}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{1=20, 2=RefValue{address=1, locationType=int}}
-----------------------------
-ExeStack:
-[print(readHeap{exp=readHeap{exp=VarExp{id='a'}}}), allocHeap{var_name='v', exp=ValueExp{e=30}}]
-SymTable:
-{a=RefValue{address=2, locationType=Ref(int)}, v=RefValue{address=1, locationType=int}}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{1=20, 2=RefValue{address=1, locationType=int}}
-----------------------------
-ExeStack:
-[print(readHeap{exp=readHeap{exp=VarExp{id='a'}}}), allocHeap{var_name='v', exp=ValueExp{e=30}}]
-SymTable:
-{a=RefValue{address=2, locationType=Ref(int)}, v=RefValue{address=1, locationType=int}}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{1=20, 2=RefValue{address=1, locationType=int}}
-----------------------------
-ExeStack:
-[print(readHeap{exp=readHeap{exp=VarExp{id='a'}}})]
-SymTable:
-{a=RefValue{address=2, locationType=Ref(int)}, v=RefValue{address=3, locationType=int}}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{1=20, 2=RefValue{address=1, locationType=int}, 3=30}
-----------------------------
-ExeStack:
-[print(readHeap{exp=readHeap{exp=VarExp{id='a'}}})]
-SymTable:
-{a=RefValue{address=2, locationType=Ref(int)}, v=RefValue{address=3, locationType=int}}
-Out:
-[]
-FileTable:
-{}
-HeapTable:
-{1=20, 2=RefValue{address=1, locationType=int}, 3=30}
-----------------------------
-ExeStack:
-[]
-SymTable:
-{a=RefValue{address=2, locationType=Ref(int)}, v=RefValue{address=3, locationType=int}}
-Out:
-[20]
-FileTable:
-{}
-HeapTable:
-{1=20, 2=RefValue{address=1, locationType=int}, 3=30}
-----------------------------
-ExeStack:
-[]
-SymTable:
-{a=RefValue{address=2, locationType=Ref(int)}, v=RefValue{address=3, locationType=int}}
-Out:
-[20]
-FileTable:
-{}
-HeapTable:
-{1=20, 2=RefValue{address=1, locationType=int}, 3=30}
+{1=22}
 ----------------------------

@@ -13,7 +13,8 @@ public class PrgState {
     private MyIDictionary<String, BufferedReader> fileTable;
     private MyIHeap<Integer, Value> heapTable;
     private IStmt originalProgram;
-    public static Integer id;
+    private Integer id;
+    private static Integer availableId;
 
     public PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symtbl, MyIList<Value> ot,
                     MyIDictionary<String, BufferedReader>ft,MyIHeap<Integer, Value>ht, IStmt prg){
@@ -23,6 +24,7 @@ public class PrgState {
         fileTable=ft;
         heapTable=ht;
         originalProgram=prg.deepCopy();
+        id=availableId;
         stk.push(prg);
     }
 
@@ -37,12 +39,13 @@ public class PrgState {
         return !exeStack.isEmpty();
     }
 
-    public static Integer getPrgId() {
+    public Integer getPrgId() {
         return id;
     }
 
-    public static void setPrgId(Integer id) {
-        PrgState.id = id;
+    public static Integer getAvailableId(){return availableId;}
+    public static void setAvailableId(Integer newId) {
+        availableId=newId;
     }
 
     public void setExeStack(MyIStack<IStmt> exeStack) {
