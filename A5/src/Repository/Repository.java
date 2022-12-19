@@ -28,7 +28,7 @@ public class Repository implements IRepository{
     }
     public void logPrgStateExec(PrgState prg) throws MyException{
         try{
-            PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter("log.txt",true)));
+            PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath,true)));
             logFile.println("Program id: " + prg.getPrgId().toString());
             logFile.println("ExeStack:");
             StringTokenizer st = new StringTokenizer(prg.getExeStack().toString(),";");

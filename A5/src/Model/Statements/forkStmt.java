@@ -9,8 +9,6 @@ import java.io.BufferedReader;
 public class forkStmt implements IStmt{
     IStmt stmt;
 
-
-
     public forkStmt(IStmt stmt){
         this.stmt = stmt;
     }

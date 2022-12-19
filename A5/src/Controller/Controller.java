@@ -15,6 +15,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
@@ -79,17 +80,20 @@ public class Controller implements IController{
                     .map(future -> {
                         try {
                             return future.get();
-                        } catch (Exception e) {
+                        } catch(Exception e){
                             System.out.println(e.toString());
-                        } finally {
+                        }
+                        finally{
                             return null;
                         }
                     })
-                    .filter(p -> p != null)
                     .collect(Collectors.toList());
-
+            System.out.println("before " + newPrgList.toString());
+            newPrgList =newPrgList.stream().filter(p->p!=null).collect(Collectors.toList());
+            System.out.println("after " + newPrgList.toString());
             //add the new created threads to the list of existing threads
-            System.out.println(newPrgList.size());
+            prgList.addAll(newPrgList);
+            System.out.println(prgList.size());
 
             //after the execution, print the PrgState List into the log file
             prgList.forEach(prg -> {
