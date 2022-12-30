@@ -12,7 +12,7 @@ public class PrgState {
     private MyIList<Value> out;
     private MyIDictionary<String, BufferedReader> fileTable;
     private MyIHeap<Integer, Value> heapTable;
-    private IStmt originalProgram=null;
+    private IStmt originalProgram;
     private Integer id;
     private static Integer availableId;
 
@@ -23,8 +23,7 @@ public class PrgState {
         out=ot;
         fileTable=ft;
         heapTable=ht;
-        if(prg!=null)
-            originalProgram=prg.deepCopy();
+        originalProgram=prg.deepCopy();
         id=availableId;
         stk.push(prg);
     }

@@ -111,97 +111,97 @@ public class Interpreter {
                                                                     new PrintStmt(new readHeap(new VarExp("a"))))))),
                                                     new CompStmt(new PrintStmt(new VarExp("v")),
                                                             new PrintStmt(new readHeap(new VarExp("a")))))))));
+
+            PrgState prg1, prg2, prg3, prg4, prg5, prg6, prg7, prg8, prg9, prg10;
             try{
                 ex1.typecheck(new MyDictionary<>());
+                prg1 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex1);
             }catch (Exception e){
                 System.out.println("Ex1: " + e);
-                ex1 = null;
+                prg1 = null;
             }
 
             try{
                 ex2.typecheck(new MyDictionary<>());
+                prg2 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex2);
             }catch (Exception e){
                 System.out.println("Ex2: " + e);
-                ex2 = null;
+                prg2 = null;
             }
 
             try{
                 ex3.typecheck(new MyDictionary<>());
+                prg3 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex3);
             }catch (Exception e){
                 System.out.println("Ex3: " + e);
-                ex3=null;
+                prg3=null;
             }
 
             try{
                 fileOperationsEx.typecheck(new MyDictionary<>());
+                prg4 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), fileOperationsEx);
             }catch (Exception e){
                 System.out.println("fileOperationsEx: " + e);
-                fileOperationsEx=null;
+                prg4=null;
             }
 
             try{
                 heapAllocationEx.typecheck(new MyDictionary<>());
+                prg5 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), heapAllocationEx);
             }catch (Exception e){
                 System.out.println("heapAllocationEx: " + e);
-                heapAllocationEx=null;
+                prg5=null;
             }
 
             try{
                 heapReadingEx.typecheck(new MyDictionary<>());
+                prg6 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), heapReadingEx);
             }catch (Exception e){
                 System.out.println("heapReadingEx: " + e);
-                heapReadingEx=null;
+                prg6=null;
             }
 
             try{
                 heapWritingEx.typecheck(new MyDictionary<>());
+                prg7 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), heapWritingEx);
             }catch (Exception e){
                 System.out.println("heapWritingEx: " + e);
-                heapWritingEx=null;
+                prg7=null;
             }
 
             try{
                 garbageCollectorEx.typecheck(new MyDictionary<>());
+                prg8 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), garbageCollectorEx);
             }catch (Exception e){
                 System.out.println("garbageCollectorEx: " + e);
-                garbageCollectorEx=null;
+                prg8=null;
             }
 
             try{
                 whileStmtEx.typecheck(new MyDictionary<>());
+                prg9 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), whileStmtEx);
             }catch (Exception e){
                 System.out.println("whileStmtEx: " + e);
-                whileStmtEx=null;
+                prg9=null;
             }
 
             try{
                 concurrentEx.typecheck(new MyDictionary<>());
+                prg10 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), concurrentEx);
             }catch (Exception e){
                 System.out.println("concurrentEx: " + e);
-                concurrentEx=null;
+                prg10=null;
             }
-
-
-            PrgState prg1 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex1);
-            PrgState prg2 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex2);
-            PrgState prg3 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex3);
-            PrgState prg4 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), fileOperationsEx);
-            PrgState prg5 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), heapAllocationEx);
-            PrgState prg6 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), heapReadingEx);
-            PrgState prg7 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), heapWritingEx);
-            PrgState prg8 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), garbageCollectorEx);
-            PrgState prg9 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), whileStmtEx);
-            PrgState prg10 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), concurrentEx);
 
             IRepository rp1 = new Repository(prg1, logFilePath);
             IRepository rp2 = new Repository(prg2, logFilePath);
