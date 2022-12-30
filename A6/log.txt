@@ -13955,3 +13955,129 @@ FileTable:
 HeapTable:
 {}
 ----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(v=ValueExp{e=2}
+print(VarExp{id='v'})))]
+SymTable:
+{}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+print(VarExp{id='v'})), VarDeclStmt{name='v', typ=int}]
+SymTable:
+{}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+print(VarExp{id='v'})), VarDeclStmt{name='v', typ=int}]
+SymTable:
+{}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+print(VarExp{id='v'}))]
+SymTable:
+{v=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+print(VarExp{id='v'}))]
+SymTable:
+{v=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(VarExp{id='v'}), v=ValueExp{e=2}]
+SymTable:
+{v=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(VarExp{id='v'}), v=ValueExp{e=2}]
+SymTable:
+{v=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(VarExp{id='v'})]
+SymTable:
+{v=2}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(VarExp{id='v'})]
+SymTable:
+{v=2}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[]
+SymTable:
+{v=2}
+Out:
+[2]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------

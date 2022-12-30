@@ -81,3 +81,7 @@ A2/out/production/A2/Controller/Controller.class
 A2/out/production/A2/View/Main.class
 *.xml
 *.iml
+A7/.mvn/wrapper/maven-wrapper.jar
+A7/.mvn/wrapper/maven-wrapper.properties
+A7/mvnw
+A7/mvnw.cmd
