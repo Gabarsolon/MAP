@@ -3,6 +3,7 @@ package Model.Expressions;
 import Model.Exceptions.MyException;
 import Model.States.MyIDictionary;
 import Model.States.MyIHeap;
+import Model.Types.BoolType;
 import Model.Types.IntType;
 import Model.Types.Type;
 import Model.Values.BoolValue;
@@ -72,7 +73,7 @@ public class RelExp implements Exp{
         typ2 = exp2.typecheck(typeEnv);
         if(typ1.equals(new IntType())){
             if(typ2.equals(new IntType()))
-                return new IntType();
+                return new BoolType();
             else
                 throw new MyException("The second operand is not an integer");
         }

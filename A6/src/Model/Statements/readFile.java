@@ -83,9 +83,13 @@ public class readFile implements IStmt{
     public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
         Type typexp = exp.typecheck(typeEnv);
         Type typevar = typeEnv.lookup(var_name);
-        if(typevar.equals(typexp))
-            return typeEnv;
+        if(typevar.equals(new IntType())){
+            if(typexp.equals(new StringType()))
+                return typeEnv;
+            else
+                throw new MyException("readFile stmt: The given variable isn't of type string");
+        }
         else
-            throw new MyException("readFile stmt: right hand side and left hand side have different types");
+            throw new MyException("readFile stmt: The expression is not a integer");
     }
 }
