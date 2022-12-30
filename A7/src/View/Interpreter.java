@@ -2,7 +2,6 @@ package View;
 
 import Controller.Controller;
 import Controller.IController;
-import Model.Exceptions.MyException;
 import Model.Statements.*;
 import Model.States.*;
 import Model.Expressions.*;
@@ -43,7 +42,7 @@ public class Interpreter {
                                             new ValueExp(new IntValue(2))), new AssignStmt("v", new ValueExp(
                                             new IntValue(3)))), new PrintStmt(new VarExp("v"))))));
 
-            IStmt fileOperationsEx = new CompStmt(new VarDeclStmt("varf", new StringType()),
+            IStmt ex4 = new CompStmt(new VarDeclStmt("varf", new StringType()),
                     new CompStmt(new AssignStmt("varf", new ValueExp(new StringValue("test.in"))),
                             new CompStmt(new openRFile(new VarExp("varf")),
                                     new CompStmt(new VarDeclStmt("varc", new IntType()),
@@ -53,7 +52,7 @@ public class Interpreter {
                                                                     new CompStmt(new PrintStmt(new VarExp("varc")),
                                                                             new closeRFile(new VarExp("varf"))))))))));
 
-            IStmt heapAllocationEx = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())),
+            IStmt ex5 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())),
                     new CompStmt(new allocHeap("v", new ValueExp(new IntValue(20))),
                             new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType()))),
                                     new CompStmt(new allocHeap("a", new VarExp("v")),
@@ -67,7 +66,7 @@ public class Interpreter {
         Out={20, 25}
         */
 
-            IStmt heapReadingEx = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())),
+            IStmt ex6 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())),
                     new CompStmt(new allocHeap("v", new ValueExp(new IntValue(20))),
                             new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType()))),
                                     new CompStmt(new allocHeap("a", new VarExp("v")),
@@ -79,7 +78,7 @@ public class Interpreter {
         At the end of execution: Heap={1->30}, SymTable={v->(1,int)} and Out={20, 35}
          */
 
-            IStmt heapWritingEx = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())),
+            IStmt ex7 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())),
                     new CompStmt(new allocHeap("v", new ValueExp(new IntValue(20))),
                             new CompStmt(new PrintStmt(new readHeap(new VarExp("v"))),
                                     new CompStmt(new writeHeap("v", new ValueExp(new IntValue(30))),
@@ -87,21 +86,21 @@ public class Interpreter {
 
             //Ref int v;new(v,20);Ref Ref int a; new(a,v); new(v,30);print(rH(rH(a)))
 
-            IStmt garbageCollectorEx = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())),
+            IStmt ex8 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())),
                     new CompStmt(new allocHeap("v", new ValueExp(new IntValue(20))),
                             new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType()))),
                                     new CompStmt(new allocHeap("a", new VarExp("v")),
                                             new CompStmt(new allocHeap("v", new ValueExp(new IntValue(30))),
                                                     new PrintStmt(new readHeap(new readHeap(new VarExp("a")))))))));
 
-            IStmt whileStmtEx = new CompStmt(new VarDeclStmt("v", new IntType()),
+            IStmt ex9 = new CompStmt(new VarDeclStmt("v", new IntType()),
                     new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(4))),
                             new CompStmt(new WhileStmt(new RelExp(">", new VarExp("v"), new ValueExp(new IntValue(0))),
                                     new CompStmt(new PrintStmt(new VarExp("v")), new AssignStmt("v",
                                             new ArithExp(2, new VarExp("v"), new ValueExp(new IntValue(1)))))),
                                     new PrintStmt(new VarExp("v")))));
 
-            IStmt concurrentEx = new CompStmt(new VarDeclStmt("v", new IntType()),
+            IStmt ex10 = new CompStmt(new VarDeclStmt("v", new IntType()),
                     new CompStmt(new VarDeclStmt("a", new RefType(new IntType())),
                             new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(10))),
                                     new CompStmt(new allocHeap("a", new ValueExp(new IntValue(22))),
@@ -111,76 +110,17 @@ public class Interpreter {
                                                                     new PrintStmt(new readHeap(new VarExp("a"))))))),
                                                     new CompStmt(new PrintStmt(new VarExp("v")),
                                                             new PrintStmt(new readHeap(new VarExp("a")))))))));
-            try{
-                ex1.typecheck(new MyDictionary<>());
-            }catch (Exception e){
-                System.out.println("Ex1: " + e);
-                ex1 = null;
-            }
 
-            try{
-                ex2.typecheck(new MyDictionary<>());
-            }catch (Exception e){
-                System.out.println("Ex2: " + e);
-                ex2 = null;
-            }
-
-            try{
-                ex3.typecheck(new MyDictionary<>());
-            }catch (Exception e){
-                System.out.println("Ex3: " + e);
-                ex3=null;
-            }
-
-            try{
-                fileOperationsEx.typecheck(new MyDictionary<>());
-            }catch (Exception e){
-                System.out.println("fileOperationsEx: " + e);
-                fileOperationsEx=null;
-            }
-
-            try{
-                heapAllocationEx.typecheck(new MyDictionary<>());
-            }catch (Exception e){
-                System.out.println("heapAllocationEx: " + e);
-                heapAllocationEx=null;
-            }
-
-            try{
-                heapReadingEx.typecheck(new MyDictionary<>());
-            }catch (Exception e){
-                System.out.println("heapReadingEx: " + e);
-                heapReadingEx=null;
-            }
-
-            try{
-                heapWritingEx.typecheck(new MyDictionary<>());
-            }catch (Exception e){
-                System.out.println("heapWritingEx: " + e);
-                heapWritingEx=null;
-            }
-
-            try{
-                garbageCollectorEx.typecheck(new MyDictionary<>());
-            }catch (Exception e){
-                System.out.println("garbageCollectorEx: " + e);
-                garbageCollectorEx=null;
-            }
-
-            try{
-                whileStmtEx.typecheck(new MyDictionary<>());
-            }catch (Exception e){
-                System.out.println("whileStmtEx: " + e);
-                whileStmtEx=null;
-            }
-
-            try{
-                concurrentEx.typecheck(new MyDictionary<>());
-            }catch (Exception e){
-                System.out.println("concurrentEx: " + e);
-                concurrentEx=null;
-            }
-
+            ex1.typecheck(new MyDictionary<>());
+            ex2.typecheck(new MyDictionary<>());
+            ex3.typecheck(new MyDictionary<>());
+            ex4.typecheck(new MyDictionary<>());
+            ex5.typecheck(new MyDictionary<>());
+            ex6.typecheck(new MyDictionary<>());
+            ex7.typecheck(new MyDictionary<>());
+            ex8.typecheck(new MyDictionary<>());
+            ex9.typecheck(new MyDictionary<>());
+            ex10.typecheck(new MyDictionary<>());
 
             PrgState prg1 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
                     new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex1);
@@ -189,19 +129,19 @@ public class Interpreter {
             PrgState prg3 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
                     new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex3);
             PrgState prg4 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), fileOperationsEx);
+                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex4);
             PrgState prg5 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), heapAllocationEx);
+                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex5);
             PrgState prg6 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), heapReadingEx);
+                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex6);
             PrgState prg7 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), heapWritingEx);
+                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex7);
             PrgState prg8 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), garbageCollectorEx);
+                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex8);
             PrgState prg9 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), whileStmtEx);
+                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex9);
             PrgState prg10 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), concurrentEx);
+                    new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex10);
 
             IRepository rp1 = new Repository(prg1, logFilePath);
             IRepository rp2 = new Repository(prg2, logFilePath);
@@ -231,13 +171,13 @@ public class Interpreter {
             menu.addCommand(new RunExample("1", "Run the first example", ctr1));
             menu.addCommand(new RunExample("2", "Run the second example", ctr2));
             menu.addCommand(new RunExample("3", "Run the third example", ctr3));
-            menu.addCommand(new RunExample("4", "Run the file operations example", ctr4));
-            menu.addCommand(new RunExample("5", "Run the heap allocation example", ctr5));
-            menu.addCommand(new RunExample("6", "Run the heap reading example", ctr6));
-            menu.addCommand(new RunExample("7", "Run the heap writing example", ctr7));
-            menu.addCommand(new RunExample("8", "Run the garbage collector example", ctr8));
-            menu.addCommand(new RunExample("9", "Run the while stmt example", ctr9));
-            menu.addCommand(new RunExample("10", "Run the concurrent example", ctr10));
+            menu.addCommand(new RunExample("4", "Run the fourth example", ctr4));
+            menu.addCommand(new RunExample("5", "Run the fifth example", ctr5));
+            menu.addCommand(new RunExample("6", "Run the sixth example", ctr6));
+            menu.addCommand(new RunExample("7", "Run the seventh example", ctr7));
+            menu.addCommand(new RunExample("8", "Run the eighth example", ctr8));
+            menu.addCommand(new RunExample("9", "Run the ninth example", ctr9));
+            menu.addCommand(new RunExample("10", "Run the tenth example", ctr10));
             menu.show();
         }catch(Exception e){
             System.out.println(e);

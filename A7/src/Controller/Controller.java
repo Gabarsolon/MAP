@@ -113,8 +113,6 @@ public class Controller implements IController{
     }
 
     public void allStep() throws MyException {
-        if(repository.getPrgList().get(0).getOriginalProgram() == null)
-            throw new MyException("The current program didn't pass the typecheker");
         PrgState.setAvailableId(0);
         executor = Executors.newFixedThreadPool(2);
         //remove the completed programs
