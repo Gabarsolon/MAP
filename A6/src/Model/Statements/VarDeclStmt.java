@@ -46,4 +46,10 @@ public class VarDeclStmt implements IStmt{
     public Value defaultValue(){
         return this.typ.defaultValue();
     }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        typeEnv.update(name, typ);
+        return typeEnv;
+    }
 }

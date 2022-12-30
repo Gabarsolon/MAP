@@ -4,10 +4,11 @@ import Model.Exceptions.MyException;
 import Model.States.MyIDictionary;
 import Model.States.MyIHeap;
 import Model.States.PrgState;
+import Model.Types.RefType;
+import Model.Types.Type;
 import Model.Values.RefValue;
 import Model.Values.Value;
 
-import java.sql.Ref;
 
 public class readHeap implements Exp{
     @Override
@@ -39,5 +40,15 @@ public class readHeap implements Exp{
     @Override
     public Exp deepCopy() {
         return new readHeap(exp.deepCopy());
+    }
+
+    @Override
+    public Type typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typ= exp.typecheck(typeEnv);
+        if(typ instanceof RefType){
+            RefType reft = (RefType) typ;
+            return reft.getInner();
+        }else
+            throw new MyException("the rH argument is not a Ref Type");
     }
 }

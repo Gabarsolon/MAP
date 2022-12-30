@@ -5,6 +5,8 @@ import Model.Expressions.Exp;
 import Model.States.MyIDictionary;
 import Model.States.MyIHeap;
 import Model.States.PrgState;
+import Model.Types.StringType;
+import Model.Types.Type;
 import Model.Values.StringValue;
 import Model.Values.Value;
 
@@ -55,5 +57,14 @@ public class closeRFile implements IStmt{
     @Override
     public IStmt deepCopy() {
         return new closeRFile(exp.deepCopy());
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typ = exp.typecheck(typeEnv);
+        if(typ.equals(new StringType()))
+            return typeEnv;
+        else
+            throw new MyException("closeRFile stmt: the expression is not a string");
     }
 }

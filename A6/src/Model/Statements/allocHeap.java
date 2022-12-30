@@ -6,6 +6,7 @@ import Model.States.MyIDictionary;
 import Model.States.MyIHeap;
 import Model.States.PrgState;
 import Model.Types.RefType;
+import Model.Types.Type;
 import Model.Values.RefValue;
 import Model.Values.Value;
 
@@ -45,5 +46,15 @@ public class allocHeap implements IStmt{
     }
     public allocHeap deepCopy(){
         return new allocHeap(var_name, exp);
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typevar = typeEnv.lookup(var_name);
+        Type typeexp = exp.typecheck(typeEnv);
+        if(typevar.equals(new RefType(typeexp)))
+            return typeEnv;
+        else
+            throw new MyException("allocHeap stmt: right hand side and left hand side have different types");
     }
 }

@@ -2,6 +2,7 @@ package Model.Statements;
 
 import Model.Exceptions.MyException;
 import Model.States.*;
+import Model.Types.Type;
 import Model.Values.Value;
 
 import java.io.BufferedReader;
@@ -38,5 +39,14 @@ public class forkStmt implements IStmt{
     @Override
     public IStmt deepCopy() {
         return new forkStmt(stmt.deepCopy());
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        MyIDictionary<String,Type> typeEnvClone = new MyDictionary<>();
+        typeEnvClone.setData(typeEnv.getData().entrySet().stream()
+                .collect(Collectors.toMap(e->e.getKey(), e->e.getValue().deepCopy())));
+        stmt.typecheck(typeEnvClone);
+        return typeEnv;
     }
 }

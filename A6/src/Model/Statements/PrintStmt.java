@@ -3,6 +3,7 @@ package Model.Statements;
 import Model.Exceptions.MyException;
 import Model.Expressions.Exp;
 import Model.States.*;
+import Model.Types.Type;
 import Model.Values.Value;
 
 public class PrintStmt implements IStmt{
@@ -22,5 +23,11 @@ public class PrintStmt implements IStmt{
     }
     public PrintStmt deepCopy(){
         return new PrintStmt(exp.deepCopy());
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        exp.typecheck(typeEnv);
+        return typeEnv;
     }
 }

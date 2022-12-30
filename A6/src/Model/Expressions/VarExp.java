@@ -3,6 +3,7 @@ package Model.Expressions;
 import Model.Exceptions.MyException;
 import Model.States.MyIDictionary;
 import Model.States.MyIHeap;
+import Model.Types.Type;
 import Model.Values.Value;
 
 public class VarExp implements Exp{
@@ -26,5 +27,10 @@ public class VarExp implements Exp{
     }
     public VarExp deepCopy(){
         return new VarExp(id);
+    }
+
+    @Override
+    public Type typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        return typeEnv.lookup(id);
     }
 }

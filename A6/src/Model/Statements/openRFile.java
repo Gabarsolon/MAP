@@ -4,6 +4,7 @@ import Model.Exceptions.MyException;
 import Model.Expressions.Exp;
 import Model.States.*;
 import Model.Types.StringType;
+import Model.Types.Type;
 import Model.Values.StringValue;
 import Model.Values.Value;
 
@@ -49,5 +50,14 @@ public class openRFile implements IStmt{
     @Override
     public IStmt deepCopy() {
         return new openRFile(exp.deepCopy());
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typ = exp.typecheck(typeEnv);
+        if(typ.equals(new StringType()))
+            return typeEnv;
+        else
+            throw new MyException("openRFile stmt: the expression is not a string");
     }
 }

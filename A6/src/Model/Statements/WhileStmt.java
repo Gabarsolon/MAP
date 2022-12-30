@@ -2,13 +2,13 @@ package Model.Statements;
 
 import Model.Exceptions.MyException;
 import Model.Expressions.Exp;
-import Model.States.MyIDictionary;
-import Model.States.MyIHeap;
-import Model.States.MyIStack;
-import Model.States.PrgState;
+import Model.States.*;
 import Model.Types.BoolType;
+import Model.Types.Type;
 import Model.Values.BoolValue;
 import Model.Values.Value;
+
+import java.util.stream.Collectors;
 
 public class WhileStmt implements IStmt{
     private Exp exp;
@@ -46,5 +46,19 @@ public class WhileStmt implements IStmt{
     @Override
     public IStmt deepCopy() {
         return new WhileStmt(exp.deepCopy(), stmt.deepCopy());
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typ = exp.typecheck(typeEnv);
+        if(typ.equals(new BoolType())){
+            MyIDictionary<String,Type> typeEnvClone = new MyDictionary<>();
+            typeEnvClone.setData(typeEnv.getData().entrySet().stream()
+                    .collect(Collectors.toMap(e->e.getKey(), e->e.getValue().deepCopy())));
+            stmt.typecheck(typeEnvClone);
+            return typeEnv;
+        }
+        else
+            throw new MyException("The condition of WHILE has not the type bool");
     }
 }

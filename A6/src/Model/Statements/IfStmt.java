@@ -4,8 +4,11 @@ import Model.Exceptions.MyException;
 import Model.Expressions.Exp;
 import Model.States.*;
 import Model.Types.BoolType;
+import Model.Types.Type;
 import Model.Values.BoolValue;
 import Model.Values.Value;
+
+import java.util.stream.Collectors;
 
 public class IfStmt implements IStmt{
     private Exp exp;
@@ -44,5 +47,24 @@ public class IfStmt implements IStmt{
         else
             stk.push(elseS);
         return null;
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typexp = exp .typecheck(typeEnv);
+        if(typexp.equals(new BoolType())){
+            MyIDictionary<String, Type> typeEnvClone = new MyDictionary<>();
+
+            typeEnvClone.setData(typeEnv.getData().entrySet().stream()
+                    .collect(Collectors.toMap(e->e.getKey(), e->e.getValue().deepCopy())));
+            thenS.typecheck(typeEnvClone);
+
+            typeEnvClone.setData(typeEnv.getData().entrySet().stream()
+                    .collect(Collectors.toMap(e->e.getKey(), e->e.getValue().deepCopy())));
+            elseS.typecheck(typeEnvClone);
+            return typeEnv;
+        }
+        else
+            throw new MyException("The condition of IF has not the type bool");
     }
 }

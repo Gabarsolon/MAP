@@ -1,8 +1,10 @@
 package Model.Statements;
 
 import Model.Exceptions.MyException;
+import Model.States.MyIDictionary;
 import Model.States.MyIStack;
 import Model.States.PrgState;
+import Model.Types.Type;
 
 public class CompStmt implements IStmt{
     private IStmt first;
@@ -24,5 +26,10 @@ public class CompStmt implements IStmt{
     }
     public CompStmt deepCopy(){
         return new CompStmt(first.deepCopy(), snd.deepCopy());
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        return snd.typecheck(first.typecheck(typeEnv));
     }
 }

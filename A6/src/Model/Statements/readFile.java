@@ -7,6 +7,7 @@ import Model.States.MyIHeap;
 import Model.States.PrgState;
 import Model.Types.IntType;
 import Model.Types.StringType;
+import Model.Types.Type;
 import Model.Values.IntValue;
 import Model.Values.StringValue;
 import Model.Values.Value;
@@ -78,4 +79,13 @@ public class readFile implements IStmt{
         this.var_name = var_name;
     }
 
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typexp = exp.typecheck(typeEnv);
+        Type typevar = typeEnv.lookup(var_name);
+        if(typevar.equals(typexp))
+            return typeEnv;
+        else
+            throw new MyException("readFile stmt: right hand side and left hand side have different types");
+    }
 }

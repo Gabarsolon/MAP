@@ -6,6 +6,7 @@ import Model.States.MyIDictionary;
 import Model.States.MyIHeap;
 import Model.States.PrgState;
 import Model.Types.RefType;
+import Model.Types.Type;
 import Model.Values.RefValue;
 import Model.Values.Value;
 
@@ -48,5 +49,15 @@ public class writeHeap implements IStmt{
     @Override
     public IStmt deepCopy() {
         return new writeHeap(var_name, exp.deepCopy());
+    }
+
+    @Override
+    public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typevar = typeEnv.lookup(var_name);
+        Type typexp = exp.typecheck(typeEnv);
+        if(typevar.equals(new RefType(typexp)))
+            return typeEnv;
+        else
+            throw new MyException("writeHeap stmt: right hand side and left hand side have different types");
     }
 }

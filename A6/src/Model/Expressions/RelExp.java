@@ -4,6 +4,7 @@ import Model.Exceptions.MyException;
 import Model.States.MyIDictionary;
 import Model.States.MyIHeap;
 import Model.Types.IntType;
+import Model.Types.Type;
 import Model.Values.BoolValue;
 import Model.Values.IntValue;
 import Model.Values.Value;
@@ -62,5 +63,20 @@ public class RelExp implements Exp{
     @Override
     public Exp deepCopy() {
         return new RelExp(op, exp1.deepCopy(), exp2.deepCopy());
+    }
+
+    @Override
+    public Type typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
+        Type typ1, typ2;
+        typ1 = exp1.typecheck(typeEnv);
+        typ2 = exp2.typecheck(typeEnv);
+        if(typ1.equals(new IntType())){
+            if(typ2.equals(new IntType()))
+                return new IntType();
+            else
+                throw new MyException("The second operand is not an integer");
+        }
+        else
+            throw new MyException("The first operand is not an integer");
     }
 }
