@@ -1,0 +1,16 @@
+1.In Java, a static method is a method that belongs to a class rather than an instance of the class. 
+This means that you can call a static method without creating an object of the class.
+On the other hand, a non-static method is a method that belongs to an instance of a class. 
+This means that you must create an object of the class before you can call a non-static method.
+
+2.
+Integer sum = numbers.stream().filter(nr->nr%4!=0).map(nr->nr+1).reduce(0, (sum2, nr)->(sum2+nr)%2);
+        numbers = Arrays.asList(sum);
+        System.out.println(numbers);
+
+3.In Java, a semaphore is a synchronization object that controls access by multiple threads to a common resource in a parallel programming environment. 
+It is used to protect critical sections of code from concurrent execution, 
+and can be used to implement mutual exclusion and/or to limit the number of threads that can access a resource simultaneously.
+A semaphore is characterized by a counter that is decremented each time a thread acquires the semaphore, 
+and incremented each time a thread releases the semaphore. When the counter is zero, 
+any thread that attempts to acquire the semaphore will be blocked until the semaphore is released by another thread.
