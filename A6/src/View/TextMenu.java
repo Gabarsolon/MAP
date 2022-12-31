@@ -4,7 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class TextMenu {
+public class
+TextMenu {
     private Map<String, Command> commands;
     public TextMenu(){
         commands = new HashMap<>();
