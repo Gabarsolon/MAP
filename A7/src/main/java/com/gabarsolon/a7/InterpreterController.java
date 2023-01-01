@@ -4,12 +4,9 @@ import Model.Statements.IStmt;
 import Controller.IController;
 import Model.States.PrgState;
 import Model.Values.Value;
-import javafx.beans.Observable;
 import javafx.beans.property.*;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -18,7 +15,6 @@ import javafx.scene.control.*;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.util.Callback;
 
 
 import java.util.List;
@@ -60,6 +56,7 @@ public class InterpreterController {
     @FXML
     private TableView<Map.Entry<String,Value>> symTableView;
 
+    private Stage programListWindow;
     private BooleanProperty changedPrgState;
     private IController currentPrgController;
     private List<IStmt> stmtList;
@@ -71,7 +68,7 @@ public class InterpreterController {
     }
     public void createProgramListWindow(){
         try {
-            Stage programListWindow = new Stage();
+            programListWindow = new Stage();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("ProgramList.fxml"));
             StackPane root = loader.load();
 
@@ -83,10 +80,19 @@ public class InterpreterController {
                         public void changed(ObservableValue<? extends IStmt> observable, IStmt oldValue, IStmt newValue) {
                             currentPrgController = prgControllers.get(plc.getProgramListView().getSelectionModel().getSelectedIndex());
                             prgList = currentPrgController.getPrgList();
-                            currentPrgController.prepareExecution();
-                            updateProgramStatus();
-                            programListWindow.hide();
-                            mainStage.show();
+                            if(prgList.get(0)==null){
+                                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                                alert.setTitle("Error");
+                                alert.setHeaderText(null);
+                                alert.setContentText("The selected program ");
+                                alert.showAndWait();
+                            }
+                            else{
+                                currentPrgController.prepareExecution();
+                                updateProgramsStatus();
+                                programListWindow.hide();
+                                mainStage.show();
+                            }
                         }
                     });
 
@@ -101,9 +107,7 @@ public class InterpreterController {
             System.out.println(e);
         }
     }
-    private void updateProgramStatus(){
-        prgList = currentPrgController.removeCompletedPrg(prgList);
-
+    private void updateProgramsStatus(){
         prgStatesListView.getItems().clear();
         heapTableView.getItems().clear();
         outListView.getItems().clear();
@@ -118,12 +122,26 @@ public class InterpreterController {
         prgList.get(0).getFileTable().getData().entrySet().stream().forEach(e->fileTableListView.getItems().add(e.getKey()));
 
         changedPrgState.set(!changedPrgState.get());
+        prgList = currentPrgController.removeCompletedPrg(prgList);
     }
     @FXML
     void runOneStep(ActionEvent event) {
         try{
-            currentPrgController.oneStepForAllPrg(currentPrgController.getPrgList());
-            updateProgramStatus();
+            if(prgList.size() < 1){
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Finished");
+                alert.setHeaderText(null);
+                alert.setContentText("All of the programs finished the execution");
+                alert.showAndWait();
+
+                currentPrgController.endExecution();
+                mainStage.hide();
+                programListWindow.show();
+            }
+            else{
+                currentPrgController.oneStepForAllPrg(prgList);
+                updateProgramsStatus();
+            }
         }catch (Exception e){
             System.out.println(e);
         }
@@ -153,20 +171,24 @@ public class InterpreterController {
             public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
                 symTableView.getItems().clear();
                 exeStackListView.getItems().clear();
-                PrgState prg = prgList.get(prgStatesListView.getSelectionModel().getSelectedIndex());
+                Integer prgIndex = prgStatesListView.getSelectionModel().getSelectedIndex();
 
-                symTableView.getItems().addAll(prg.getSymTable().getData().entrySet());
+                if(prgIndex >= 0 &&  prgIndex < prgList.size()){
+                    PrgState prg = prgList.get(prgStatesListView.getSelectionModel().getSelectedIndex());
 
-                StringTokenizer st = new StringTokenizer(prg.getExeStack().toString(),";");
-                while(st.hasMoreTokens()){
-                    exeStackListView.getItems().add(st.nextToken());
+                    symTableView.getItems().addAll(prg.getSymTable().getData().entrySet());
+
+                    StringTokenizer st = new StringTokenizer(prg.getExeStack().toString(),";");
+                    while(st.hasMoreTokens()){
+                        exeStackListView.getItems().add(st.nextToken());
+                    }
                 }
             }
         });
         prgStatesListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Integer>() {
             @Override
             public void changed(ObservableValue<? extends Integer> observable, Integer oldValue, Integer newValue) {
-                changedPrgState.set(changedPrgState.get());
+                    changedPrgState.set(!changedPrgState.get());
             }
         });
     }
