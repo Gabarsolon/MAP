@@ -14081,3 +14081,531 @@ FileTable:
 HeapTable:
 {}
 ----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='varf', typ=string}
+(varf=ValueExp{e=test.in}
+(openRFile{exp=VarExp{id='varf'}}
+(VarDeclStmt{name='varc', typ=int}
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}}))))))))]
+SymTable:
+{}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(varf=ValueExp{e=test.in}
+(openRFile{exp=VarExp{id='varf'}}
+(VarDeclStmt{name='varc', typ=int}
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}}))))))), VarDeclStmt{name='varf', typ=string}]
+SymTable:
+{}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(varf=ValueExp{e=test.in}
+(openRFile{exp=VarExp{id='varf'}}
+(VarDeclStmt{name='varc', typ=int}
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}}))))))), VarDeclStmt{name='varf', typ=string}]
+SymTable:
+{}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(varf=ValueExp{e=test.in}
+(openRFile{exp=VarExp{id='varf'}}
+(VarDeclStmt{name='varc', typ=int}
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}})))))))]
+SymTable:
+{varf=}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(varf=ValueExp{e=test.in}
+(openRFile{exp=VarExp{id='varf'}}
+(VarDeclStmt{name='varc', typ=int}
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}})))))))]
+SymTable:
+{varf=}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(openRFile{exp=VarExp{id='varf'}}
+(VarDeclStmt{name='varc', typ=int}
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}})))))), varf=ValueExp{e=test.in}]
+SymTable:
+{varf=}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(openRFile{exp=VarExp{id='varf'}}
+(VarDeclStmt{name='varc', typ=int}
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}})))))), varf=ValueExp{e=test.in}]
+SymTable:
+{varf=}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(openRFile{exp=VarExp{id='varf'}}
+(VarDeclStmt{name='varc', typ=int}
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}}))))))]
+SymTable:
+{varf=test.in}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(openRFile{exp=VarExp{id='varf'}}
+(VarDeclStmt{name='varc', typ=int}
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}}))))))]
+SymTable:
+{varf=test.in}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='varc', typ=int}
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}}))))), openRFile{exp=VarExp{id='varf'}}]
+SymTable:
+{varf=test.in}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='varc', typ=int}
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}}))))), openRFile{exp=VarExp{id='varf'}}]
+SymTable:
+{varf=test.in}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='varc', typ=int}
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}})))))]
+SymTable:
+{varf=test.in}
+Out:
+[]
+FileTable:
+{test.in=java.io.BufferedReader@2957fcb0}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='varc', typ=int}
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}})))))]
+SymTable:
+{varf=test.in}
+Out:
+[]
+FileTable:
+{test.in=java.io.BufferedReader@2957fcb0}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}})))), VarDeclStmt{name='varc', typ=int}]
+SymTable:
+{varf=test.in}
+Out:
+[]
+FileTable:
+{test.in=java.io.BufferedReader@2957fcb0}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}})))), VarDeclStmt{name='varc', typ=int}]
+SymTable:
+{varf=test.in}
+Out:
+[]
+FileTable:
+{test.in=java.io.BufferedReader@2957fcb0}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}}))))]
+SymTable:
+{varf=test.in, varc=0}
+Out:
+[]
+FileTable:
+{test.in=java.io.BufferedReader@2957fcb0}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}}))))]
+SymTable:
+{varf=test.in, varc=0}
+Out:
+[]
+FileTable:
+{test.in=java.io.BufferedReader@2957fcb0}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='varc'})
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}}))), readFile{exp=VarExp{id='varf'}, var_name='varc'}]
+SymTable:
+{varf=test.in, varc=0}
+Out:
+[]
+FileTable:
+{test.in=java.io.BufferedReader@2957fcb0}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='varc'})
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}}))), readFile{exp=VarExp{id='varf'}, var_name='varc'}]
+SymTable:
+{varf=test.in, varc=0}
+Out:
+[]
+FileTable:
+{test.in=java.io.BufferedReader@2957fcb0}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='varc'})
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}})))]
+SymTable:
+{varf=test.in, varc=15}
+Out:
+[]
+FileTable:
+{test.in=java.io.BufferedReader@2957fcb0}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='varc'})
+(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}})))]
+SymTable:
+{varf=test.in, varc=15}
+Out:
+[]
+FileTable:
+{test.in=java.io.BufferedReader@2957fcb0}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}})), print(VarExp{id='varc'})]
+SymTable:
+{varf=test.in, varc=15}
+Out:
+[]
+FileTable:
+{test.in=java.io.BufferedReader@2957fcb0}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}})), print(VarExp{id='varc'})]
+SymTable:
+{varf=test.in, varc=15}
+Out:
+[]
+FileTable:
+{test.in=java.io.BufferedReader@2957fcb0}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}}))]
+SymTable:
+{varf=test.in, varc=15}
+Out:
+[15]
+FileTable:
+{test.in=java.io.BufferedReader@2957fcb0}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(readFile{exp=VarExp{id='varf'}, var_name='varc'}
+(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}}))]
+SymTable:
+{varf=test.in, varc=15}
+Out:
+[15]
+FileTable:
+{test.in=java.io.BufferedReader@2957fcb0}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}}), readFile{exp=VarExp{id='varf'}, var_name='varc'}]
+SymTable:
+{varf=test.in, varc=15}
+Out:
+[15]
+FileTable:
+{test.in=java.io.BufferedReader@2957fcb0}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}}), readFile{exp=VarExp{id='varf'}, var_name='varc'}]
+SymTable:
+{varf=test.in, varc=15}
+Out:
+[15]
+FileTable:
+{test.in=java.io.BufferedReader@2957fcb0}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}})]
+SymTable:
+{varf=test.in, varc=50}
+Out:
+[15]
+FileTable:
+{test.in=java.io.BufferedReader@2957fcb0}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='varc'})
+closeRFile{exp=VarExp{id='varf'}})]
+SymTable:
+{varf=test.in, varc=50}
+Out:
+[15]
+FileTable:
+{test.in=java.io.BufferedReader@2957fcb0}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[closeRFile{exp=VarExp{id='varf'}}, print(VarExp{id='varc'})]
+SymTable:
+{varf=test.in, varc=50}
+Out:
+[15]
+FileTable:
+{test.in=java.io.BufferedReader@2957fcb0}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[closeRFile{exp=VarExp{id='varf'}}, print(VarExp{id='varc'})]
+SymTable:
+{varf=test.in, varc=50}
+Out:
+[15]
+FileTable:
+{test.in=java.io.BufferedReader@2957fcb0}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[closeRFile{exp=VarExp{id='varf'}}]
+SymTable:
+{varf=test.in, varc=50}
+Out:
+[15, 50]
+FileTable:
+{test.in=java.io.BufferedReader@2957fcb0}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[closeRFile{exp=VarExp{id='varf'}}]
+SymTable:
+{varf=test.in, varc=50}
+Out:
+[15, 50]
+FileTable:
+{test.in=java.io.BufferedReader@2957fcb0}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[]
+SymTable:
+{varf=test.in, varc=50}
+Out:
+[15, 50]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------

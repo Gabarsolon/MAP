@@ -236,7 +236,7 @@ public class Interpreter extends Application {
             IController ctr9 = new Controller(rp9);
             IController ctr10 = new Controller(rp10);
 
-            FXMLLoader fxmlLoader = new FXMLLoader(Interpreter.class.getResource("hello-view.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(Interpreter.class.getResource("Interpreter.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 320, 240);
 
             List<IStmt> prgList = Arrays.asList(ex1, ex2, ex3, fileOperationsEx, heapAllocationEx, heapReadingEx, heapWritingEx,
@@ -248,7 +248,7 @@ public class Interpreter extends Application {
             ic.setMainStage(stage);
             ic.createProgramListWindow();
 
-            stage.setTitle("Hello!");
+            stage.setTitle("Interpreter");
             stage.setScene(scene);
             //stage.show();
         } catch (Exception e) {

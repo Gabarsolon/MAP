@@ -14,6 +14,11 @@ public class ProgramListController {
     @FXML
     private ListView<IStmt> programListView;
     private Stage mainStage;
+
+    public ListView<IStmt> getProgramListView() {
+        return programListView;
+    }
+
     public void setProgramListView(List<IStmt> programList) {
         ObservableList<IStmt> programs = FXCollections.observableArrayList(programList);
         programListView.setItems(programs);
