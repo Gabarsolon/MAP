@@ -22,7 +22,10 @@ public class Controller implements IController{
     private ExecutorService executor;
     public Controller(IRepository repo){
         this.repository = repo;
-        this.displayPrgState = true;
+        this.displayPrgState = false;
+    }
+    public List<PrgState> getPrgList(){
+        return repository.getPrgList();
     }
     private Map<Integer, Value> unsafeGarbageCollector(List<Integer> symTableAddr, Map<Integer,Value> heap){
         return heap.entrySet().stream()
@@ -42,7 +45,7 @@ public class Controller implements IController{
                 .map(v->{RefValue v1 = (RefValue)v; return v1.getAddress();})
                 .collect(Collectors.toList());
     }
-    private void conservativeGarbageCollector(List<PrgState> prgList){
+    public void conservativeGarbageCollector(List<PrgState> prgList){
         MyIHeap<Integer, Value> heapTbl = prgList.get(0).getHeapTable();
         List<Integer> addresses = new ArrayList<>();
         prgList.forEach(prg->{
@@ -107,7 +110,14 @@ public class Controller implements IController{
             System.out.printf(e.toString());
         }
     }
+    public void prepareExecution(){
+        PrgState.setAvailableId(0);
+        executor = Executors.newFixedThreadPool(2);
+    }
 
+    public void endExecution(){
+        executor.shutdown();
+    }
     public void allStep() throws MyException {
         if(repository.getPrgList().get(0) == null)
             throw new MyException("The current program didn't pass the typecheker");

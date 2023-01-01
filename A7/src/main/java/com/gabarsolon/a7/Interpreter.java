@@ -22,10 +22,8 @@ import javafx.stage.Stage;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Scanner;
 
 public class Interpreter extends Application {
     @Override
@@ -237,13 +235,13 @@ public class Interpreter extends Application {
             IController ctr10 = new Controller(rp10);
 
             FXMLLoader fxmlLoader = new FXMLLoader(Interpreter.class.getResource("Interpreter.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+            Scene scene = new Scene(fxmlLoader.load(), 600, 400);
 
             List<IStmt> prgList = Arrays.asList(ex1, ex2, ex3, fileOperationsEx, heapAllocationEx, heapReadingEx, heapWritingEx,
                     garbageCollectorEx, whileStmtEx, concurrentEx);
             List<IController> prgControllers = Arrays.asList(ctr1, ctr2, ctr3, ctr4, ctr5, ctr6, ctr7, ctr8, ctr9, ctr10);
             InterpreterController ic = fxmlLoader.getController();
-            ic.setPrgList(prgList);
+            ic.setStmtList(prgList);
             ic.setPrgControllers(prgControllers);
             ic.setMainStage(stage);
             ic.createProgramListWindow();

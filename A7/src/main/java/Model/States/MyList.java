@@ -14,4 +14,7 @@ public class MyList<T> implements MyIList<T>{
     public String toString(){
         return data.toString();
     }
+    public List<T> getData(){
+        return data;
+    }
 }

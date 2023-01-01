@@ -39,8 +39,8 @@
             <Label text="HeapTable" />
             <TableView fx:id="heapTableView" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0">
               <columns>
-                <TableColumn minWidth="0.0" prefWidth="142.0" text="Address" />
-                <TableColumn minWidth="0.0" prefWidth="158.0" text="Value" />
+                <TableColumn fx:id="addressColumn" minWidth="0.0" prefWidth="142.0" text="Address" />
+                <TableColumn fx:id="valueColumnHeapTable" minWidth="0.0" prefWidth="158.0" text="Value" />
               </columns>
             </TableView>
          </children>
@@ -80,8 +80,8 @@
             <Label text="SymTable" />
             <TableView fx:id="symTableView" prefHeight="200.0" prefWidth="200.0">
               <columns>
-                <TableColumn prefWidth="140.0" text="Variable Name" />
-                <TableColumn prefWidth="149.0" text="Value" />
+                <TableColumn fx:id="variableNameColumn" prefWidth="140.0" text="Variable Name" />
+                <TableColumn fx:id="valueColumnSymTable" prefWidth="149.0" text="Value" />
               </columns>
             </TableView>
          </children>
@@ -93,7 +93,7 @@
          <children>
             <Label text="ExeStack" />
             <ListView fx:id="exeStackListView" prefHeight="200.0" prefWidth="200.0" />
-            <Button fx:id="runOneStepButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Run one step" />
+            <Button fx:id="runOneStepButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#runOneStep" prefHeight="25.0" prefWidth="101.0" text="Run one step" />
          </children>
       </VBox>
    </children>
