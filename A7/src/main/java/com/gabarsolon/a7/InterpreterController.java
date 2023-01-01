@@ -84,7 +84,7 @@ public class InterpreterController {
                                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                                 alert.setTitle("Error");
                                 alert.setHeaderText(null);
-                                alert.setContentText("The selected program ");
+                                alert.setContentText("The selected program didn't pass the typechecker");
                                 alert.showAndWait();
                             }
                             else{

@@ -130,7 +130,6 @@ public class Interpreter extends Application {
                 System.out.println("Ex1: " + e);
                 prg1 = null;
             }
-
             try {
                 ex2.typecheck(new MyDictionary<>());
                 prg2 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
@@ -237,8 +236,8 @@ public class Interpreter extends Application {
             FXMLLoader fxmlLoader = new FXMLLoader(Interpreter.class.getResource("Interpreter.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 600, 400);
 
-            List<IStmt> prgList = Arrays.asList(ex1, ex2, ex3, fileOperationsEx, heapAllocationEx, heapReadingEx, heapWritingEx,
-                    garbageCollectorEx, whileStmtEx, concurrentEx);
+            List<IStmt> prgList = Arrays.asList(ex1, ex2, ex3, fileOperationsEx, heapAllocationEx, heapReadingEx,
+                    heapWritingEx, garbageCollectorEx, whileStmtEx, concurrentEx);
             List<IController> prgControllers = Arrays.asList(ctr1, ctr2, ctr3, ctr4, ctr5, ctr6, ctr7, ctr8, ctr9, ctr10);
             InterpreterController ic = fxmlLoader.getController();
             ic.setStmtList(prgList);
