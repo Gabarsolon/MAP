@@ -3,6 +3,9 @@ package com.gabarsolon.a7;
 import Model.Statements.IStmt;
 import Controller.IController;
 import Model.States.PrgState;
+import Model.Values.Value;
+import javafx.beans.Observable;
+import javafx.beans.property.*;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -15,11 +18,24 @@ import javafx.scene.control.*;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.util.Callback;
+
 
 import java.util.List;
+import java.util.Map;
 import java.util.StringTokenizer;
 
 public class InterpreterController {
+    @FXML
+    private TableColumn<Map.Entry<Integer, Value>, String> addressColumn;
+    @FXML
+    private TableColumn<Map.Entry<Integer, Value>, String> valueColumnHeapTable;
+
+    @FXML
+    private TableColumn<Map.Entry<String, Value>, String> variableNameColumn;
+    @FXML
+    private TableColumn<Map.Entry<String, Value>, String> valueColumnSymTable;
+
     @FXML
     private ListView<String> exeStackListView;
 
@@ -27,7 +43,7 @@ public class InterpreterController {
     private ListView<String> fileTableListView;
 
     @FXML
-    private TableView<ObservableList<String>> heapTableView;
+    private TableView<Map.Entry<Integer, Value>> heapTableView;
 
     @FXML
     private TextField noOfPrgStatesTextField;
@@ -42,8 +58,9 @@ public class InterpreterController {
     private Button runOneStepButton;
 
     @FXML
-    private TableView<String> symTableView;
+    private TableView<Map.Entry<String,Value>> symTableView;
 
+    private BooleanProperty changedPrgState;
     private IController currentPrgController;
     private List<IStmt> stmtList;
     private List<IController> prgControllers;
@@ -91,17 +108,16 @@ public class InterpreterController {
         heapTableView.getItems().clear();
         outListView.getItems().clear();
         fileTableListView.getItems().clear();
-        symTableView.getItems().clear();
-        exeStackListView.getItems().clear();
 
         noOfPrgStatesTextField.setText(Integer.toString(prgList.size()));
         prgList.stream().forEach(prg->prgStatesListView.getItems().add(prg.getPrgId()));
+        prgStatesListView.getSelectionModel().select(0);
 
-        prgList.get(0).getHeapTable().getData().entrySet().stream().forEach(
-                e-> heapTableView.getItems().add(FXCollections.observableArrayList(e.getKey().toString(), e.getValue().toString()))
-        );
+        heapTableView.getItems().addAll(prgList.get(0).getHeapTable().getData().entrySet());
         prgList.get(0).getOut().getData().stream().forEach(e->outListView.getItems().add(e.toString()));
         prgList.get(0).getFileTable().getData().entrySet().stream().forEach(e->fileTableListView.getItems().add(e.getKey()));
+
+        changedPrgState.set(!changedPrgState.get());
     }
     @FXML
     void runOneStep(ActionEvent event) {
@@ -125,18 +141,32 @@ public class InterpreterController {
         heapTableView.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
         symTableView.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
 
-        prgStatesListView.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
+        variableNameColumn.setCellValueFactory(param->new ReadOnlyStringWrapper(param.getValue().getKey()));
+        valueColumnSymTable.setCellValueFactory(param->new ReadOnlyStringWrapper(param.getValue().getValue().toString()));
+
+        addressColumn.setCellValueFactory(param-> new ReadOnlyStringWrapper(param.getValue().getKey().toString()));
+        valueColumnHeapTable.setCellValueFactory(param->new ReadOnlyStringWrapper(param.getValue().getValue().toString()));
+
+        changedPrgState= new SimpleBooleanProperty(true);
+        changedPrgState.addListener(new ChangeListener<Boolean>() {
             @Override
-            public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
                 symTableView.getItems().clear();
                 exeStackListView.getItems().clear();
+                PrgState prg = prgList.get(prgStatesListView.getSelectionModel().getSelectedIndex());
 
-                PrgState prg = prgList.get((Integer)newValue);
-                //prgList.get((Integer)newValue).getSymTable().getData().entrySet().stream().forEach();
+                symTableView.getItems().addAll(prg.getSymTable().getData().entrySet());
+
                 StringTokenizer st = new StringTokenizer(prg.getExeStack().toString(),";");
                 while(st.hasMoreTokens()){
                     exeStackListView.getItems().add(st.nextToken());
                 }
+            }
+        });
+        prgStatesListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Integer>() {
+            @Override
+            public void changed(ObservableValue<? extends Integer> observable, Integer oldValue, Integer newValue) {
+                changedPrgState.set(changedPrgState.get());
             }
         });
     }
