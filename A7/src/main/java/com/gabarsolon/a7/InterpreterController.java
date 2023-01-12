@@ -56,6 +56,7 @@ public class InterpreterController {
     @FXML
     private TableView<Map.Entry<String,Value>> symTableView;
 
+    private Integer oldPrgListSize;
     private Stage programListWindow;
     private BooleanProperty changedPrgState;
     private IController currentPrgController;
@@ -89,7 +90,7 @@ public class InterpreterController {
                             }
                             else{
                                 currentPrgController.prepareExecution();
-                                updateProgramsStatus();
+                                oldPrgListSize = 0;
                                 programListWindow.hide();
                                 mainStage.show();
                             }
@@ -108,40 +109,51 @@ public class InterpreterController {
         }
     }
     private void updateProgramsStatus(){
-        prgStatesListView.getItems().clear();
+
         heapTableView.getItems().clear();
         outListView.getItems().clear();
         fileTableListView.getItems().clear();
 
-        noOfPrgStatesTextField.setText(Integer.toString(prgList.size()));
-        prgList.stream().forEach(prg->prgStatesListView.getItems().add(prg.getPrgId()));
-        prgStatesListView.getSelectionModel().select(0);
+
 
         heapTableView.getItems().addAll(prgList.get(0).getHeapTable().getData().entrySet());
         prgList.get(0).getOut().getData().stream().forEach(e->outListView.getItems().add(e.toString()));
         prgList.get(0).getFileTable().getData().entrySet().stream().forEach(e->fileTableListView.getItems().add(e.getKey()));
 
-        changedPrgState.set(!changedPrgState.get());
-        prgList = currentPrgController.removeCompletedPrg(prgList);
+        //changedPrgState.set(!changedPrgState.get());
     }
     @FXML
     void runOneStep(ActionEvent event) {
         try{
-            if(prgList.size() < 1){
-                Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                alert.setTitle("Finished");
-                alert.setHeaderText(null);
-                alert.setContentText("All of the programs finished the execution");
-                alert.showAndWait();
+            prgList = currentPrgController.removeCompletedPrg(prgList);
+            if(this.oldPrgListSize != prgList.size()) {
+                if (prgList.size() < 1) {
+                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    alert.setTitle("Finished");
+                    alert.setHeaderText(null);
+                    alert.setContentText("All of the programs finished the execution");
+                    alert.showAndWait();
 
-                currentPrgController.endExecution();
-                mainStage.hide();
-                programListWindow.show();
+                    currentPrgController.endExecution();
+                    mainStage.hide();
+                    programListWindow.show();
+                    return;
+                } else {
+                    Integer lastSelectedIndex = prgStatesListView.getSelectionModel().getSelectedIndex();
+                    //System.out.println("update program status " + lastSelectedIndex);
+                    prgStatesListView.getItems().clear();
+                    noOfPrgStatesTextField.setText(Integer.toString(prgList.size()));
+                    prgList.stream().forEach(prg->prgStatesListView.getItems().add(prg.getPrgId()));
+                    if(lastSelectedIndex!=-1){
+                        prgStatesListView.getSelectionModel().select(lastSelectedIndex);
+                        System.out.println(prgStatesListView.getSelectionModel().getSelectedIndex());
+                    }
+                    oldPrgListSize=prgList.size();
+                }
             }
-            else{
-                currentPrgController.oneStepForAllPrg(prgList);
-                updateProgramsStatus();
-            }
+            currentPrgController.oneStepForAllPrg(prgList);
+            changedPrgState.set(!changedPrgState.get());
+            updateProgramsStatus();
         }catch (Exception e){
             System.out.println(e);
         }
@@ -172,9 +184,9 @@ public class InterpreterController {
                 symTableView.getItems().clear();
                 exeStackListView.getItems().clear();
                 Integer prgIndex = prgStatesListView.getSelectionModel().getSelectedIndex();
-
+                System.out.println("changed " + prgIndex);
                 if(prgIndex >= 0 &&  prgIndex < prgList.size()){
-                    PrgState prg = prgList.get(prgStatesListView.getSelectionModel().getSelectedIndex());
+                    PrgState prg = prgList.get(prgIndex);
 
                     symTableView.getItems().addAll(prg.getSymTable().getData().entrySet());
 
@@ -188,6 +200,7 @@ public class InterpreterController {
         prgStatesListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Integer>() {
             @Override
             public void changed(ObservableValue<? extends Integer> observable, Integer oldValue, Integer newValue) {
+                if(newValue != null)
                     changedPrgState.set(!changedPrgState.get());
             }
         });

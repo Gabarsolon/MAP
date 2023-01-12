@@ -105,7 +105,7 @@ public class Interpreter {
                     new CompStmt(new VarDeclStmt("a", new RefType(new IntType())),
                             new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(10))),
                                     new CompStmt(new allocHeap("a", new ValueExp(new IntValue(22))),
-                                            new CompStmt(new forkStmt(new CompStmt(new writeHeap("a", new ValueExp(new IntValue(30))),
+                                            new CompStmt(new forkStmt(new CompStmt(new writeHeap("v", new ValueExp(new IntValue(30))),
                                                     new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(32))),
                                                             new CompStmt(new PrintStmt(new VarExp("v")),
                                                                     new PrintStmt(new readHeap(new VarExp("a"))))))),

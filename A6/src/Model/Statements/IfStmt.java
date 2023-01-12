@@ -51,7 +51,7 @@ public class IfStmt implements IStmt{
 
     @Override
     public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
-        Type typexp = exp .typecheck(typeEnv);
+        Type typexp = exp.typecheck(typeEnv);
         if(typexp.equals(new BoolType())){
             MyIDictionary<String, Type> typeEnvClone = new MyDictionary<>();
 
