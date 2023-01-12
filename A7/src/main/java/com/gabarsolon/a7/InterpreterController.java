@@ -90,7 +90,9 @@ public class InterpreterController {
                             }
                             else{
                                 currentPrgController.prepareExecution();
-                                oldPrgListSize = 0;
+                                oldPrgListSize = 1;
+                                updateProgramList();
+                                prgStatesListView.getSelectionModel().select(0);
                                 programListWindow.hide();
                                 mainStage.show();
                             }
@@ -109,18 +111,26 @@ public class InterpreterController {
         }
     }
     private void updateProgramsStatus(){
-
         heapTableView.getItems().clear();
         outListView.getItems().clear();
         fileTableListView.getItems().clear();
-
-
 
         heapTableView.getItems().addAll(prgList.get(0).getHeapTable().getData().entrySet());
         prgList.get(0).getOut().getData().stream().forEach(e->outListView.getItems().add(e.toString()));
         prgList.get(0).getFileTable().getData().entrySet().stream().forEach(e->fileTableListView.getItems().add(e.getKey()));
 
-        //changedPrgState.set(!changedPrgState.get());
+        changedPrgState.set(!changedPrgState.get());
+    }
+    private void updateProgramList(){
+        Integer lastSelectedIndex = prgStatesListView.getSelectionModel().getSelectedIndex();
+        prgStatesListView.getItems().clear();
+        noOfPrgStatesTextField.setText(Integer.toString(prgList.size()));
+        prgList.stream().forEach(prg->prgStatesListView.getItems().add(prg.getPrgId()));
+        if(lastSelectedIndex!=-1){
+            prgStatesListView.getSelectionModel().select(lastSelectedIndex);
+            System.out.println(prgStatesListView.getSelectionModel().getSelectedIndex());
+        }
+        oldPrgListSize=prgList.size();
     }
     @FXML
     void runOneStep(ActionEvent event) {
@@ -135,24 +145,20 @@ public class InterpreterController {
                     alert.showAndWait();
 
                     currentPrgController.endExecution();
+
+                    prgStatesListView.getItems().clear();
+                    heapTableView.getItems().clear();
+                    outListView.getItems().clear();
+                    fileTableListView.getItems().clear();
                     mainStage.hide();
+
                     programListWindow.show();
                     return;
                 } else {
-                    Integer lastSelectedIndex = prgStatesListView.getSelectionModel().getSelectedIndex();
-                    //System.out.println("update program status " + lastSelectedIndex);
-                    prgStatesListView.getItems().clear();
-                    noOfPrgStatesTextField.setText(Integer.toString(prgList.size()));
-                    prgList.stream().forEach(prg->prgStatesListView.getItems().add(prg.getPrgId()));
-                    if(lastSelectedIndex!=-1){
-                        prgStatesListView.getSelectionModel().select(lastSelectedIndex);
-                        System.out.println(prgStatesListView.getSelectionModel().getSelectedIndex());
-                    }
-                    oldPrgListSize=prgList.size();
+                    updateProgramList();
                 }
             }
             currentPrgController.oneStepForAllPrg(prgList);
-            changedPrgState.set(!changedPrgState.get());
             updateProgramsStatus();
         }catch (Exception e){
             System.out.println(e);
