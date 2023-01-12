@@ -91,7 +91,7 @@ public class InterpreterController {
                             else{
                                 currentPrgController.prepareExecution();
                                 oldPrgListSize = 1;
-                                updateProgramList();
+                                updateProgramListView();
                                 prgStatesListView.getSelectionModel().select(0);
                                 programListWindow.hide();
                                 mainStage.show();
@@ -121,7 +121,7 @@ public class InterpreterController {
 
         changedPrgState.set(!changedPrgState.get());
     }
-    private void updateProgramList(){
+    private void updateProgramListView(){
         Integer lastSelectedIndex = prgStatesListView.getSelectionModel().getSelectedIndex();
         prgStatesListView.getItems().clear();
         noOfPrgStatesTextField.setText(Integer.toString(prgList.size()));
@@ -153,7 +153,7 @@ public class InterpreterController {
                     programListWindow.show();
                     return;
                 } else {
-                    updateProgramList();
+                    updateProgramListView();
                 }
             }
             currentPrgController.oneStepForAllPrg(prgList);
