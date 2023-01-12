@@ -126,10 +126,8 @@ public class InterpreterController {
         prgStatesListView.getItems().clear();
         noOfPrgStatesTextField.setText(Integer.toString(prgList.size()));
         prgList.stream().forEach(prg->prgStatesListView.getItems().add(prg.getPrgId()));
-        if(lastSelectedIndex!=-1){
+        if(lastSelectedIndex!=-1)
             prgStatesListView.getSelectionModel().select(lastSelectedIndex);
-            System.out.println(prgStatesListView.getSelectionModel().getSelectedIndex());
-        }
         oldPrgListSize=prgList.size();
     }
     @FXML
@@ -190,7 +188,6 @@ public class InterpreterController {
                 symTableView.getItems().clear();
                 exeStackListView.getItems().clear();
                 Integer prgIndex = prgStatesListView.getSelectionModel().getSelectedIndex();
-                System.out.println("changed " + prgIndex);
                 if(prgIndex >= 0 &&  prgIndex < prgList.size()){
                     PrgState prg = prgList.get(prgIndex);
 
