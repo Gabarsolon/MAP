@@ -8336,3 +8336,1163 @@ FileTable:
 HeapTable:
 {}
 ----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='a', typ=int}
+(VarDeclStmt{name='b', typ=int}
+(VarDeclStmt{name='c', typ=int}
+(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300}))))))))]
+SymTable:
+{}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='b', typ=int}
+(VarDeclStmt{name='c', typ=int}
+(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300}))))))), VarDeclStmt{name='a', typ=int}]
+SymTable:
+{}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='b', typ=int}
+(VarDeclStmt{name='c', typ=int}
+(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300}))))))), VarDeclStmt{name='a', typ=int}]
+SymTable:
+{}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='b', typ=int}
+(VarDeclStmt{name='c', typ=int}
+(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300})))))))]
+SymTable:
+{a=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='b', typ=int}
+(VarDeclStmt{name='c', typ=int}
+(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300})))))))]
+SymTable:
+{a=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='c', typ=int}
+(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300})))))), VarDeclStmt{name='b', typ=int}]
+SymTable:
+{a=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='c', typ=int}
+(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300})))))), VarDeclStmt{name='b', typ=int}]
+SymTable:
+{a=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='c', typ=int}
+(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300}))))))]
+SymTable:
+{a=0, b=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='c', typ=int}
+(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300}))))))]
+SymTable:
+{a=0, b=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300}))))), VarDeclStmt{name='c', typ=int}]
+SymTable:
+{a=0, b=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300}))))), VarDeclStmt{name='c', typ=int}]
+SymTable:
+{a=0, b=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300})))))]
+SymTable:
+{a=0, b=0, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300})))))]
+SymTable:
+{a=0, b=0, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300})))), a=ValueExp{e=1}]
+SymTable:
+{a=0, b=0, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300})))), a=ValueExp{e=1}]
+SymTable:
+{a=0, b=0, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300}))))]
+SymTable:
+{a=1, b=0, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300}))))]
+SymTable:
+{a=1, b=0, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(c=ValueExp{e=5}
+(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300}))), b=ValueExp{e=2}]
+SymTable:
+{a=1, b=0, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(c=ValueExp{e=5}
+(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300}))), b=ValueExp{e=2}]
+SymTable:
+{a=1, b=0, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(c=ValueExp{e=5}
+(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300})))]
+SymTable:
+{a=1, b=2, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(c=ValueExp{e=5}
+(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300})))]
+SymTable:
+{a=1, b=2, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300})), c=ValueExp{e=5}]
+SymTable:
+{a=1, b=2, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300})), c=ValueExp{e=5}]
+SymTable:
+{a=1, b=2, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300}))]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(Model.Statements.SwitchStmt@15308237
+print(ValueExp{e=300}))]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300}), Model.Statements.SwitchStmt@15308237]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300}), Model.Statements.SwitchStmt@15308237]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300}), IfStmt{exp=RelExp{exp1=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp2=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, op='=='}, thenS=(print(VarExp{id='a'})
+print(VarExp{id='b'})), elseS=IfStmt{exp=RelExp{exp1=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp2=ValueExp{e=10}, op='=='}, thenS=(print(ValueExp{e=100})
+print(ValueExp{e=200})), elseS=print(ValueExp{e=300})}}]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300}), IfStmt{exp=RelExp{exp1=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp2=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, op='=='}, thenS=(print(VarExp{id='a'})
+print(VarExp{id='b'})), elseS=IfStmt{exp=RelExp{exp1=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp2=ValueExp{e=10}, op='=='}, thenS=(print(ValueExp{e=100})
+print(ValueExp{e=200})), elseS=print(ValueExp{e=300})}}]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300}), (print(VarExp{id='a'})
+print(VarExp{id='b'}))]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300}), (print(VarExp{id='a'})
+print(VarExp{id='b'}))]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300}), print(VarExp{id='b'}), print(VarExp{id='a'})]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300}), print(VarExp{id='b'}), print(VarExp{id='a'})]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300}), print(VarExp{id='b'})]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[1]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300}), print(VarExp{id='b'})]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[1]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300})]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[1, 2]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300})]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[1, 2]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[1, 2, 300]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='a', typ=int}
+(VarDeclStmt{name='b', typ=int}
+(VarDeclStmt{name='c', typ=int}
+(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300}))))))))]
+SymTable:
+{}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='b', typ=int}
+(VarDeclStmt{name='c', typ=int}
+(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300}))))))), VarDeclStmt{name='a', typ=int}]
+SymTable:
+{}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='b', typ=int}
+(VarDeclStmt{name='c', typ=int}
+(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300}))))))), VarDeclStmt{name='a', typ=int}]
+SymTable:
+{}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='b', typ=int}
+(VarDeclStmt{name='c', typ=int}
+(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300})))))))]
+SymTable:
+{a=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='b', typ=int}
+(VarDeclStmt{name='c', typ=int}
+(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300})))))))]
+SymTable:
+{a=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='c', typ=int}
+(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300})))))), VarDeclStmt{name='b', typ=int}]
+SymTable:
+{a=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='c', typ=int}
+(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300})))))), VarDeclStmt{name='b', typ=int}]
+SymTable:
+{a=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='c', typ=int}
+(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300}))))))]
+SymTable:
+{a=0, b=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='c', typ=int}
+(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300}))))))]
+SymTable:
+{a=0, b=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300}))))), VarDeclStmt{name='c', typ=int}]
+SymTable:
+{a=0, b=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300}))))), VarDeclStmt{name='c', typ=int}]
+SymTable:
+{a=0, b=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300})))))]
+SymTable:
+{a=0, b=0, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(a=ValueExp{e=1}
+(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300})))))]
+SymTable:
+{a=0, b=0, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300})))), a=ValueExp{e=1}]
+SymTable:
+{a=0, b=0, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300})))), a=ValueExp{e=1}]
+SymTable:
+{a=0, b=0, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300}))))]
+SymTable:
+{a=1, b=0, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(b=ValueExp{e=2}
+(c=ValueExp{e=5}
+(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300}))))]
+SymTable:
+{a=1, b=0, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(c=ValueExp{e=5}
+(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300}))), b=ValueExp{e=2}]
+SymTable:
+{a=1, b=0, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(c=ValueExp{e=5}
+(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300}))), b=ValueExp{e=2}]
+SymTable:
+{a=1, b=0, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(c=ValueExp{e=5}
+(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300})))]
+SymTable:
+{a=1, b=2, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(c=ValueExp{e=5}
+(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300})))]
+SymTable:
+{a=1, b=2, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300})), c=ValueExp{e=5}]
+SymTable:
+{a=1, b=2, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300})), c=ValueExp{e=5}]
+SymTable:
+{a=1, b=2, c=0}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300}))]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[(SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}
+print(ValueExp{e=300}))]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300}), SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300}), SwitchStmt{exp=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp1=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, exp2=ValueExp{e=10}, stmt1=(print(VarExp{id='a'})
+print(VarExp{id='b'})), stmt2=(print(ValueExp{e=100})
+print(ValueExp{e=200})), stmt3=print(ValueExp{e=300})}]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300}), IfStmt{exp=RelExp{exp1=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp2=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, op='=='}, thenS=(print(VarExp{id='a'})
+print(VarExp{id='b'})), elseS=IfStmt{exp=RelExp{exp1=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp2=ValueExp{e=10}, op='=='}, thenS=(print(ValueExp{e=100})
+print(ValueExp{e=200})), elseS=print(ValueExp{e=300})}}]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300}), IfStmt{exp=RelExp{exp1=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp2=ArithExp{e1=VarExp{id='b'}, e2=VarExp{id='c'}, op=3}, op='=='}, thenS=(print(VarExp{id='a'})
+print(VarExp{id='b'})), elseS=IfStmt{exp=RelExp{exp1=ArithExp{e1=VarExp{id='a'}, e2=ValueExp{e=10}, op=3}, exp2=ValueExp{e=10}, op='=='}, thenS=(print(ValueExp{e=100})
+print(ValueExp{e=200})), elseS=print(ValueExp{e=300})}}]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300}), (print(VarExp{id='a'})
+print(VarExp{id='b'}))]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300}), (print(VarExp{id='a'})
+print(VarExp{id='b'}))]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300}), print(VarExp{id='b'}), print(VarExp{id='a'})]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300}), print(VarExp{id='b'}), print(VarExp{id='a'})]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300}), print(VarExp{id='b'})]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[1]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300}), print(VarExp{id='b'})]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[1]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300})]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[1, 2]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=300})]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[1, 2]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
+Program id: 0
+ExeStack:
+[]
+SymTable:
+{a=1, b=2, c=5}
+Out:
+[1, 2, 300]
+FileTable:
+{}
+HeapTable:
+{}
+----------------------------
