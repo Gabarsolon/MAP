@@ -57,4 +57,10 @@ public class release implements IStmt{
             throw new MyException("acquire: The variable isn't of type int");
     }
 
+    @Override
+    public String toString() {
+        return "release{" +
+                "var='" + var + '\'' +
+                '}';
+    }
 }

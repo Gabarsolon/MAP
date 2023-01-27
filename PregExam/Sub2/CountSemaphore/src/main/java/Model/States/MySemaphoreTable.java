@@ -43,4 +43,17 @@ public class MySemaphoreTable implements MyISemaphoreTable{
         while(data.containsKey(freePos))
             freePos++;
     }
+
+    @Override
+    public Map<Integer, Pair<Integer, List<Integer>>> getData() {
+        return data;
+    }
+
+    @Override
+    public String toString() {
+        return "MySemaphoreTable{" +
+                "data=" + data +
+                ", freePos=" + freePos +
+                '}';
+    }
 }

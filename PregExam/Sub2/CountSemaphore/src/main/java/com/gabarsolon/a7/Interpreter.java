@@ -119,9 +119,27 @@ public class Interpreter extends Application {
                                                     new CompStmt(new PrintStmt(new VarExp("v")),
                                                             new PrintStmt(new readHeap(new VarExp("a")))))))));
 
+            IStmt semaphoreEx =
+                new CompStmt(new VarDeclStmt("v1", new RefType(new IntType())),
+                new CompStmt(new VarDeclStmt("cnt", new IntType()),
+                new CompStmt(new allocHeap("v1", new ValueExp(new IntValue(1))),
+                new CompStmt(new createSemaphore("cnt", new readHeap(new VarExp("v1"))),
+                new CompStmt(new forkStmt(new CompStmt(new acquire("cnt"),
+                                          new CompStmt(new writeHeap("v1", new ArithExp(3, new readHeap(new VarExp("v1")), new ValueExp(new IntValue(10)))),
+                                          new CompStmt(new PrintStmt(new readHeap(new VarExp("v1"))),
+                                          new release("cnt"))))),
+                new CompStmt(new forkStmt(new CompStmt(new acquire("cnt"),
+                                          new CompStmt(new writeHeap("v1", new ArithExp(3, new readHeap(new VarExp("v1")), new ValueExp(new IntValue(10)))),
+                                          new CompStmt(new writeHeap("v1", new ArithExp(3, new readHeap(new VarExp("v1")), new ValueExp(new IntValue(2)))),
+                                          new CompStmt(new PrintStmt(new readHeap(new VarExp("v1"))),
+                                          new release("cnt")))))),
+                new CompStmt(new acquire("cnt"),
+                new CompStmt(new PrintStmt(new ArithExp(2, new readHeap(new VarExp("v1")), new ValueExp(new IntValue(1)))),
+                (new release("cnt"))))))))));
 
 
-            PrgState prg1, prg2, prg3, prg4, prg5, prg6, prg7, prg8, prg9, prg10;
+
+            PrgState prg1, prg2, prg3, prg4, prg5, prg6, prg7, prg8, prg9, prg10, prg11;
             try {
                 ex1.typecheck(new MyDictionary<>());
                 prg1 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
@@ -211,6 +229,15 @@ public class Interpreter extends Application {
                 prg10 = null;
             }
 
+            try {
+                semaphoreEx.typecheck(new MyDictionary<>());
+                prg11 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), semaphoreEx);
+            } catch (Exception e) {
+                System.out.println("semaphoreEx: " + e);
+                prg11 = null;
+            }
+
             IRepository rp1 = new Repository(prg1, logFilePath);
             IRepository rp2 = new Repository(prg2, logFilePath);
             IRepository rp3 = new Repository(prg3, logFilePath);
@@ -221,6 +248,7 @@ public class Interpreter extends Application {
             IRepository rp8 = new Repository(prg8, logFilePath);
             IRepository rp9 = new Repository(prg9, logFilePath);
             IRepository rp10 = new Repository(prg10, logFilePath);
+            IRepository rp11 = new Repository(prg11, logFilePath);
 
             IController ctr1 = new Controller(rp1);
             IController ctr2 = new Controller(rp2);
@@ -232,13 +260,14 @@ public class Interpreter extends Application {
             IController ctr8 = new Controller(rp8);
             IController ctr9 = new Controller(rp9);
             IController ctr10 = new Controller(rp10);
+            IController ctr11 = new Controller(rp11);
 
             FXMLLoader fxmlLoader = new FXMLLoader(Interpreter.class.getResource("Interpreter.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 600, 400);
 
             List<IStmt> prgList = Arrays.asList(ex1, ex2, ex3, fileOperationsEx, heapAllocationEx, heapReadingEx,
-                    heapWritingEx, garbageCollectorEx, whileStmtEx, concurrentEx);
-            List<IController> prgControllers = Arrays.asList(ctr1, ctr2, ctr3, ctr4, ctr5, ctr6, ctr7, ctr8, ctr9, ctr10);
+                    heapWritingEx, garbageCollectorEx, whileStmtEx, concurrentEx, semaphoreEx);
+            List<IController> prgControllers = Arrays.asList(ctr1, ctr2, ctr3, ctr4, ctr5, ctr6, ctr7, ctr8, ctr9, ctr10, ctr11);
             InterpreterController ic = fxmlLoader.getController();
             ic.setStmtList(prgList);
             ic.setPrgControllers(prgControllers);

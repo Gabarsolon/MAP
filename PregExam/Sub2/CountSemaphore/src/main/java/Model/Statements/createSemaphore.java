@@ -60,4 +60,12 @@ public class createSemaphore implements IStmt{
             throw new MyException("createSemaphore: The expression doesn't evaluate to int");
         return typeEnv;
     }
+
+    @Override
+    public String toString() {
+        return "createSemaphore{" +
+                "var='" + var + '\'' +
+                ", exp1=" + exp1 +
+                '}';
+    }
 }

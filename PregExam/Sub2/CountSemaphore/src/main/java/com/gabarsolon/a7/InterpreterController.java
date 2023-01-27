@@ -15,6 +15,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.util.Pair;
 
 
 import java.util.List;
@@ -33,6 +34,14 @@ public class InterpreterController {
     private TableColumn<Map.Entry<String, Value>, String> valueColumnSymTable;
 
     @FXML
+    private TableColumn<Map.Entry<Integer, Pair<Integer, List<Integer>>>, String> indexColumnSemaphoreTable;
+
+    @FXML
+    private TableColumn<Map.Entry<Integer, Pair<Integer, List<Integer>>>, String> valueColumnSemaphoreTable;
+
+    @FXML
+    private TableColumn<Map.Entry<Integer, Pair<Integer, List<Integer>>>, String> listOfValuesColumnSemaphoreTable;
+    @FXML
     private ListView<String> exeStackListView;
 
     @FXML
@@ -40,6 +49,9 @@ public class InterpreterController {
 
     @FXML
     private TableView<Map.Entry<Integer, Value>> heapTableView;
+
+    @FXML
+    private TableView <Map.Entry<Integer, Pair<Integer, List<Integer>>>> semaphoreTableView;
 
     @FXML
     private TextField noOfPrgStatesTextField;
@@ -114,10 +126,12 @@ public class InterpreterController {
         heapTableView.getItems().clear();
         outListView.getItems().clear();
         fileTableListView.getItems().clear();
+        semaphoreTableView.getItems().clear();
 
         heapTableView.getItems().addAll(prgList.get(0).getHeapTable().getData().entrySet());
         prgList.get(0).getOut().getData().stream().forEach(e->outListView.getItems().add(e.toString()));
         prgList.get(0).getFileTable().getData().entrySet().stream().forEach(e->fileTableListView.getItems().add(e.getKey()));
+        semaphoreTableView.getItems().addAll(prgList.get(0).getSemTable().getData().entrySet());
 
         changedPrgState.set(!changedPrgState.get());
     }
@@ -180,6 +194,10 @@ public class InterpreterController {
 
         addressColumn.setCellValueFactory(param-> new ReadOnlyStringWrapper(param.getValue().getKey().toString()));
         valueColumnHeapTable.setCellValueFactory(param->new ReadOnlyStringWrapper(param.getValue().getValue().toString()));
+
+        indexColumnSemaphoreTable.setCellValueFactory(param-> new ReadOnlyStringWrapper(param.getValue().getKey().toString()));
+        valueColumnSemaphoreTable.setCellValueFactory(param-> new ReadOnlyStringWrapper(param.getValue().getValue().getKey().toString()));
+        listOfValuesColumnSemaphoreTable.setCellValueFactory(param->new ReadOnlyStringWrapper(param.getValue().getValue().getValue().toString()));
 
         changedPrgState= new SimpleBooleanProperty(true);
         changedPrgState.addListener(new ChangeListener<Boolean>() {
