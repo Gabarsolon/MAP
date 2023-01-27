@@ -3,19 +3,18 @@ package Model.Statements;
 import Model.Exceptions.MyException;
 import Model.States.MyIDictionary;
 import Model.States.MyISemaphoreTable;
-import Model.States.MyIStack;
 import Model.States.PrgState;
 import Model.Types.IntType;
 import Model.Types.Type;
-import Model.Values.*;
+import Model.Values.IntValue;
+import Model.Values.Value;
 import javafx.util.Pair;
-
 import java.util.List;
 
-public class acquire implements IStmt{
+public class release implements IStmt{
     String var;
 
-    public acquire(String var) {
+    public release(String var) {
         this.var = var;
     }
 
@@ -23,36 +22,30 @@ public class acquire implements IStmt{
     public PrgState execute(PrgState state) throws MyException {
         MyIDictionary<String, Value> symTbl = state.getSymTable();
         MyISemaphoreTable semTable = state.getSemTable();
-        MyIStack<IStmt> exeStack = state.getExeStack();
 
-        Value foundIndex;
         if(!symTbl.isDefined(var))
-            throw new MyException("The variable isn't an int");
+            throw new MyException("The variable isn't defined in the symTbl");
 
-        foundIndex = symTbl.lookup(var);
+        Value foundIndex = symTbl.lookup(var);
         if(!foundIndex.getType().equals(new IntType()))
-            throw new MyException("The variable isn't defined in the symTable");
+            throw new MyException("The variable isn't of type int");
 
-        Integer semTblKey = ((IntValue)foundIndex).getVal();
-        Pair<Integer, List<Integer>> entry = semTable.lookup(semTblKey);
-        if(entry == null)
+        Integer semTableIndex = ((IntValue)foundIndex).getVal();
+        Pair<Integer, List<Integer>> entry = semTable.lookup(semTableIndex);
+        if(entry==null)
             throw new MyException("The index isn't in the semaphore table");
-        Integer N1 = entry.getKey();
-        List<Integer> List1 = entry.getValue();
-        Integer NL = List1.size();
 
-        if(N1>NL){
-            if(!List1.contains(state.getPrgId()))
-                List1.add(state.getPrgId());
-        }
-        else
-            exeStack.push(this);
+        List<Integer> List1 = entry.getValue();
+
+        if(List1.contains(state.getPrgId()))
+            List1.remove(state.getPrgId());
+
         return null;
     }
 
     @Override
     public IStmt deepCopy() {
-        return new acquire(var);
+        return new release(var);
     }
 
     @Override
@@ -63,4 +56,5 @@ public class acquire implements IStmt{
         else
             throw new MyException("acquire: The variable isn't of type int");
     }
+
 }

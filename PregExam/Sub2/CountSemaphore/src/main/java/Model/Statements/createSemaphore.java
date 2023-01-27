@@ -52,6 +52,12 @@ public class createSemaphore implements IStmt{
 
     @Override
     public MyIDictionary<String, Type> typecheck(MyIDictionary<String, Type> typeEnv) throws MyException {
-        return null;
+        Type typVar = typeEnv.lookup(var);
+        Type typExp = exp1.typecheck(typeEnv);
+        if(!typVar.equals(new IntType()))
+            throw new MyException("createSemaphore: The type of the variable isn't int");
+        if(!typExp.equals(new IntType()))
+            throw new MyException("createSemaphore: The expression doesn't evaluate to int");
+        return typeEnv;
     }
 }
