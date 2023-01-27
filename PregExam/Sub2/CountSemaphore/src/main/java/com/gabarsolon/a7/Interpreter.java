@@ -143,7 +143,7 @@ public class Interpreter extends Application {
             try {
                 ex1.typecheck(new MyDictionary<>());
                 prg1 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex1);
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), new MySemaphoreTable(), ex1);
             } catch (Exception e) {
                 System.out.println("Ex1: " + e);
                 prg1 = null;
@@ -151,7 +151,7 @@ public class Interpreter extends Application {
             try {
                 ex2.typecheck(new MyDictionary<>());
                 prg2 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex2);
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), new MySemaphoreTable(),ex2);
             } catch (Exception e) {
                 System.out.println("Ex2: " + e);
                 prg2 = null;
@@ -160,7 +160,7 @@ public class Interpreter extends Application {
             try {
                 ex3.typecheck(new MyDictionary<>());
                 prg3 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex3);
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), new MySemaphoreTable(),ex3);
             } catch (Exception e) {
                 System.out.println("Ex3: " + e);
                 prg3 = null;
@@ -169,7 +169,7 @@ public class Interpreter extends Application {
             try {
                 fileOperationsEx.typecheck(new MyDictionary<>());
                 prg4 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), fileOperationsEx);
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), new MySemaphoreTable(),fileOperationsEx);
             } catch (Exception e) {
                 System.out.println("fileOperationsEx: " + e);
                 prg4 = null;
@@ -178,7 +178,7 @@ public class Interpreter extends Application {
             try {
                 heapAllocationEx.typecheck(new MyDictionary<>());
                 prg5 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), heapAllocationEx);
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), new MySemaphoreTable(),heapAllocationEx);
             } catch (Exception e) {
                 System.out.println("heapAllocationEx: " + e);
                 prg5 = null;
@@ -187,7 +187,7 @@ public class Interpreter extends Application {
             try {
                 heapReadingEx.typecheck(new MyDictionary<>());
                 prg6 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), heapReadingEx);
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), new MySemaphoreTable(),heapReadingEx);
             } catch (Exception e) {
                 System.out.println("heapReadingEx: " + e);
                 prg6 = null;
@@ -196,7 +196,7 @@ public class Interpreter extends Application {
             try {
                 heapWritingEx.typecheck(new MyDictionary<>());
                 prg7 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), heapWritingEx);
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), new MySemaphoreTable(),heapWritingEx);
             } catch (Exception e) {
                 System.out.println("heapWritingEx: " + e);
                 prg7 = null;
@@ -205,7 +205,7 @@ public class Interpreter extends Application {
             try {
                 garbageCollectorEx.typecheck(new MyDictionary<>());
                 prg8 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), garbageCollectorEx);
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), new MySemaphoreTable(),garbageCollectorEx);
             } catch (Exception e) {
                 System.out.println("garbageCollectorEx: " + e);
                 prg8 = null;
@@ -214,7 +214,7 @@ public class Interpreter extends Application {
             try {
                 whileStmtEx.typecheck(new MyDictionary<>());
                 prg9 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), whileStmtEx);
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), new MySemaphoreTable(),whileStmtEx);
             } catch (Exception e) {
                 System.out.println("whileStmtEx: " + e);
                 prg9 = null;
@@ -223,7 +223,7 @@ public class Interpreter extends Application {
             try {
                 concurrentEx.typecheck(new MyDictionary<>());
                 prg10 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), concurrentEx);
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), new MySemaphoreTable(),concurrentEx);
             } catch (Exception e) {
                 System.out.println("concurrentEx: " + e);
                 prg10 = null;
@@ -232,7 +232,7 @@ public class Interpreter extends Application {
             try {
                 semaphoreEx.typecheck(new MyDictionary<>());
                 prg11 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), semaphoreEx);
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), new MySemaphoreTable(),semaphoreEx);
             } catch (Exception e) {
                 System.out.println("semaphoreEx: " + e);
                 prg11 = null;

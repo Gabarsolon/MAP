@@ -24,9 +24,10 @@ public class forkStmt implements IStmt{
         MyIList<Value> out = state.getOut();
         MyIDictionary<String, BufferedReader> fileTbl = state.getFileTable();
         MyIHeap<Integer, Value> heapTbl= state.getHeapTable();
+        MyISemaphoreTable semTable = state.getSemTable();
         PrgState.setAvailableId(PrgState.getAvailableId()+1);
 
-        return new PrgState(exeStack,symTbl,out,fileTbl,heapTbl,stmt);
+        return new PrgState(exeStack,symTbl,out,fileTbl,heapTbl,semTable, stmt);
     }
 
     @Override

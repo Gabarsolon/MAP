@@ -19,12 +19,13 @@ public class PrgState {
     private static Integer availableId;
 
     public PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symtbl, MyIList<Value> ot,
-                    MyIDictionary<String, BufferedReader>ft,MyIHeap<Integer, Value>ht, IStmt prg){
+                    MyIDictionary<String, BufferedReader>ft,MyIHeap<Integer, Value>ht, MyISemaphoreTable st, IStmt prg){
         exeStack=stk;
         symTable=symtbl;
         out=ot;
         fileTable=ft;
         heapTable=ht;
+        semTable=st;
         originalProgram=prg.deepCopy();
         id=availableId;
         stk.push(prg);
