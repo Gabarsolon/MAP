@@ -119,23 +119,22 @@ public class Interpreter extends Application {
                                                     new CompStmt(new PrintStmt(new VarExp("v")),
                                                             new PrintStmt(new readHeap(new VarExp("a")))))))));
 
-            IStmt semaphoreEx =
-                new CompStmt(new VarDeclStmt("v1", new RefType(new IntType())),
-                new CompStmt(new VarDeclStmt("cnt", new IntType()),
-                new CompStmt(new allocHeap("v1", new ValueExp(new IntValue(1))),
-                new CompStmt(new createSemaphore("cnt", new readHeap(new VarExp("v1"))),
-                new CompStmt(new forkStmt(new CompStmt(new acquire("cnt"),
-                                          new CompStmt(new writeHeap("v1", new ArithExp(3, new readHeap(new VarExp("v1")), new ValueExp(new IntValue(10)))),
-                                          new CompStmt(new PrintStmt(new readHeap(new VarExp("v1"))),
-                                          new release("cnt"))))),
-                new CompStmt(new forkStmt(new CompStmt(new acquire("cnt"),
-                                          new CompStmt(new writeHeap("v1", new ArithExp(3, new readHeap(new VarExp("v1")), new ValueExp(new IntValue(10)))),
-                                          new CompStmt(new writeHeap("v1", new ArithExp(3, new readHeap(new VarExp("v1")), new ValueExp(new IntValue(2)))),
-                                          new CompStmt(new PrintStmt(new readHeap(new VarExp("v1"))),
-                                          new release("cnt")))))),
-                new CompStmt(new acquire("cnt"),
-                new CompStmt(new PrintStmt(new ArithExp(2, new readHeap(new VarExp("v1")), new ValueExp(new IntValue(1)))),
-                new release("cnt")))))))));
+            IStmt repeatUntilEx =
+                new CompStmt(new VarDeclStmt("v", new IntType()),
+                new CompStmt(new VarDeclStmt("x", new IntType()),
+                new CompStmt(new VarDeclStmt("y", new IntType()),
+                new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(0))),
+                new CompStmt(new repeat( new CompStmt(
+                                 new forkStmt(new CompStmt(new PrintStmt(new VarExp("v")),
+                                              new AssignStmt("v", new ArithExp(2, new VarExp("v"), new ValueExp(new IntValue(1)))))),
+                                 new AssignStmt("v", new ArithExp(1, new VarExp("v"), new ValueExp(new IntValue(1))))), new RelExp("==", new VarExp("v"), new ValueExp(new IntValue(3)))),
+                new CompStmt(new AssignStmt("x", new ValueExp(new IntValue(1))),
+                new CompStmt(new NopStmt(),
+                new CompStmt(new AssignStmt("y", new ValueExp(new IntValue(3))),
+                new CompStmt(new NopStmt(),
+                new PrintStmt(new ArithExp(3, new VarExp("v"), new ValueExp(new IntValue(10)))))))))))));
+
+
 
 
 
@@ -143,7 +142,7 @@ public class Interpreter extends Application {
             try {
                 ex1.typecheck(new MyDictionary<>());
                 prg1 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), new MySemaphoreTable(), ex1);
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex1);
             } catch (Exception e) {
                 System.out.println("Ex1: " + e);
                 prg1 = null;
@@ -151,7 +150,7 @@ public class Interpreter extends Application {
             try {
                 ex2.typecheck(new MyDictionary<>());
                 prg2 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), new MySemaphoreTable(),ex2);
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex2);
             } catch (Exception e) {
                 System.out.println("Ex2: " + e);
                 prg2 = null;
@@ -160,7 +159,7 @@ public class Interpreter extends Application {
             try {
                 ex3.typecheck(new MyDictionary<>());
                 prg3 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), new MySemaphoreTable(),ex3);
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), ex3);
             } catch (Exception e) {
                 System.out.println("Ex3: " + e);
                 prg3 = null;
@@ -169,7 +168,7 @@ public class Interpreter extends Application {
             try {
                 fileOperationsEx.typecheck(new MyDictionary<>());
                 prg4 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), new MySemaphoreTable(),fileOperationsEx);
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), fileOperationsEx);
             } catch (Exception e) {
                 System.out.println("fileOperationsEx: " + e);
                 prg4 = null;
@@ -178,7 +177,7 @@ public class Interpreter extends Application {
             try {
                 heapAllocationEx.typecheck(new MyDictionary<>());
                 prg5 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), new MySemaphoreTable(),heapAllocationEx);
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), heapAllocationEx);
             } catch (Exception e) {
                 System.out.println("heapAllocationEx: " + e);
                 prg5 = null;
@@ -187,7 +186,7 @@ public class Interpreter extends Application {
             try {
                 heapReadingEx.typecheck(new MyDictionary<>());
                 prg6 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), new MySemaphoreTable(),heapReadingEx);
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), heapReadingEx);
             } catch (Exception e) {
                 System.out.println("heapReadingEx: " + e);
                 prg6 = null;
@@ -196,7 +195,7 @@ public class Interpreter extends Application {
             try {
                 heapWritingEx.typecheck(new MyDictionary<>());
                 prg7 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), new MySemaphoreTable(),heapWritingEx);
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), heapWritingEx);
             } catch (Exception e) {
                 System.out.println("heapWritingEx: " + e);
                 prg7 = null;
@@ -205,7 +204,7 @@ public class Interpreter extends Application {
             try {
                 garbageCollectorEx.typecheck(new MyDictionary<>());
                 prg8 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), new MySemaphoreTable(),garbageCollectorEx);
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), garbageCollectorEx);
             } catch (Exception e) {
                 System.out.println("garbageCollectorEx: " + e);
                 prg8 = null;
@@ -214,7 +213,7 @@ public class Interpreter extends Application {
             try {
                 whileStmtEx.typecheck(new MyDictionary<>());
                 prg9 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), new MySemaphoreTable(),whileStmtEx);
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), whileStmtEx);
             } catch (Exception e) {
                 System.out.println("whileStmtEx: " + e);
                 prg9 = null;
@@ -223,20 +222,21 @@ public class Interpreter extends Application {
             try {
                 concurrentEx.typecheck(new MyDictionary<>());
                 prg10 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), new MySemaphoreTable(),concurrentEx);
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), concurrentEx);
             } catch (Exception e) {
                 System.out.println("concurrentEx: " + e);
                 prg10 = null;
             }
 
             try {
-                semaphoreEx.typecheck(new MyDictionary<>());
+                repeatUntilEx.typecheck(new MyDictionary<>());
                 prg11 = new PrgState(new MyStack<IStmt>(), new MyDictionary<String, Value>(),
-                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), new MySemaphoreTable(),semaphoreEx);
+                        new MyList<Value>(), new MyDictionary<String, BufferedReader>(), new MyHeap<Integer, Value>(), repeatUntilEx);
             } catch (Exception e) {
-                System.out.println("semaphoreEx: " + e);
+                System.out.println("repeatUntilEx: " + e);
                 prg11 = null;
             }
+
 
             IRepository rp1 = new Repository(prg1, logFilePath);
             IRepository rp2 = new Repository(prg2, logFilePath);
@@ -266,7 +266,7 @@ public class Interpreter extends Application {
             Scene scene = new Scene(fxmlLoader.load(), 600, 400);
 
             List<IStmt> prgList = Arrays.asList(ex1, ex2, ex3, fileOperationsEx, heapAllocationEx, heapReadingEx,
-                    heapWritingEx, garbageCollectorEx, whileStmtEx, concurrentEx, semaphoreEx);
+                    heapWritingEx, garbageCollectorEx, whileStmtEx, concurrentEx, repeatUntilEx);
             List<IController> prgControllers = Arrays.asList(ctr1, ctr2, ctr3, ctr4, ctr5, ctr6, ctr7, ctr8, ctr9, ctr10, ctr11);
             InterpreterController ic = fxmlLoader.getController();
             ic.setStmtList(prgList);
