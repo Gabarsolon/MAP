@@ -7642,3 +7642,2551 @@ HeapTable:
 LatchTable:
 Model.States.MyLatchTable@7721dea7
 ----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v1', typ=Ref(int)}
+(VarDeclStmt{name='v2', typ=Ref(int)}
+(VarDeclStmt{name='v3', typ=Ref(int)}
+(VarDeclStmt{name='cnt', typ=int}
+(allocHeap{var_name='v1', exp=ValueExp{e=2}}
+(allocHeap{var_name='v2', exp=ValueExp{e=3}}
+(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100})))))))))))))]
+SymTable:
+{}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v2', typ=Ref(int)}
+(VarDeclStmt{name='v3', typ=Ref(int)}
+(VarDeclStmt{name='cnt', typ=int}
+(allocHeap{var_name='v1', exp=ValueExp{e=2}}
+(allocHeap{var_name='v2', exp=ValueExp{e=3}}
+(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100})))))))))))), VarDeclStmt{name='v1', typ=Ref(int)}]
+SymTable:
+{}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v2', typ=Ref(int)}
+(VarDeclStmt{name='v3', typ=Ref(int)}
+(VarDeclStmt{name='cnt', typ=int}
+(allocHeap{var_name='v1', exp=ValueExp{e=2}}
+(allocHeap{var_name='v2', exp=ValueExp{e=3}}
+(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100})))))))))))), VarDeclStmt{name='v1', typ=Ref(int)}]
+SymTable:
+{}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v2', typ=Ref(int)}
+(VarDeclStmt{name='v3', typ=Ref(int)}
+(VarDeclStmt{name='cnt', typ=int}
+(allocHeap{var_name='v1', exp=ValueExp{e=2}}
+(allocHeap{var_name='v2', exp=ValueExp{e=3}}
+(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))))))))))))]
+SymTable:
+{v1=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v2', typ=Ref(int)}
+(VarDeclStmt{name='v3', typ=Ref(int)}
+(VarDeclStmt{name='cnt', typ=int}
+(allocHeap{var_name='v1', exp=ValueExp{e=2}}
+(allocHeap{var_name='v2', exp=ValueExp{e=3}}
+(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))))))))))))]
+SymTable:
+{v1=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v3', typ=Ref(int)}
+(VarDeclStmt{name='cnt', typ=int}
+(allocHeap{var_name='v1', exp=ValueExp{e=2}}
+(allocHeap{var_name='v2', exp=ValueExp{e=3}}
+(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))))))))))), VarDeclStmt{name='v2', typ=Ref(int)}]
+SymTable:
+{v1=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v3', typ=Ref(int)}
+(VarDeclStmt{name='cnt', typ=int}
+(allocHeap{var_name='v1', exp=ValueExp{e=2}}
+(allocHeap{var_name='v2', exp=ValueExp{e=3}}
+(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))))))))))), VarDeclStmt{name='v2', typ=Ref(int)}]
+SymTable:
+{v1=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v3', typ=Ref(int)}
+(VarDeclStmt{name='cnt', typ=int}
+(allocHeap{var_name='v1', exp=ValueExp{e=2}}
+(allocHeap{var_name='v2', exp=ValueExp{e=3}}
+(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100})))))))))))]
+SymTable:
+{v1=RefValue{address=0, locationType=int}, v2=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v3', typ=Ref(int)}
+(VarDeclStmt{name='cnt', typ=int}
+(allocHeap{var_name='v1', exp=ValueExp{e=2}}
+(allocHeap{var_name='v2', exp=ValueExp{e=3}}
+(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100})))))))))))]
+SymTable:
+{v1=RefValue{address=0, locationType=int}, v2=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='cnt', typ=int}
+(allocHeap{var_name='v1', exp=ValueExp{e=2}}
+(allocHeap{var_name='v2', exp=ValueExp{e=3}}
+(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100})))))))))), VarDeclStmt{name='v3', typ=Ref(int)}]
+SymTable:
+{v1=RefValue{address=0, locationType=int}, v2=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='cnt', typ=int}
+(allocHeap{var_name='v1', exp=ValueExp{e=2}}
+(allocHeap{var_name='v2', exp=ValueExp{e=3}}
+(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100})))))))))), VarDeclStmt{name='v3', typ=Ref(int)}]
+SymTable:
+{v1=RefValue{address=0, locationType=int}, v2=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='cnt', typ=int}
+(allocHeap{var_name='v1', exp=ValueExp{e=2}}
+(allocHeap{var_name='v2', exp=ValueExp{e=3}}
+(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))))))))))]
+SymTable:
+{v1=RefValue{address=0, locationType=int}, v2=RefValue{address=0, locationType=int}, v3=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='cnt', typ=int}
+(allocHeap{var_name='v1', exp=ValueExp{e=2}}
+(allocHeap{var_name='v2', exp=ValueExp{e=3}}
+(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))))))))))]
+SymTable:
+{v1=RefValue{address=0, locationType=int}, v2=RefValue{address=0, locationType=int}, v3=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(allocHeap{var_name='v1', exp=ValueExp{e=2}}
+(allocHeap{var_name='v2', exp=ValueExp{e=3}}
+(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))))))))), VarDeclStmt{name='cnt', typ=int}]
+SymTable:
+{v1=RefValue{address=0, locationType=int}, v2=RefValue{address=0, locationType=int}, v3=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(allocHeap{var_name='v1', exp=ValueExp{e=2}}
+(allocHeap{var_name='v2', exp=ValueExp{e=3}}
+(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))))))))), VarDeclStmt{name='cnt', typ=int}]
+SymTable:
+{v1=RefValue{address=0, locationType=int}, v2=RefValue{address=0, locationType=int}, v3=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(allocHeap{var_name='v1', exp=ValueExp{e=2}}
+(allocHeap{var_name='v2', exp=ValueExp{e=3}}
+(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100})))))))))]
+SymTable:
+{cnt=0, v1=RefValue{address=0, locationType=int}, v2=RefValue{address=0, locationType=int}, v3=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(allocHeap{var_name='v1', exp=ValueExp{e=2}}
+(allocHeap{var_name='v2', exp=ValueExp{e=3}}
+(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100})))))))))]
+SymTable:
+{cnt=0, v1=RefValue{address=0, locationType=int}, v2=RefValue{address=0, locationType=int}, v3=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(allocHeap{var_name='v2', exp=ValueExp{e=3}}
+(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100})))))))), allocHeap{var_name='v1', exp=ValueExp{e=2}}]
+SymTable:
+{cnt=0, v1=RefValue{address=0, locationType=int}, v2=RefValue{address=0, locationType=int}, v3=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(allocHeap{var_name='v2', exp=ValueExp{e=3}}
+(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100})))))))), allocHeap{var_name='v1', exp=ValueExp{e=2}}]
+SymTable:
+{cnt=0, v1=RefValue{address=0, locationType=int}, v2=RefValue{address=0, locationType=int}, v3=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(allocHeap{var_name='v2', exp=ValueExp{e=3}}
+(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))))))))]
+SymTable:
+{cnt=0, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=0, locationType=int}, v3=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(allocHeap{var_name='v2', exp=ValueExp{e=3}}
+(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))))))))]
+SymTable:
+{cnt=0, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=0, locationType=int}, v3=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))))))), allocHeap{var_name='v2', exp=ValueExp{e=3}}]
+SymTable:
+{cnt=0, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=0, locationType=int}, v3=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))))))), allocHeap{var_name='v2', exp=ValueExp{e=3}}]
+SymTable:
+{cnt=0, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=0, locationType=int}, v3=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100})))))))]
+SymTable:
+{cnt=0, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2, 2=3}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(allocHeap{var_name='v3', exp=ValueExp{e=4}}
+(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100})))))))]
+SymTable:
+{cnt=0, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2, 2=3}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100})))))), allocHeap{var_name='v3', exp=ValueExp{e=4}}]
+SymTable:
+{cnt=0, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2, 2=3}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100})))))), allocHeap{var_name='v3', exp=ValueExp{e=4}}]
+SymTable:
+{cnt=0, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=0, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2, 2=3}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))))))]
+SymTable:
+{cnt=0, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}
+(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))))))]
+SymTable:
+{cnt=0, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))))), newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}]
+SymTable:
+{cnt=0, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))))), newLatch{var='cnt', exp=readHeap{exp=VarExp{id='v2'}}}]
+SymTable:
+{cnt=0, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100})))))]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}
+(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100})))))]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100})))), forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100})))), forkStmt{stmt=(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))))]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 1
+ExeStack:
+[(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(await{var='cnt'}
+(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))))]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 1
+ExeStack:
+[(writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})))]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 1
+ExeStack:
+[(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})), writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 1
+ExeStack:
+[(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})), writeHeap{var_name='v1', exp=ArithExp{e1=readHeap{exp=VarExp{id='v1'}}, e2=ValueExp{e=10}, op=3}}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=2, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 1
+ExeStack:
+[(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))}))]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 1
+ExeStack:
+[(print(readHeap{exp=VarExp{id='v1'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))}))]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 1
+ExeStack:
+[(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))}), print(readHeap{exp=VarExp{id='v1'}})]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 1
+ExeStack:
+[(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))}), print(readHeap{exp=VarExp{id='v1'}})]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 1
+ExeStack:
+[(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 1
+ExeStack:
+[(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))})]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))}, countDown{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))}, countDown{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 1
+ExeStack:
+[]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 2
+ExeStack:
+[(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 2
+ExeStack:
+[(writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})))]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 2
+ExeStack:
+[(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})), writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 2
+ExeStack:
+[(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})), writeHeap{var_name='v2', exp=ArithExp{e1=readHeap{exp=VarExp{id='v2'}}, e2=ValueExp{e=10}, op=3}}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=3, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 2
+ExeStack:
+[(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))}))]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 2
+ExeStack:
+[(print(readHeap{exp=VarExp{id='v2'}})
+(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))}))]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 2
+ExeStack:
+[(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))}), print(readHeap{exp=VarExp{id='v2'}})]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 2
+ExeStack:
+[(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))}), print(readHeap{exp=VarExp{id='v2'}})]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 2
+ExeStack:
+[(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 2
+ExeStack:
+[(countDown{var='cnt'}
+forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))})]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 2
+ExeStack:
+[forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))}, countDown{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 2
+ExeStack:
+[forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))}, countDown{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 2
+ExeStack:
+[forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 2
+ExeStack:
+[forkStmt{stmt=(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 2
+ExeStack:
+[]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 3
+ExeStack:
+[(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 3
+ExeStack:
+[(writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}
+(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}))]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 3
+ExeStack:
+[(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}), writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 3
+ExeStack:
+[(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'}), writeHeap{var_name='v3', exp=ArithExp{e1=readHeap{exp=VarExp{id='v3'}}, e2=ValueExp{e=10}, op=3}}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=4}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 3
+ExeStack:
+[(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'})]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 3
+ExeStack:
+[(print(readHeap{exp=VarExp{id='v3'}})
+countDown{var='cnt'})]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 3
+ExeStack:
+[countDown{var='cnt'}, print(readHeap{exp=VarExp{id='v3'}})]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 3
+ExeStack:
+[countDown{var='cnt'}, print(readHeap{exp=VarExp{id='v3'}})]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2, 40]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 3
+ExeStack:
+[countDown{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2, 40]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2, 40]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 3
+ExeStack:
+[countDown{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2, 40]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2, 40, 3]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 3
+ExeStack:
+[]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2, 40, 3]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100}))), await{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2, 40, 3]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100})))]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2, 40, 3]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(ValueExp{e=100})
+(countDown{var='cnt'}
+print(ValueExp{e=100})))]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2, 40, 3]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(countDown{var='cnt'}
+print(ValueExp{e=100})), print(ValueExp{e=100})]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2, 40, 3]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(countDown{var='cnt'}
+print(ValueExp{e=100})), print(ValueExp{e=100})]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2, 40, 3]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(countDown{var='cnt'}
+print(ValueExp{e=100}))]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2, 40, 3, 100]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[(countDown{var='cnt'}
+print(ValueExp{e=100}))]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2, 40, 3, 100]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=100}), countDown{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2, 40, 3, 100]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=100}), countDown{var='cnt'}]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2, 40, 3, 100]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=100})]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2, 40, 3, 100, 0]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[print(ValueExp{e=100})]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2, 40, 3, 100, 0]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------
+Program id: 0
+ExeStack:
+[]
+SymTable:
+{cnt=1, v1=RefValue{address=1, locationType=int}, v2=RefValue{address=2, locationType=int}, v3=RefValue{address=3, locationType=int}}
+Out:
+[20, 1, 30, 2, 40, 3, 100, 0, 100]
+FileTable:
+{}
+HeapTable:
+{1=20, 2=30, 3=40}
+LatchTable:
+Model.States.MyLatchTable@76f3617f
+----------------------------

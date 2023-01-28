@@ -157,6 +157,8 @@ public class InterpreterController {
                 }
             }
             currentPrgController.oneStepForAllPrg(prgList);
+	    if(oldPrgListSize!=prgList.size())
+                updateProgramListView();
             updateProgramsStatus();
         }catch (Exception e){
             System.out.println(e);
