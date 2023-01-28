@@ -28,7 +28,7 @@ public class writeHeap implements IStmt{
 
     @Override
     public PrgState execute(PrgState state) throws MyException {
-        MyIDictionary<String, Value> symTbl = state.getSymTable();
+        MyIDictionary<String, Value> symTbl = state.getSymTableStack().top();
         MyIHeap<Integer, Value> heapTbl = state.getHeapTable();
 
         Value newVal = exp.eval(symTbl, heapTbl);

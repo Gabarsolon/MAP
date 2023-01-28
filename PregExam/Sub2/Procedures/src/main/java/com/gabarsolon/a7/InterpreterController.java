@@ -17,9 +17,8 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 
-import java.util.List;
-import java.util.Map;
-import java.util.StringTokenizer;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class InterpreterController {
     @FXML
@@ -33,6 +32,12 @@ public class InterpreterController {
     private TableColumn<Map.Entry<String, Value>, String> valueColumnSymTable;
 
     @FXML
+    private TableColumn<Map.Entry<List<String>, IStmt>, String> nameParametersColumnProcTable;
+
+    @FXML
+    private TableColumn<Map.Entry<List<String>, IStmt>, String> bodyColumnProcTable;
+
+    @FXML
     private ListView<String> exeStackListView;
 
     @FXML
@@ -40,6 +45,9 @@ public class InterpreterController {
 
     @FXML
     private TableView<Map.Entry<Integer, Value>> heapTableView;
+
+    @FXML
+    private TableView<Map.Entry<List<String>, IStmt>> procTableView;
 
     @FXML
     private TextField noOfPrgStatesTextField;
@@ -114,8 +122,19 @@ public class InterpreterController {
         heapTableView.getItems().clear();
         outListView.getItems().clear();
         fileTableListView.getItems().clear();
+        procTableView.getItems().clear();
 
         heapTableView.getItems().addAll(prgList.get(0).getHeapTable().getData().entrySet());
+        Map<List<String>, IStmt> concProcTable = prgList.get(0).getProcTable().getData().entrySet()
+                .stream().collect(Collectors.toMap(e->{
+                        String fname = e.getKey();
+                        List<String> variables = e.getValue().getKey();
+                        List<String> fnameVariablesList = new ArrayList<>();
+                        fnameVariablesList.add(fname);
+                        fnameVariablesList.addAll(variables);
+                        return fnameVariablesList;
+                    }, e->e.getValue().getValue()));
+        procTableView.getItems().addAll(concProcTable.entrySet());
         prgList.get(0).getOut().getData().stream().forEach(e->outListView.getItems().add(e.toString()));
         prgList.get(0).getFileTable().getData().entrySet().stream().forEach(e->fileTableListView.getItems().add(e.getKey()));
 
@@ -183,6 +202,9 @@ public class InterpreterController {
         addressColumn.setCellValueFactory(param-> new ReadOnlyStringWrapper(param.getValue().getKey().toString()));
         valueColumnHeapTable.setCellValueFactory(param->new ReadOnlyStringWrapper(param.getValue().getValue().toString()));
 
+        nameParametersColumnProcTable.setCellValueFactory(param->new ReadOnlyStringWrapper(param.getValue().getKey().toString()));
+        bodyColumnProcTable.setCellValueFactory(param->new ReadOnlyStringWrapper(param.getValue().getValue().toString()));
+
         changedPrgState= new SimpleBooleanProperty(true);
         changedPrgState.addListener(new ChangeListener<Boolean>() {
             @Override
@@ -193,7 +215,7 @@ public class InterpreterController {
                 if(prgIndex >= 0 &&  prgIndex < prgList.size()){
                     PrgState prg = prgList.get(prgIndex);
 
-                    symTableView.getItems().addAll(prg.getSymTable().getData().entrySet());
+                    symTableView.getItems().addAll(prg.getSymTableStack().top().getData().entrySet());
 
                     StringTokenizer st = new StringTokenizer(prg.getExeStack().toString(),";");
                     while(st.hasMoreTokens()){

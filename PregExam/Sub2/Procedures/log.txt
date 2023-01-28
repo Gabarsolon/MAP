@@ -8336,3 +8336,6756 @@ FileTable:
 HeapTable:
 {}
 ----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='sum', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))}
+(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))), createProc{name='sum', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))), createProc{name='sum', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))), createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))), createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})), VarDeclStmt{name='w', typ=int}]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})), VarDeclStmt{name='w', typ=int}]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), Model.Statements.returnProc@2af231c, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), Model.Statements.returnProc@2af231c, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), Model.Statements.returnProc@2af231c, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), Model.Statements.returnProc@2af231c, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), Model.Statements.returnProc@2af231c, print(VarExp{id='v'})]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@2df3af4f
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='sum', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))}
+(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))), createProc{name='sum', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))), createProc{name='sum', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))), createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))), createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})), VarDeclStmt{name='w', typ=int}]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})), VarDeclStmt{name='w', typ=int}]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), Model.Statements.returnProc@4043081e, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), Model.Statements.returnProc@4043081e, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), Model.Statements.returnProc@4043081e, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), Model.Statements.returnProc@4043081e, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), Model.Statements.returnProc@4043081e, print(VarExp{id='v'})]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), Model.Statements.returnProc@4043081e, print(VarExp{id='v'})]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), Model.Statements.returnProc@4043081e]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), Model.Statements.returnProc@4043081e]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}, print(VarExp{id='v'})]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}, print(VarExp{id='v'})]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[]
+SymTable:
+[{v=0, w=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 1
+ExeStack:
+[(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})]
+SymTable:
+[{v=0, w=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 1
+ExeStack:
+[(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})]
+SymTable:
+[{v=0, w=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, Model.Statements.returnProc@3e488f0f, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, Model.Statements.returnProc@3e488f0f, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, Model.Statements.returnProc@3e488f0f, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, Model.Statements.returnProc@3e488f0f, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, Model.Statements.returnProc@3e488f0f, print(VarExp{id='v'})]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, Model.Statements.returnProc@3e488f0f, print(VarExp{id='v'})]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, Model.Statements.returnProc@3e488f0f]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, Model.Statements.returnProc@3e488f0f]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 1
+ExeStack:
+[]
+SymTable:
+[{v=0, w=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 2
+ExeStack:
+[call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 2
+ExeStack:
+[call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 2
+ExeStack:
+[Model.Statements.returnProc@34483002, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 2
+ExeStack:
+[Model.Statements.returnProc@34483002, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 2
+ExeStack:
+[Model.Statements.returnProc@34483002, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 2
+ExeStack:
+[Model.Statements.returnProc@34483002, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 2
+ExeStack:
+[Model.Statements.returnProc@34483002, print(VarExp{id='v'})]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 2
+ExeStack:
+[Model.Statements.returnProc@34483002, print(VarExp{id='v'})]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 2
+ExeStack:
+[Model.Statements.returnProc@34483002]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 2
+ExeStack:
+[Model.Statements.returnProc@34483002]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 2
+ExeStack:
+[]
+SymTable:
+[{v=0, w=0}]
+Out:
+[0]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@67aa5198
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='sum', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))}
+(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))), createProc{name='sum', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))), createProc{name='sum', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))), createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))), createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})), VarDeclStmt{name='w', typ=int}]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})), VarDeclStmt{name='w', typ=int}]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, print(VarExp{id='v'})]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, print(VarExp{id='v'})]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@7e0cb55d
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='sum', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))}
+(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))), createProc{name='sum', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))), createProc{name='sum', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))), createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))), createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})), VarDeclStmt{name='w', typ=int}]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})), VarDeclStmt{name='w', typ=int}]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=0, w=0}, {a=0, b=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='sum', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))}
+(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))), createProc{name='sum', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))), createProc{name='sum', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))), createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))), createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))), VarDeclStmt{name='w', typ=int}]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))), VarDeclStmt{name='w', typ=int}]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))), v=ValueExp{e=2}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))), v=ValueExp{e=2}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))]
+SymTable:
+[{v=2, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))]
+SymTable:
+[{v=2, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})), w=ValueExp{e=5}]
+SymTable:
+[{v=2, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})), w=ValueExp{e=5}]
+SymTable:
+[{v=2, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))]
+SymTable:
+[{v=2, w=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))]
+SymTable:
+[{v=2, w=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=2, w=5}, {a=0, b=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@3f349623
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='sum', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))}
+(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))), createProc{name='sum', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))), createProc{name='sum', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))), createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))), createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))), VarDeclStmt{name='w', typ=int}]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))), VarDeclStmt{name='w', typ=int}]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))), v=ValueExp{e=2}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))), v=ValueExp{e=2}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))]
+SymTable:
+[{v=2, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))]
+SymTable:
+[{v=2, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})), w=ValueExp{e=5}]
+SymTable:
+[{v=2, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})), w=ValueExp{e=5}]
+SymTable:
+[{v=2, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))]
+SymTable:
+[{v=2, w=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))]
+SymTable:
+[{v=2, w=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=2, w=5}, {a=20, b=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=2, w=5}, {a=20, b=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=2, w=5}, {a=20, b=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=2, w=5}, {a=20, b=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, print(VarExp{id='v'})]
+SymTable:
+[{v=2, w=5}, {a=20, b=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, print(VarExp{id='v'})]
+SymTable:
+[{v=2, w=5}, {a=20, b=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}]
+SymTable:
+[{v=2, w=5}, {a=20, b=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@17447266
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='sum', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))}
+(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))), createProc{name='sum', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))), createProc{name='sum', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))), createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))), createProc{name='product', variablesList=[a, b], body=(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))), VarDeclStmt{name='w', typ=int}]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))), VarDeclStmt{name='w', typ=int}]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))), v=ValueExp{e=2}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))), v=ValueExp{e=2}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))]
+SymTable:
+[{v=2, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))]
+SymTable:
+[{v=2, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})), w=ValueExp{e=5}]
+SymTable:
+[{v=2, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})), w=ValueExp{e=5}]
+SymTable:
+[{v=2, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))]
+SymTable:
+[{v=2, w=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))]
+SymTable:
+[{v=2, w=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=2, w=5}, {a=20, b=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=2, w=5}, {a=20, b=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=2, w=5}, {a=20, b=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=2, w=5}, {a=20, b=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, print(VarExp{id='v'})]
+SymTable:
+[{v=2, w=5}, {a=20, b=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@6bea8f4e
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='sum', variablesList=[a, b], body=(VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})))}
+(createProc{name='product', variablesList=[a, b], body=(VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'})))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'})))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))), createProc{name='sum', variablesList=[a, b], body=(VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'})))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))), createProc{name='sum', variablesList=[a, b], body=(VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'})))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'})))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))), createProc{name='product', variablesList=[a, b], body=(VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'})))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))), createProc{name='product', variablesList=[a, b], body=(VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'})))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))), VarDeclStmt{name='w', typ=int}]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))), VarDeclStmt{name='w', typ=int}]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))), v=ValueExp{e=2}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))), v=ValueExp{e=2}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))]
+SymTable:
+[{v=2, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))]
+SymTable:
+[{v=2, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})), w=ValueExp{e=5}]
+SymTable:
+[{v=2, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})), w=ValueExp{e=5}]
+SymTable:
+[{v=2, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))]
+SymTable:
+[{v=2, w=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))]
+SymTable:
+[{v=2, w=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, (VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})))]
+SymTable:
+[{v=2, w=5}, {a=20, b=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, (VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})))]
+SymTable:
+[{v=2, w=5}, {a=20, b=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{v=2, w=5}, {a=20, b=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{v=2, w=5}, {a=20, b=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=2, w=5}, {a=20, b=5, v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=2, w=5}, {a=20, b=5, v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=2, w=5}, {a=20, b=5, v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=2, w=5}, {a=20, b=5, v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, print(VarExp{id='v'})]
+SymTable:
+[{v=2, w=5}, {a=20, b=5, v=25}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, print(VarExp{id='v'})]
+SymTable:
+[{v=2, w=5}, {a=20, b=5, v=25}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}]
+SymTable:
+[{v=2, w=5}, {a=20, b=5, v=25}]
+Out:
+[25]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}]
+SymTable:
+[{v=2, w=5}, {a=20, b=5, v=25}]
+Out:
+[25]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}, print(VarExp{id='v'})]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}, print(VarExp{id='v'})]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[forkStmt{stmt=(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 1
+ExeStack:
+[(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 1
+ExeStack:
+[(call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}, (VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})))]
+SymTable:
+[{v=2, w=5}, {a=2, b=5}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}, (VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})))]
+SymTable:
+[{v=2, w=5}, {a=2, b=5}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}, print(VarExp{id='v'})]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=7}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}, print(VarExp{id='v'})]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=7}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=7}]
+Out:
+[25, 2, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=7}]
+Out:
+[25, 2, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 1
+ExeStack:
+[]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 2
+ExeStack:
+[call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 2
+ExeStack:
+[call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}, (VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})))]
+SymTable:
+[{v=2, w=5}, {a=2, b=5}]
+Out:
+[25, 2, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}, (VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})))]
+SymTable:
+[{v=2, w=5}, {a=2, b=5}]
+Out:
+[25, 2, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5}]
+Out:
+[25, 2, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5}]
+Out:
+[25, 2, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Out:
+[25, 2, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Out:
+[25, 2, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Out:
+[25, 2, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Out:
+[25, 2, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}, print(VarExp{id='v'})]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=7}]
+Out:
+[25, 2, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}, print(VarExp{id='v'})]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=7}]
+Out:
+[25, 2, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=7}]
+Out:
+[25, 2, 7, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=7}]
+Out:
+[25, 2, 7, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 2
+ExeStack:
+[]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2, 7, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@244da872
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='sum', variablesList=[a, b], body=(VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})))}
+(createProc{name='product', variablesList=[a, b], body=(VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'})))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'})))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))), createProc{name='sum', variablesList=[a, b], body=(VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'})))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))), createProc{name='sum', variablesList=[a, b], body=(VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'})))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(createProc{name='product', variablesList=[a, b], body=(VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'})))}
+(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))), createProc{name='product', variablesList=[a, b], body=(VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'})))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))), createProc{name='product', variablesList=[a, b], body=(VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'})))}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='v', typ=int}
+(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))))]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(VarDeclStmt{name='w', typ=int}
+(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))))]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))), VarDeclStmt{name='w', typ=int}]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))), VarDeclStmt{name='w', typ=int}]
+SymTable:
+[{v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(v=ValueExp{e=2}
+(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))))]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))), v=ValueExp{e=2}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))), v=ValueExp{e=2}]
+SymTable:
+[{v=0, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))]
+SymTable:
+[{v=2, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(w=ValueExp{e=5}
+(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})))]
+SymTable:
+[{v=2, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})), w=ValueExp{e=5}]
+SymTable:
+[{v=2, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})), w=ValueExp{e=5}]
+SymTable:
+[{v=2, w=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))]
+SymTable:
+[{v=2, w=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}
+(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}))]
+SymTable:
+[{v=2, w=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), call{fname='sum', parameters=[ArithExp{e1=VarExp{id='v'}, e2=ValueExp{e=10}, op=3}, VarExp{id='w'}]}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, (VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})))]
+SymTable:
+[{v=2, w=5}, {a=20, b=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, (VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})))]
+SymTable:
+[{v=2, w=5}, {a=20, b=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{v=2, w=5}, {a=20, b=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{v=2, w=5}, {a=20, b=5}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=2, w=5}, {a=20, b=5, v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=2, w=5}, {a=20, b=5, v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=2, w=5}, {a=20, b=5, v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=2, w=5}, {a=20, b=5, v=0}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, print(VarExp{id='v'})]
+SymTable:
+[{v=2, w=5}, {a=20, b=5, v=25}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}, print(VarExp{id='v'})]
+SymTable:
+[{v=2, w=5}, {a=20, b=5, v=25}]
+Out:
+[]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}]
+SymTable:
+[{v=2, w=5}, {a=20, b=5, v=25}]
+Out:
+[25]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}), returnProc{}]
+SymTable:
+[{v=2, w=5}, {a=20, b=5, v=25}]
+Out:
+[25]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[(print(VarExp{id='v'})
+forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})})]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}, print(VarExp{id='v'})]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}, print(VarExp{id='v'})]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[forkStmt{stmt=(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 0
+ExeStack:
+[]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 1
+ExeStack:
+[(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 1
+ExeStack:
+[(call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}
+forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}})]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, call{fname='product', parameters=[VarExp{id='v'}, VarExp{id='w'}]}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}, (VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'})))]
+SymTable:
+[{v=2, w=5}, {a=2, b=5}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}, (VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'})))]
+SymTable:
+[{v=2, w=5}, {a=2, b=5}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'})), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'})), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=3}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}, print(VarExp{id='v'})]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=10}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}, print(VarExp{id='v'})]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=10}]
+Out:
+[25, 2]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=10}]
+Out:
+[25, 2, 10]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}, returnProc{}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=10}]
+Out:
+[25, 2, 10]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2, 10]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 1
+ExeStack:
+[forkStmt{stmt=call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2, 10]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 1
+ExeStack:
+[]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2, 10]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 2
+ExeStack:
+[call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2, 10]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 2
+ExeStack:
+[call{fname='sum', parameters=[VarExp{id='v'}, VarExp{id='w'}]}]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2, 10]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}, (VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})))]
+SymTable:
+[{v=2, w=5}, {a=2, b=5}]
+Out:
+[25, 2, 10]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}, (VarDeclStmt{name='v', typ=int}
+(v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})))]
+SymTable:
+[{v=2, w=5}, {a=2, b=5}]
+Out:
+[25, 2, 10]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5}]
+Out:
+[25, 2, 10]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'})), VarDeclStmt{name='v', typ=int}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5}]
+Out:
+[25, 2, 10]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Out:
+[25, 2, 10]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}, (v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}
+print(VarExp{id='v'}))]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Out:
+[25, 2, 10]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Out:
+[25, 2, 10]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}, print(VarExp{id='v'}), v=ArithExp{e1=VarExp{id='a'}, e2=VarExp{id='b'}, op=1}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=0}]
+Out:
+[25, 2, 10]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}, print(VarExp{id='v'})]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=7}]
+Out:
+[25, 2, 10]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}, print(VarExp{id='v'})]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=7}]
+Out:
+[25, 2, 10]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=7}]
+Out:
+[25, 2, 10, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 2
+ExeStack:
+[returnProc{}]
+SymTable:
+[{v=2, w=5}, {a=2, b=5, v=7}]
+Out:
+[25, 2, 10, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------
+Program id: 2
+ExeStack:
+[]
+SymTable:
+[{v=2, w=5}]
+Out:
+[25, 2, 10, 7]
+FileTable:
+{}
+HeapTable:
+{}
+ProcTable:
+Model.States.MyProcTable@62fcc92e
+----------------------------

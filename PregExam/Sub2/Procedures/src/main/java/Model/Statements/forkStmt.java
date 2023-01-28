@@ -20,29 +20,37 @@ public class forkStmt implements IStmt{
     @Override
     public PrgState execute(PrgState state) throws MyException {
         MyIStack<IStmt> exeStack = new MyStack<>();
+        MyIList<Value> out = state.getOut();
+        MyIDictionary<String, BufferedReader> fileTbl = state.getFileTable();
+        MyIHeap<Integer, Value> heapTbl= state.getHeapTable();
+        MyIProcTable procTable = state.getProcTable();
+        PrgState.setAvailableId(PrgState.getAvailableId()+1);
+
+
 
         MyIStack<MyIDictionary<String, Value>> reversedSymTblStack = new MyStack<>();
         MyIStack<MyIDictionary<String, Value>> originalSymTblStack = state.getSymTableStack();
-        MyIStack<MyIDictionary<String, Value>> cloneSymTblStack = new MyStack<>();
 
         while(!originalSymTblStack.isEmpty()){
             reversedSymTblStack.push(originalSymTblStack.pop());
         }
+
+        MyIDictionary<String, Value> symTbl = reversedSymTblStack.pop();
+        originalSymTblStack.push(symTbl);
+        MyIDictionary<String, Value> cloneSymTbl = new MyDictionary<>();
+        cloneSymTbl.setData(symTbl.getData().entrySet().stream()
+                .collect(Collectors.toMap(e->e.getKey(), e->e.getValue().deepCopy())));
+        PrgState clonePrgState = new PrgState(exeStack,cloneSymTbl,out,fileTbl,heapTbl, procTable, stmt);
+
         while(!reversedSymTblStack.isEmpty()){
-            MyIDictionary<String, Value> symTbl = reversedSymTblStack.pop();
+            symTbl = reversedSymTblStack.pop();
             originalSymTblStack.push(symTbl);
-            MyIDictionary<String, Value> cloneSymTbl = new MyDictionary<>();
+            cloneSymTbl = new MyDictionary<>();
             cloneSymTbl.setData(symTbl.getData().entrySet().stream()
                     .collect(Collectors.toMap(e->e.getKey(), e->e.getValue().deepCopy())));
-            cloneSymTblStack.push(cloneSymTbl);
+            clonePrgState.getSymTableStack().push(cloneSymTbl);
         }
-
-        MyIList<Value> out = state.getOut();
-        MyIDictionary<String, BufferedReader> fileTbl = state.getFileTable();
-        MyIHeap<Integer, Value> heapTbl= state.getHeapTable();
-        PrgState.setAvailableId(PrgState.getAvailableId()+1);
-
-        return new PrgState(exeStack,cloneSymTblStack,out,fileTbl,heapTbl,stmt);
+        return clonePrgState;
     }
 
     @Override

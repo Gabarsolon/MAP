@@ -21,7 +21,7 @@ public class WhileStmt implements IStmt{
 
     @Override
     public PrgState execute(PrgState state) throws MyException {
-        MyIDictionary<String, Value> symTbl = state.getSymTable();
+        MyIDictionary<String, Value> symTbl = state.getSymTableStack().top();
         MyIStack<IStmt> exeStack = state.getExeStack();
         MyIHeap<Integer, Value> heapTbl = state.getHeapTable();
 

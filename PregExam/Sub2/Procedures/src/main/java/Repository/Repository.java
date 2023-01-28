@@ -34,13 +34,15 @@ public class Repository implements IRepository{
                 logFile.println(st.nextToken());
             }
             logFile.println("SymTable:");
-            logFile.println(prg.getSymTable());
+            logFile.println(prg.getSymTableStack());
             logFile.println("Out:");
             logFile.println(prg.getOut());
             logFile.println("FileTable:");
             logFile.println(prg.getFileTable());
             logFile.println("HeapTable:");
             logFile.println(prg.getHeapTable());
+            logFile.println("ProcTable:");
+            logFile.println(prg.getProcTable());
             logFile.println("----------------------------");
             logFile.close();
         }

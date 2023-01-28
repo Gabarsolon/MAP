@@ -49,7 +49,7 @@ public class Controller implements IController{
         MyIHeap<Integer, Value> heapTbl = prgList.get(0).getHeapTable();
         List<Integer> addresses = new ArrayList<>();
         prgList.forEach(prg->{
-            addresses.addAll(getAddrFromSymTable(prg.getSymTable().getData().values()));
+            addresses.addAll(getAddrFromSymTable(prg.getSymTableStack().top().getData().values()));
         });
         heapTbl.setData(safeGarbageCollector(addresses, heapTbl.getData()));
     }

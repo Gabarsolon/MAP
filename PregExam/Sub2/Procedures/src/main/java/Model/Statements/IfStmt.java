@@ -36,10 +36,10 @@ public class IfStmt implements IStmt{
     }
 
     public PrgState execute(PrgState state) throws MyException {
-        MyIDictionary<String, Value> symTable = state.getSymTable();
+        MyIDictionary<String, Value> symTbl = state.getSymTableStack().top();
         MyIHeap<Integer, Value> heapTbl  = state.getHeapTable();
         MyIStack<IStmt> stk = state.getExeStack();
-        Value cond = exp.eval(symTable, heapTbl);
+        Value cond = exp.eval(symTbl, heapTbl);
         if(!(cond.getType() instanceof BoolType))
             throw new MyException("Conditional expression is not a boolean");
         if(((BoolValue)cond).getVal())

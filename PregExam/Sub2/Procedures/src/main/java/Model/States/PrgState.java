@@ -14,21 +14,22 @@ public class PrgState {
     private MyIList<Value> out;
     private MyIDictionary<String, BufferedReader> fileTable;
     private MyIHeap<Integer, Value> heapTable;
-
+    private MyIProcTable procTable;
     private IStmt originalProgram;
     private Integer id;
     private static Integer availableId;
 
-    public PrgState(MyIStack<IStmt> stk, MyIStack<MyIDictionary<String, Value>> symTblStack, MyIList<Value> ot,
-                    MyIDictionary<String, BufferedReader>ft,MyIHeap<Integer, Value>ht, IStmt prg){
+    public PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symTbl, MyIList<Value> ot,
+                    MyIDictionary<String, BufferedReader>ft,MyIHeap<Integer, Value>ht, MyIProcTable prcTbl, IStmt prg){
         exeStack=stk;
-        symTableStack=symTblStack;
         out=ot;
+        symTableStack = new MyStack<>();
+        symTableStack.push(symTbl);
         fileTable=ft;
         heapTable=ht;
         originalProgram=prg.deepCopy();
+        procTable=prcTbl;
         id=availableId;
-        symTblStack.push(new MyDictionary<>());
         stk.push(prg);
     }
 
@@ -84,6 +85,11 @@ public class PrgState {
     public MyIHeap<Integer, Value> getHeapTable(){
         return heapTable;
     }
+
+    public MyIProcTable getProcTable() {
+        return procTable;
+    }
+
     public IStmt getOriginalProgram(){
         return originalProgram;
     }
@@ -98,6 +104,7 @@ public class PrgState {
 //                ", originalProgram=" + originalProgram +
                 "\nfileTable=" + fileTable+
                 "\nheapTable=" + heapTable+
+                "\nprocTable=" + procTable+
                 "}\n"+
                 "---------------------------------------------";
     }

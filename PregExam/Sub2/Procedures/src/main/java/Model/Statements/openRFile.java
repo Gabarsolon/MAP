@@ -19,7 +19,7 @@ public class openRFile implements IStmt{
 
     @Override
     public PrgState execute(PrgState state) throws MyException {
-        MyIDictionary<String, Value> symtbl = state.getSymTable();
+        MyIDictionary<String, Value> symtbl = state.getSymTableStack().top();
         MyIDictionary<String, BufferedReader> fileTable = state.getFileTable();
         MyIHeap<Integer, Value> heapTbl  = state.getHeapTable();
         Value value =exp.eval(symtbl, heapTbl);
