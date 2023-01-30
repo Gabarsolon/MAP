@@ -12,17 +12,19 @@ public class PrgState {
     private MyIList<Value> out;
     private MyIDictionary<String, BufferedReader> fileTable;
     private MyIHeap<Integer, Value> heapTable;
+    private MyILatchTable latchTable;
     private IStmt originalProgram;
     private Integer id;
     private static Integer availableId;
 
     public PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symtbl, MyIList<Value> ot,
-                    MyIDictionary<String, BufferedReader>ft,MyIHeap<Integer, Value>ht, IStmt prg){
+                    MyIDictionary<String, BufferedReader>ft,MyIHeap<Integer, Value>ht, MyILatchTable lt,  IStmt prg){
         exeStack=stk;
         symTable=symtbl;
         out=ot;
         fileTable=ft;
         heapTable=ht;
+        latchTable=lt;
         originalProgram=prg.deepCopy();
         id=availableId;
         stk.push(prg);
@@ -79,6 +81,11 @@ public class PrgState {
     public MyIHeap<Integer, Value> getHeapTable(){
         return heapTable;
     }
+
+    public MyILatchTable getLatchTable() {
+        return latchTable;
+    }
+
     public IStmt getOriginalProgram(){
         return originalProgram;
     }
@@ -93,6 +100,7 @@ public class PrgState {
 //                ", originalProgram=" + originalProgram +
                 "\nfileTable=" + fileTable+
                 "\nheapTable=" + heapTable+
+                "\nlatchTable=" + latchTable+
                 "}\n"+
                 "---------------------------------------------";
     }
