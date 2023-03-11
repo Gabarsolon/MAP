@@ -1,2 +1,2 @@
 # MAP
-teme map cica
+Advanced Programming Methdos homeworks
