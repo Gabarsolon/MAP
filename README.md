@@ -1,2 +1,2 @@
 # MAP
-Advanced Programming Methdos homeworks
+Advanced Programming Methods homeworks
